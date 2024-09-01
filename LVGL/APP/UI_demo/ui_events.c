@@ -4,7 +4,6 @@
 // Project name: SquareLine_Project
 
 #include "ui.h"
-#include "MQTT_Task.h"
 #include "main.h"
 
 void Detect_From_Tempature(lv_event_t *e)

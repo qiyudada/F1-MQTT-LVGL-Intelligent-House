@@ -33,15 +33,6 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "ring_buffer.h"
-//#include "Uart3_IRQ.h"
-//#include <platform_mutex.h>	
-#include "Lcd.h"
-#include "GUI.h"
-#include "lvgl.h"
-#include "lv_port_disp.h"
-#include "lv_port_indev.h"
-#include "ATcommand.h"
-#include "MQTT_Task.h"
 
 /* USER CODE END Includes */
 

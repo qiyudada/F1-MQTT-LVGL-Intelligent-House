@@ -18,14 +18,7 @@
 
 extern ADC_HandleTypeDef hadc1;
 
-typedef struct
-{
-	int Volt;
-	int Sample;
-	char data_sensor[50];
-} Light_Data;
 
-extern Light_Data L_Data;
 
 void LightSensor_Init(void);
 int LightSensor_Read(int *pData);

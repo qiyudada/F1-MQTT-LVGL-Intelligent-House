@@ -15,9 +15,9 @@
 		GPIOB->CRL |= (u32)3 << 28; \
 	}
 
-#define IIC_SCL PBout(6)
-#define IIC_SDA PBout(7)
-#define READ_SDA PBin(7)
+#define IIC_SCL PBout(10)
+#define IIC_SDA PBout(11)
+#define READ_SDA PBin(11)
 
 void IIC_Start(void);
 void IIC_Stop(void);

@@ -33,7 +33,9 @@
         "delay.h": "c",
         "mqttclient.h": "c",
         "rtc.h": "c",
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "ih_task_init.h": "c",
+        "cmsis_os.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

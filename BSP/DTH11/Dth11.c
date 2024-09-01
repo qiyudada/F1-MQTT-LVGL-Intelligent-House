@@ -6,8 +6,6 @@
 #include "semphr.h"
 #include "Lcd.h"
 
-DTH11_Data D_Data;
-
 
 void DHT11_PinCfgAsOutput(void)
 {
@@ -162,20 +160,3 @@ void DHT11_Test(void)
 }
 
 
-void Lv_DTH11_Task(void)
-{
-    platform_mutex_lock(&Mqtt_Func.G_xTaskMutex);
-    if (DHT11_Read_Data(&D_Data.Temp, &D_Data.Humid))
-    {
-        DHT11_PinCfgAsInput();
-        QI_DEBUG("dht11 read err!\r\n");
-    }
-    else
-    {
-        sprintf(D_Data.data_of_sensor, "\"temperature\":\"%d\",\"humidity\":\"%d\",", D_Data.Temp, D_Data.Humid);
-        xQueueSend(Mqtt_Func.G_xMessageQueueToMQTT, &D_Data.data_of_sensor, NULL);
-        QI_DEBUG("Send DTH11 datas successfully\r\n");
-        memset(D_Data.data_of_sensor, 0, sizeof(D_Data.data_of_sensor));
-    }
-    platform_mutex_unlock(&Mqtt_Func.G_xTaskMutex);
-}

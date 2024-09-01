@@ -102,20 +102,20 @@ int main(void)
   MX_ADC1_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-  /*********************Uart INITATION**********************/
-  Uart3_Lock_Init();
-  /*********************DTH11 INITATION**********************/
-  DHT11_Start();
-  DHT11_Wait_Ack();
-  /*********************Lightsensor INITATION**********************/
-  LightSensor_Init();
-  /*********************Uart INITATION**********************/
-  ATInit();
-  printf("Hello World!\r\n");
-  /*********************LVGL INITATION**********************/
-  lv_init();
-  lv_port_disp_init();
-  lv_port_indev_init();
+  // /*********************Uart INITATION**********************/
+  // Uart3_Lock_Init();
+  // /*********************DTH11 INITATION**********************/
+  // DHT11_Start();
+  // DHT11_Wait_Ack();
+  // /*********************Lightsensor INITATION**********************/
+  // LightSensor_Init();
+  // /*********************Uart INITATION**********************/
+  // ATInit();
+  // printf("Hello World!\r\n");
+  // /*********************LVGL INITATION**********************/
+  // lv_init();
+  // lv_port_disp_init();
+  // lv_port_indev_init();
   /*********************TIM INITATION***************************/
   // HAL_TIM_Base_Start_IT(&htim3);
   

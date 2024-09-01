@@ -756,9 +756,29 @@
           <GroupName>Application/User/Task</GroupName>
           <Files>
             <File>
-              <FileName>MQTT_Task.c</FileName>
+              <FileName>IH_Task_Init.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\MainTask\MQTT_Task.c</FilePath>
+              <FilePath>..\UserTask\IH_Task_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_DataManage.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_DataManage.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_MqttTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_MqttTask.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_Hardware_Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_Hardware_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_LvglHandler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_LvglHandler.c</FilePath>
             </File>
           </Files>
         </Group>

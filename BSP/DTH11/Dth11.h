@@ -9,14 +9,7 @@
 #include "tim.h"
 #include "event_groups.h"
 
-typedef struct
-{
-	int Temp;
-	int Humid;
-	char data_of_sensor[50];
-} DTH11_Data;
 
-extern DTH11_Data D_Data;
 
 /*DATA->GPIOA_Pin_12*/
 #define DTH11_Port GPIOA

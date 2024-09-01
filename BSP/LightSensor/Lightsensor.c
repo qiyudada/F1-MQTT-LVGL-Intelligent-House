@@ -1,6 +1,5 @@
 #include "Lightsensor.h"
 
-Light_Data L_Data;
 
 static ADC_HandleTypeDef *g_HADC_LightSensor = &hadc1;
 
@@ -54,20 +53,4 @@ void LightSensor_Test(void)
     }
 }
 
-void Lv_LightSensor_Task(void)
-{
-    platform_mutex_lock(&Mqtt_Func.G_xTaskMutex);
-    if (!LightSensor_Read(&L_Data.Sample))
-    {
-        L_Data.Volt = L_Data.Sample * 330 / 4096;
-        sprintf(L_Data.data_sensor, "\"Light\":\"%d\",\"Volt\":\"%d.%d%d\",", L_Data.Sample, L_Data.Volt / 100, (L_Data.Volt / 10) % 10, L_Data.Volt % 10);
-        xQueueSend(Mqtt_Func.G_xMessageQueueToMQTT, &L_Data.data_sensor, NULL);
-        QI_DEBUG("Send light datas successfully\r\n");
-        memset(L_Data.data_sensor, 0, sizeof(L_Data));
-    }
-    else
-    {
-        QI_DEBUG("Light Sensor Read Fail\r\n");
-    }
-    platform_mutex_unlock(&Mqtt_Func.G_xTaskMutex);
-}
+
