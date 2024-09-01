@@ -150,50 +150,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>59</LineNumber>
+          <LineNumber>26</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134236716</Address>
+          <Address>134242376</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\MainTask\MQTT_Task.c</Filename>
+          <Filename>..\BSP\WIFI\WIFI_Uart_IRQ.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../MainTask/MQTT_Task.c\59</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>102</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134238786</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\MainTask\MQTT_Task.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../MainTask/MQTT_Task.c\102</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>133</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134238402</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\MainTask\MQTT_Task.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../MainTask/MQTT_Task.c\133</Expression>
+          <Expression>\\F1_FSMC_LVGL\../BSP/WIFI/WIFI_Uart_IRQ.c\26</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -269,7 +237,7 @@
 
   <Group>
     <GroupName>Application/MDK-ARM</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

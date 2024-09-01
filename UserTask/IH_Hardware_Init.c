@@ -24,26 +24,28 @@ void HardwareInitTask(void *argument)
 {
     while (1)
     {
+        /*********************Uart INITATION**********************/
+        /*!!! Any about Mutex/Semaphore/Queue/Timer/etc. should be initated out of vTasksuspend line!!!*/
+        Uart3_Lock_Init();
+        ATInit();
+
+        // Delay_init();
         vTaskSuspendAll();
-
-        // /*********************DTH11 INITATION**********************/
-        // DHT11_Start();
-        // DHT11_Wait_Ack();
-        // /*********************Lightsensor INITATION**********************/
-        // LightSensor_Init();
-
-        // /*********************LVGL INITATION**********************/
-        // lv_init();
-        // lv_port_disp_init();
-        // lv_port_indev_init();
-         xTaskResumeAll();
-        // /*********************Uart INITATION**********************/
-        // Uart3_Lock_Init();
-        // /*********************Uart INITATION**********************/
-        // ATInit();
-        // printf("Hello World!\r\n");
-
+        /*********************DTH11 INITATION**********************/
+        DHT11_Start();
+        DHT11_Wait_Ack();
+        /*********************Lightsensor INITATION**********************/
+        LightSensor_Init();
+        /*********************LVGL INITATION**********************/
+        lv_init();
+        lv_port_disp_init();
+        lv_port_indev_init();
+        xTaskResumeAll();
+        /*********************Uart INITATION**********************/
+        printf("Hello World!\r\n");
+        /*********************TIM INITATION***************************/
+        // HAL_TIM_Base_Start_IT(&htim3);
         vTaskDelete(NULL);
-        osDelay(500);
+        vTaskDelay(500);
     }
 }

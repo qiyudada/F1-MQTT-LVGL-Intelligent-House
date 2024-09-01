@@ -12,6 +12,7 @@ typedef int16_t s16;
 typedef int8_t s8;
 
 #define SYS_RTOS 1
+#define SYS_CLK 100
 
 #define __QILALA_DEBUG 0
 

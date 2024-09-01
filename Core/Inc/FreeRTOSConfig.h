@@ -66,7 +66,7 @@
 #define configTICK_RATE_HZ                       (1000)
 #define configMAX_PRIORITIES                     ( 56 )
 #define configMINIMAL_STACK_SIZE                 ((uint16_t)128)
-#define configTOTAL_HEAP_SIZE                    ((size_t)20480)
+#define configTOTAL_HEAP_SIZE                    ((size_t)20*1024)
 #define configMAX_TASK_NAME_LEN                  ( 16 )
 #define configUSE_TRACE_FACILITY                 1
 #define configUSE_16_BIT_TICKS                   0
@@ -102,7 +102,7 @@ to exclude the API function. */
 #define INCLUDE_xQueueGetMutexHolder        1
 #define INCLUDE_uxTaskGetStackHighWaterMark 1
 #define INCLUDE_eTaskGetState               1
-#define INCLUDE_xTaskGetCurrentTaskHandle   1
+#define INCLUDE_xTaskGetCurrentTaskHandle	  1/*add by yourself*/
 /*
  * The CMSIS-RTOS V2 FreeRTOS wrapper is dependent on the heap implementation used
  * by the application thus the correct define need to be enabled below
@@ -148,8 +148,7 @@ standard names. */
 /* IMPORTANT: This define is commented when used with STM32Cube firmware, when the timebase source is SysTick,
               to prevent overwriting SysTick_Handler defined within STM32Cube HAL */
 
-#define USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION 0
-
+#define USE_CUSTOM_SYSTICK_HANDLER_IMPLEMENTATION 0/*need to set 0 by yourself*/
 /* USER CODE BEGIN Defines */
 /* Section where parameter definitions can be added (for instance, to override default ones in FreeRTOS.h) */
 /* USER CODE END Defines */

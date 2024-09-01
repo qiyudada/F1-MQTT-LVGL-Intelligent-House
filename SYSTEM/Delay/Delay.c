@@ -4,7 +4,6 @@
 
 #include "Delay.h"
 
-
 #define TIME_BASE_DELAY htim1
 
 #if (SYS_RTOS == 0)
@@ -50,7 +49,7 @@ void Delay_s(uint32_t xs)
 }
 #endif
 
-/*use RTOS */
+/*use RTOS based timer*/
 #if (SYS_RTOS == 1)
 void Delay_us(uint32_t xus)
 {
@@ -114,4 +113,55 @@ uint64_t system_get_ns(void)
     ns += cnt * 1000000 / reload;
     return ns;
 }
+#endif
+
+
+/*use RTOS based systick*/
+#if (SYS_RTOS == 2)
+
+void Delay_init(void)
+{
+	HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
+	/* Configure the SysTick to have interrupt in 1ms time basis*/
+	HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq));
+}
+
+void Delay_us(uint32_t xus)
+{
+    uint32_t ticks;
+    uint32_t told, tnow, tcnt = 0;
+    uint32_t reload = SysTick->LOAD;
+    ticks = xus * SYS_CLK;
+    told = SysTick->VAL;
+    while (1)
+    {
+        tnow = SysTick->VAL;
+        if (tnow != told)
+        {
+            if (tnow < told)
+                tcnt += told - tnow;
+            else
+                tcnt += reload - tnow + told;
+            told = tnow;
+            if (tcnt >= ticks)
+                break;
+        }
+    }
+}
+
+void Delay_ms(uint32_t xms)
+{
+    uint32_t i;
+    for (i = 0; i < xms; i++)
+        Delay_us(1000);
+}
+
+void Delay_s(uint32_t xs)
+{
+    while (xs--)
+    {
+        Delay_ms(1000);
+    }
+}
+
 #endif

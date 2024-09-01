@@ -23,7 +23,7 @@ void USART3_IRQHandler(void)
 		// c = (char)HAL_UART_Receive_IT(&huart3, (uint8_t *)&c, 1);
 		c=huart3.Instance->DR;
 		ring_buffer_write(c, &uart3_buffer);
-		platform_mutex_unlock_Fromisr(&uart_recv_mutex);
+		platform_mutex_unlock_Fromisr(&uart_recv_mutex);/*must be unlocked before Initation*/
 		return;
 	}
 }

@@ -12,6 +12,10 @@ void Delay_s(uint32_t xs);
 uint64_t system_get_ns(void);
 #endif
 
+#if (SYS_RTOS==2)
+void Delay_init(void);
+#endif
+
 #endif
 
 
