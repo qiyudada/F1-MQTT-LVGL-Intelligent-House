@@ -1,5 +1,5 @@
-f1 fsmc lvgl\atcommand.o: ..\WIFI\ATcommand.c
-f1 fsmc lvgl\atcommand.o: ..\WIFI\ATcommand.h
+f1 fsmc lvgl\atcommand.o: ..\BSP\WIFI\ATcommand.c
+f1 fsmc lvgl\atcommand.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\atcommand.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\string.h
 f1 fsmc lvgl\atcommand.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
@@ -16,8 +16,8 @@ f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/sem
 f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\atcommand.o: ../SYSTEM/Hal_Uart.h
-f1 fsmc lvgl\atcommand.o: ../RingBuffer/ring_buffer.h
+f1 fsmc lvgl\atcommand.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
+f1 fsmc lvgl\atcommand.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\atcommand.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -51,7 +51,7 @@ f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_
 f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\atcommand.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\atcommand.o: ../WIFI/WIFI_Uart_IRQ.h
+f1 fsmc lvgl\atcommand.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\atcommand.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\atcommand.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\atcommand.o: ../MQTT/MQTT/MQTTConnect.h

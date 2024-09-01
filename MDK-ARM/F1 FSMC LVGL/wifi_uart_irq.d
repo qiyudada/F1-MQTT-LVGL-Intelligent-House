@@ -1,5 +1,5 @@
-f1 fsmc lvgl\wifi_uart_irq.o: ..\WIFI\WIFI_Uart_IRQ.c
-f1 fsmc lvgl\wifi_uart_irq.o: ..\WIFI\WIFI_Uart_IRQ.h
+f1 fsmc lvgl\wifi_uart_irq.o: ..\BSP\WIFI\WIFI_Uart_IRQ.c
+f1 fsmc lvgl\wifi_uart_irq.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\wifi_uart_irq.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
@@ -15,7 +15,7 @@ f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include
 f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\wifi_uart_irq.o: ../RingBuffer/ring_buffer.h
+f1 fsmc lvgl\wifi_uart_irq.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

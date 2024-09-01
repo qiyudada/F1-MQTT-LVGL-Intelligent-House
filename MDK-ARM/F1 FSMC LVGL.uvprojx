@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../LCD;../AT24Cxx;../SYSTEM;../TOUCH;../LCD_TEST;../LVGL;../LVGL/examples/porting;../LVGL/examples/widgets/led;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../RingBuffer;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;../MQTT/Platform/FreeRTOS;../WIFI;../DTH11;../MainTask;../LightSensor;../LVGL/APP/UI_demo;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../LVGL/APP/UI_demo;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;../MQTT/Platform/FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -749,6 +749,16 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/User/Task</GroupName>
+          <Files>
+            <File>
+              <FileName>MQTT_Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MainTask\MQTT_Task.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1991,6 +2001,86 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Drivers/SYSTEM</GroupName>
+          <Files>
+            <File>
+              <FileName>ring_buffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\RingBuffer\ring_buffer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\Delay\Delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>Hal_Uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\Hal_Uart\Hal_Uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>myiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\MyIIC\myiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\SYS\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_Redefine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SYSTEM\Uart_Redefine\Uart_Redefine.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>24cxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\AT24Cxx\24cxx.c</FilePath>
+            </File>
+            <File>
+              <FileName>ATcommand.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\WIFI\ATcommand.c</FilePath>
+            </File>
+            <File>
+              <FileName>WIFI_Uart_IRQ.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\WIFI\WIFI_Uart_IRQ.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\TOUCH\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Dth11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\DTH11\Dth11.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\LCD\GUI.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\LCD\Lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lightsensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\LightSensor\Lightsensor.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Middlewares/FreeRTOS</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -2614,92 +2704,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Ringbuffer</GroupName>
-          <Files>
-            <File>
-              <FileName>ring_buffer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\RingBuffer\ring_buffer.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>SYSTEM</GroupName>
-          <Files>
-            <File>
-              <FileName>Delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\Delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>Uart_Redefine.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\Uart_Redefine.c</FilePath>
-            </File>
-            <File>
-              <FileName>myiic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\myiic.c</FilePath>
-            </File>
-            <File>
-              <FileName>sys.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\sys.c</FilePath>
-            </File>
-            <File>
-              <FileName>Hal_Uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\Hal_Uart.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>LCD</GroupName>
-          <Files>
-            <File>
-              <FileName>Lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LCD\Lcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUI.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LCD\GUI.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>AT24xx</GroupName>
-          <Files>
-            <File>
-              <FileName>24cxx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\AT24Cxx\24cxx.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>TOUCH</GroupName>
-          <Files>
-            <File>
-              <FileName>touch.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\TOUCH\touch.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>LCD_TEST</GroupName>
-          <Files>
-            <File>
-              <FileName>test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LCD_TEST\test.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>LVGL_SRC</GroupName>
+          <GroupName>Middlewares/LVGL_SRC</GroupName>
           <Files>
             <File>
               <FileName>lv_disp.c</FileName>
@@ -3464,7 +3469,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>LVGL_PORT</GroupName>
+          <GroupName>Middlewares/LVGL_PORT</GroupName>
           <Files>
             <File>
               <FileName>lv_port_disp.c</FileName>
@@ -3484,32 +3489,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>LVGL_DEMO</GroupName>
-          <Files>
-            <File>
-              <FileName>lv_example_led_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\examples\widgets\led\lv_example_led_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_example_keyboard_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\examples\widgets\keyboard\lv_example_keyboard_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_example_anim_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\examples\anim\lv_example_anim_1.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_example_anim_timeline_1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\examples\anim\lv_example_anim_timeline_1.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>LVGL_APP</GroupName>
+          <GroupName>Middlewares/LVGL_APP</GroupName>
           <Files>
             <File>
               <FileName>ui.c</FileName>
@@ -3599,7 +3579,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Common</GroupName>
+          <GroupName>Middlewares/MQTTCommon</GroupName>
           <Files>
             <File>
               <FileName>mqtt_list.c</FileName>
@@ -3614,7 +3594,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>MQTT</GroupName>
+          <GroupName>Middlewares/MQTTSub</GroupName>
           <Files>
             <File>
               <FileName>MQTTConnectClient.c</FileName>
@@ -3669,7 +3649,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>MQTTClient</GroupName>
+          <GroupName>Middlewares/MQTTClient</GroupName>
           <Files>
             <File>
               <FileName>mqttclient.c</FileName>
@@ -3679,7 +3659,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Network</GroupName>
+          <GroupName>Middlewares/Network</GroupName>
           <Files>
             <File>
               <FileName>nettype_tcp.c</FileName>
@@ -3694,7 +3674,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Platform</GroupName>
+          <GroupName>Middlewares/Platform</GroupName>
           <Files>
             <File>
               <FileName>platform_memory.c</FileName>
@@ -3720,51 +3700,6 @@
               <FileName>platform_timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\MQTT\Platform\FreeRTOS\platform_timer.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>DTH11</GroupName>
-          <Files>
-            <File>
-              <FileName>Dth11.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\DTH11\Dth11.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Lightsensor</GroupName>
-          <Files>
-            <File>
-              <FileName>Lightsensor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LightSensor\Lightsensor.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>WIFI</GroupName>
-          <Files>
-            <File>
-              <FileName>ATcommand.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\WIFI\ATcommand.c</FilePath>
-            </File>
-            <File>
-              <FileName>WIFI_Uart_IRQ.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\WIFI\WIFI_Uart_IRQ.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MainTask</GroupName>
-          <Files>
-            <File>
-              <FileName>MQTT_Task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MainTask\MQTT_Task.c</FilePath>
             </File>
           </Files>
         </Group>

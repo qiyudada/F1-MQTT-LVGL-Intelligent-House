@@ -37,12 +37,12 @@ f1 fsmc lvgl\adc.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\adc.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\adc.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 f1 fsmc lvgl\adc.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\adc.o: ../RingBuffer/ring_buffer.h
-f1 fsmc lvgl\adc.o: ../LCD/Lcd.h
+f1 fsmc lvgl\adc.o: ..\SYSTEM\RingBuffer\ring_buffer.h
+f1 fsmc lvgl\adc.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/main.h
 f1 fsmc lvgl\adc.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\adc.o: ../SYSTEM/Delay.h
-f1 fsmc lvgl\adc.o: ../SYSTEM/sys.h
+f1 fsmc lvgl\adc.o: ..\SYSTEM\Delay\Delay.h
+f1 fsmc lvgl\adc.o: ..\SYSTEM\SYS\sys.h
 f1 fsmc lvgl\adc.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\adc.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\adc.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -171,11 +171,10 @@ f1 fsmc lvgl\adc.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\adc.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\adc.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\adc.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\adc.o: ../LCD/GUI.h
-f1 fsmc lvgl\adc.o: ../LCD_TEST/test.h
+f1 fsmc lvgl\adc.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\adc.o: ../LVGL/examples/porting/lv_port_disp.h
 f1 fsmc lvgl\adc.o: ../LVGL/examples/porting/lv_port_indev.h
-f1 fsmc lvgl\adc.o: ../WIFI/ATcommand.h
+f1 fsmc lvgl\adc.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/FreeRTOSConfig.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
@@ -188,8 +187,8 @@ f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\adc.o: ../SYSTEM/Hal_Uart.h
-f1 fsmc lvgl\adc.o: ../WIFI/WIFI_Uart_IRQ.h
+f1 fsmc lvgl\adc.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
+f1 fsmc lvgl\adc.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\adc.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\adc.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\adc.o: ../MQTT/MQTT/MQTTConnect.h
@@ -209,14 +208,14 @@ f1 fsmc lvgl\adc.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\adc.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\adc.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\adc.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\adc.o: ../MainTask/MQTT_Task.h
+f1 fsmc lvgl\adc.o: ..\UserTask\MQTT_Task.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\adc.o: ../DTH11/Dth11.h
+f1 fsmc lvgl\adc.o: ..\BSP\DTH11\Dth11.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/tim.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\adc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-f1 fsmc lvgl\adc.o: ../LightSensor/Lightsensor.h
+f1 fsmc lvgl\adc.o: ..\BSP\LightSensor\Lightsensor.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\adc.o: ../Core/Inc/usart.h
 f1 fsmc lvgl\adc.o: ../LVGL/APP/UI_demo/ui.h

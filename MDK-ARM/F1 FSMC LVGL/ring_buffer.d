@@ -1,5 +1,5 @@
-f1 fsmc lvgl\ring_buffer.o: ..\RingBuffer\ring_buffer.c
-f1 fsmc lvgl\ring_buffer.o: ..\RingBuffer\ring_buffer.h
+f1 fsmc lvgl\ring_buffer.o: ..\SYSTEM\RingBuffer\ring_buffer.c
+f1 fsmc lvgl\ring_buffer.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\ring_buffer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ring_buffer.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\ring_buffer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

@@ -130,7 +130,7 @@ f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\lv_port_indev.o: ../TOUCH/touch.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\TOUCH\touch.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/main.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -166,17 +166,16 @@ f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 f1 fsmc lvgl\lv_port_indev.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\lv_port_indev.o: ../RingBuffer/ring_buffer.h
-f1 fsmc lvgl\lv_port_indev.o: ../LCD/Lcd.h
+f1 fsmc lvgl\lv_port_indev.o: ..\SYSTEM\RingBuffer\ring_buffer.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/main.h
 f1 fsmc lvgl\lv_port_indev.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\lv_port_indev.o: ../SYSTEM/Delay.h
-f1 fsmc lvgl\lv_port_indev.o: ../SYSTEM/sys.h
-f1 fsmc lvgl\lv_port_indev.o: ../LCD/GUI.h
-f1 fsmc lvgl\lv_port_indev.o: ../LCD_TEST/test.h
+f1 fsmc lvgl\lv_port_indev.o: ..\SYSTEM\Delay\Delay.h
+f1 fsmc lvgl\lv_port_indev.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/examples/porting/lv_port_disp.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/examples/porting/lv_port_indev.h
-f1 fsmc lvgl\lv_port_indev.o: ../WIFI/ATcommand.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/FreeRTOSConfig.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
@@ -189,8 +188,8 @@ f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\lv_port_indev.o: ../SYSTEM/Hal_Uart.h
-f1 fsmc lvgl\lv_port_indev.o: ../WIFI/WIFI_Uart_IRQ.h
+f1 fsmc lvgl\lv_port_indev.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/MQTT/MQTTConnect.h
@@ -210,14 +209,14 @@ f1 fsmc lvgl\lv_port_indev.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\lv_port_indev.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\lv_port_indev.o: ../MainTask/MQTT_Task.h
+f1 fsmc lvgl\lv_port_indev.o: ..\UserTask\MQTT_Task.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\lv_port_indev.o: ../DTH11/Dth11.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\DTH11\Dth11.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/tim.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\lv_port_indev.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-f1 fsmc lvgl\lv_port_indev.o: ../LightSensor/Lightsensor.h
+f1 fsmc lvgl\lv_port_indev.o: ..\BSP\LightSensor\Lightsensor.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/usart.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/APP/UI_demo/ui.h

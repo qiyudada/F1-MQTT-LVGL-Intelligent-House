@@ -1,5 +1,5 @@
-f1 fsmc lvgl\sys.o: ..\SYSTEM\sys.c
-f1 fsmc lvgl\sys.o: ..\SYSTEM\sys.h
+f1 fsmc lvgl\sys.o: ..\SYSTEM\SYS\sys.c
+f1 fsmc lvgl\sys.o: ..\SYSTEM\SYS\sys.h
 f1 fsmc lvgl\sys.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\sys.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\sys.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

@@ -37,7 +37,6 @@ extern "C" {
 //#include <platform_mutex.h>	
 #include "Lcd.h"
 #include "GUI.h"
-#include "test.h"
 #include "lvgl.h"
 #include "lv_port_disp.h"
 #include "lv_port_indev.h"
