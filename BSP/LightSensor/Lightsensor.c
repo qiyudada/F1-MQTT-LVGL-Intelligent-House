@@ -5,12 +5,12 @@ static ADC_HandleTypeDef *g_HADC_LightSensor = &hadc1;
 
 /*function: LightSensor_Init
 parameter: none
-return: none
+return: 0
 */
-void LightSensor_Init(void)
+int LightSensor_Init(void)
 {
     /* PA1用作ADC(ADC1_IN1) */
-    HAL_ADC_Start_IT(&hadc1);
+    return HAL_ADC_Start_IT(&hadc1);  
 }
 /*function:LightSensor_Read
 parameter: pData

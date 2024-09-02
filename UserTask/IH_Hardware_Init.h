@@ -5,4 +5,8 @@
 
 void HardwareInitTask(void* argument);
 
+void MessageUpdateTask(void *argument);
+
+void UpdataTimerCallback(void *argument);
+
 #endif

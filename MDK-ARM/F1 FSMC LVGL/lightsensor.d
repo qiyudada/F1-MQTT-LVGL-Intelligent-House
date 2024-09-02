@@ -35,7 +35,7 @@ f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rt
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\lightsensor.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
+f1 fsmc lvgl\lightsensor.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
 f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\lightsensor.o: ../Core/Inc/FreeRTOSConfig.h
 f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h

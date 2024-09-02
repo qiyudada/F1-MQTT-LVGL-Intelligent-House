@@ -189,6 +189,7 @@ f1 fsmc lvgl\main.o: ..\UserTask\IH_Hardware_Init.h
 f1 fsmc lvgl\main.o: ..\UserTask\IH_DataManage.h
 f1 fsmc lvgl\main.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\main.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
+f1 fsmc lvgl\main.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTT/MQTTConnect.h
@@ -199,12 +200,12 @@ f1 fsmc lvgl\main.o: ../MQTT/MQTT/MQTTFormat.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTT/StackTrace.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\main.o: ../MQTT/Common/mqtt_list.h
-f1 fsmc lvgl\main.o: ../MQTT/Platform/FreeRTOS/platform_timer.h
-f1 fsmc lvgl\main.o: ../MQTT/Platform/FreeRTOS/platform_memory.h
-f1 fsmc lvgl\main.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
+f1 fsmc lvgl\main.o: ..\MQTT\Platform\FreeRTOS\platform_timer.h
+f1 fsmc lvgl\main.o: ..\MQTT\Platform\FreeRTOS\platform_memory.h
+f1 fsmc lvgl\main.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-f1 fsmc lvgl\main.o: ../MQTT/Platform/FreeRTOS/platform_thread.h
+f1 fsmc lvgl\main.o: ..\MQTT\Platform\FreeRTOS\platform_thread.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTTClient/mqtt_defconfig.h
 f1 fsmc lvgl\main.o: ../MQTT/MQTTClient/mqtt_config.h
 f1 fsmc lvgl\main.o: ../MQTT/Network/network.h
@@ -214,3 +215,13 @@ f1 fsmc lvgl\main.o: ../MQTT/Common/mqtt_log.h
 f1 fsmc lvgl\main.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\main.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
 f1 fsmc lvgl\main.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
+f1 fsmc lvgl\main.o: ../LVGL/examples/porting/lv_port_disp.h
+f1 fsmc lvgl\main.o: ../LVGL/examples/porting/lv_port_indev.h
+f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui_helpers.h
+f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui_events.h
+f1 fsmc lvgl\main.o: ..\BSP\DTH11\DTH11.h
+f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+f1 fsmc lvgl\main.o: ..\BSP\LightSensor\Lightsensor.h

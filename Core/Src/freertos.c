@@ -79,7 +79,7 @@ void vApplicationTickHook(void)
 /* USER CODE BEGIN 4 */
 void vApplicationStackOverflowHook(xTaskHandle xTask, signed char *pcTaskName)
 {
-  printf("Task :%s is overflow\r\n", *pcTaskName);
+  printf("Stack overflow detected for task '%s'!\n", pcTaskName);
 }
 /* USER CODE END 4 */
 

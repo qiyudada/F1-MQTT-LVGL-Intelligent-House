@@ -38,8 +38,8 @@ void MX_RTC_Init(void)
   RTC_DateTypeDef DateToUpdate = {0};
 
   /* USER CODE BEGIN RTC_Init 1 */
-  __HAL_RCC_BKP_CLK_ENABLE(); // �?启后备区域时�?
-  __HAL_RCC_PWR_CLK_ENABLE(); // �?启电源时�?
+  __HAL_RCC_BKP_CLK_ENABLE(); // �?启后备区域时�?
+  __HAL_RCC_PWR_CLK_ENABLE(); // �?启电源时�?
   /* USER CODE END RTC_Init 1 */
 
   /** Initialize RTC Only
@@ -77,9 +77,9 @@ void MX_RTC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN RTC_Init 2 */
-    __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC);   // �?启RTC时钟秒中�?
-    datebuff = DateToUpdate;                         // 把日期数据拷贝到自己定义的data�?
-    HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x5051); // 向指定的后备区域寄存器写入数�?
+    __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC);   // �?启RTC时钟秒中�?
+    datebuff = DateToUpdate;                         // 把日期数据拷贝到自己定义的data�?
+    HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x5051); // 向指定的后备区域寄存器写入数�?
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR2, (uint16_t)datebuff.Year);
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR3, (uint16_t)datebuff.Month);
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, (uint16_t)datebuff.Date);
@@ -96,7 +96,7 @@ void MX_RTC_Init(void)
     {
       Error_Handler();
     }
-    __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC); // �?启RTC时钟秒中�?
+    __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC); // �?启RTC时钟秒中�?
   }
   /* USER CODE END RTC_Init 2 */
 
@@ -145,8 +145,43 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* rtcHandle)
 }
 
 /* USER CODE BEGIN 1 */
-RTC_DateTypeDef GetData = {0}; // Get Date structure
+uint8_t weekday_calculate(int y,int m,int d,int c)
+{
+	int w;
+	if (m == 1 || m == 2)
+	{y--, m += 12;}
+	w = y + y / 4 + c / 4  + 26*(m + 1)/10 + d - 1 - 2 * c;
+	while(w<0)
+		w+=7;
+	w%=7;
+	w=(w==0)?7:w;
+	return w;
+}
+void RTC_SetTime(uint8_t hours, uint8_t minutes, uint8_t seconds)
+{
+	RTC_TimeTypeDef time={0};
+	time.Hours=hours;
+	time.Minutes=minutes;
+	time.Seconds=seconds;
+	if (HAL_RTC_SetTime(&hrtc, &time, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
 
-RTC_TimeTypeDef GetTime = {0}; // Get Time structure
+void RTC_SetDate(uint8_t year, uint8_t month, uint8_t date)
+{
+	RTC_DateTypeDef setdate={0};
+	setdate.Date=date;
+	setdate.Month=month;
+	setdate.Year=year;
 
+	//culculat the weekday
+	setdate.WeekDay = weekday_calculate(year,month,date,20);
+
+	if (HAL_RTC_SetDate(&hrtc, &setdate, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
+}
 /* USER CODE END 1 */

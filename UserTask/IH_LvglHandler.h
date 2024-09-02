@@ -2,5 +2,6 @@
 #define _IH_LVGL_HANDLER_H_
 
 
+void LvHandlerTask(void *argument);
 
 #endif

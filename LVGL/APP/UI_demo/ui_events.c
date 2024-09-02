@@ -5,80 +5,82 @@
 
 #include "ui.h"
 #include "main.h"
-
+#include "IH_DataManage.h"
 void Detect_From_Tempature(lv_event_t *e)
 {
 }
 
 void Get_From_Tempature(lv_event_t *e)
 {
-//	static char Temp_buf[8];
-//	sprintf(Temp_buf, "%d°C", D_Data.Temp);
-//	lv_label_set_text_fmt(e->target, Temp_buf);
-//	lv_arc_set_value(ui_TempArc, D_Data.Temp);
+	static char Temp_buf[8];
+	sprintf(Temp_buf, "%d°C", IH_Family.DTH11.tempature);
+	lv_label_set_text_fmt(e->target, Temp_buf);
+	lv_arc_set_value(ui_TempArc, IH_Family.DTH11.tempature);
 }
 
 void Get_from_Humidity(lv_event_t *e)
 {
-//	static char Humid_buf[8];
-//	sprintf(Humid_buf, "%d Per", D_Data.Humid);
-//	lv_label_set_text_fmt(e->target, Humid_buf);
+	static char Humid_buf[8];
+	sprintf(Humid_buf, "%d Per", IH_Family.DTH11.humidity);
+	lv_label_set_text_fmt(e->target, Humid_buf);
+	
 }
 
 void LED1_OFF(lv_event_t *e)
 {
-//	HAL_GPIO_WritePin(LED1_PIN_GPIO_Port, LED1_PIN_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
 }
 
 void LED1_Open(lv_event_t *e)
 {
-//	HAL_GPIO_WritePin(LED1_PIN_GPIO_Port, LED1_PIN_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 }
 
 void LED2_Off(lv_event_t *e)
 {
-//	HAL_GPIO_WritePin(LED2_PIN_GPIO_Port, LED2_PIN_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
 }
 
 void LED2_Open(lv_event_t *e)
 {
-//	HAL_GPIO_WritePin(LED2_PIN_GPIO_Port, LED2_PIN_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
 }
 
 void Beep_Close(lv_event_t *e)
 {
-	// Your code here
+	HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, GPIO_PIN_SET);
 }
 
 void Beep_Open(lv_event_t *e)
 {
-	// Your code here
+	HAL_GPIO_WritePin(BEEP_GPIO_Port, BEEP_Pin, GPIO_PIN_RESET);
 }
 
 void Get_from_Light(lv_event_t *e)
 {
-//	static char LightSensor_buf[8];
-//	sprintf(LightSensor_buf, "%d Lux", L_Data.Sample);
-//	lv_label_set_text_fmt(e->target, LightSensor_buf);
+	static char LightSensor_buf[8];
+	sprintf(LightSensor_buf, "%d Lux", IH_Family.Light.Light_Value);
+	lv_label_set_text_fmt(e->target, LightSensor_buf);
+	
 }
 
 void Get_From_Hour(lv_event_t *e)
 {
-//	static char Lv_Hour[6];
-//	sprintf(Lv_Hour, "%d h", GetTime.Hours);
-//	lv_label_set_text_fmt(e->target, Lv_Hour);
+	static char Lv_Hour[6];
+	sprintf(Lv_Hour, "%d h", IH_Family.NOWTIME.Hours);
+	lv_label_set_text_fmt(e->target, Lv_Hour);
 }
 
 void Get_From_Min(lv_event_t *e)
 {
-//	static char Lv_Minute[6];
-//	sprintf(Lv_Minute, "%d m", GetTime.Minutes);
-//	lv_label_set_text_fmt(e->target, Lv_Minute);
+	static char Lv_Minute[6];
+	sprintf(Lv_Minute, "%d m", IH_Family.NOWTIME.Minutes);
+	lv_label_set_text_fmt(e->target, Lv_Minute);
 }
 
 void Get_From_Sec(lv_event_t *e)
 {
-//	static char Lv_Second[6];
-//	sprintf(Lv_Second, "%d s", GetTime.Seconds);
-//	lv_label_set_text_fmt(e->target, Lv_Second);
+	static char Lv_Second[6];
+	sprintf(Lv_Second, "%d s", IH_Family.NOWTIME.Seconds);
+	lv_label_set_text_fmt(e->target, Lv_Second);
 }

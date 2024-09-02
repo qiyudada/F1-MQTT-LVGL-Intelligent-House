@@ -26,8 +26,8 @@ extern _m_tp_dev tp_dev;
 
 static void touchpad_init(void);
 static void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data);
-static bool touchpad_is_pressed(void);
-static void touchpad_get_xy(lv_coord_t *x, lv_coord_t *y);
+//static bool touchpad_is_pressed(void);
+//static void touchpad_get_xy(lv_coord_t *x, lv_coord_t *y);
 
 /**********************
  *  STATIC VARIABLES
@@ -113,23 +113,23 @@ static void touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
     }
 }
 
-/*Return true is the touchpad is pressed*/
-static bool touchpad_is_pressed(void)
-{
-    /*Your code comes here*/
-    tp_dev.scan(0);
-    if (tp_dev.sta & TP_PRES_DOWN)
-        return true;
-    return false;
-}
+///*Return true is the touchpad is pressed*/
+//static bool touchpad_is_pressed(void)
+//{
+//    /*Your code comes here*/
+//    tp_dev.scan(0);
+//    if (tp_dev.sta & TP_PRES_DOWN)
+//        return true;
+//    return false;
+//}
 
-/*Get the x and y coordinates if the touchpad is pressed*/
-static void touchpad_get_xy(lv_coord_t *x, lv_coord_t *y)
-{
-    /*Your code comes here*/
-    (*x) = tp_dev.x;
-    (*y) = tp_dev.y;
-}
+///*Get the x and y coordinates if the touchpad is pressed*/
+//static void touchpad_get_xy(lv_coord_t *x, lv_coord_t *y)
+//{
+//    /*Your code comes here*/
+//    (*x) = tp_dev.x;
+//    (*y) = tp_dev.y;
+//}
 
 #else /*Enable this file at the top*/
 

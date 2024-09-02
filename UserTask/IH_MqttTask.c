@@ -2,8 +2,17 @@
  * @include
  */
 #include "IH_MqttTask.h"
+/*
+* @other headfile
+*/
+#include "IH_Task_Init.h"
+#include "IH_DataManage.h"
 
 
+
+/**
+ * @brief mqtt init task
+ */
 void MqttInitTask(void* argument)
 {
     int err;
@@ -50,3 +59,37 @@ void MqttInitTask(void* argument)
         vTaskSuspend(NULL);
     }
 }
+
+/**
+ * @brief send the message to MQTT servicer
+ */
+void MqttSendTask(void* argument)
+{
+     
+    QI_DEBUG("enter MQTT_Platform successfully\r\n");
+    char MQTT_buffer[200] = {0}; // data buffer Initialization
+    IH_Family.MQTT.msg.payload = MQTT_buffer;
+    IH_Family.MQTT.msg.qos= QOS0;
+    while (1)
+    {
+        uint8_t MessComStr;
+        //osMutexAcquire(MessageUpload_MutexHandle,portMAX_DELAY);
+        if (osMessageQueueGet(MessageUpComplete_Queue, &MessComStr, NULL, pdMS_TO_TICKS(10)) == osOK)
+        {
+            sprintf(MQTT_buffer,"\"temperature\":\"%d\",\"humidity\":\"%d\",\"light:\"%d\"" \
+            ,IH_Family.DTH11.tempature,IH_Family.DTH11.humidity,IH_Family.Light.Light_Value);
+
+            IH_Family.MQTT.msg.payloadlen = strlen(MQTT_buffer);
+            mqtt_publish(IH_Family.MQTT.client,IH_Family.MQTT.User_Topic,&IH_Family.MQTT.msg);
+            memset(MQTT_buffer, 0, sizeof(MQTT_buffer));
+            QI_DEBUG("send data to MQTT server successfully\r\n");
+        }
+        else
+        {
+            QI_DEBUG("No data received\r\n");
+        }
+       // osMutexRelease(MessageUpload_MutexHandle);
+        osDelay(pdMS_TO_TICKS(500));
+    }
+}
+

@@ -20,7 +20,7 @@ extern ADC_HandleTypeDef hadc1;
 
 
 
-void LightSensor_Init(void);
+int LightSensor_Init(void);
 int LightSensor_Read(int *pData);
 void LightSensor_Test(void);
 void Lv_LightSensor_Task(void);

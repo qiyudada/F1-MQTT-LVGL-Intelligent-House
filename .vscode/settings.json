@@ -35,7 +35,11 @@
         "rtc.h": "c",
         "gpio.h": "c",
         "ih_task_init.h": "c",
-        "cmsis_os.h": "c"
+        "cmsis_os.h": "c",
+        "ih_lvglhandler.h": "c",
+        "ih_datamanage.h": "c",
+        "ih_mqtttask.h": "c",
+        "ih_hardware_init.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

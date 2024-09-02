@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../LVGL/APP/UI_demo;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;../MQTT/Platform/FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../LVGL/APP/UI_demo;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;..\MQTT\Platform\FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

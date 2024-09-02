@@ -1,5 +1,6 @@
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_Task_Init.c
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_Task_Init.h
+f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_DataManage.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\ih_task_init.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stddef.h
 f1 fsmc lvgl\ih_task_init.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdint.h
@@ -9,11 +10,7 @@ f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
-f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
-f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
-f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_DataManage.h
 f1 fsmc lvgl\ih_task_init.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\ih_task_init.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -182,6 +179,7 @@ f1 fsmc lvgl\ih_task_init.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.
 f1 fsmc lvgl\ih_task_init.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ih_task_init.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ih_task_init.o: ../LVGL/src/extra/widgets/span/lv_span.h
+f1 fsmc lvgl\ih_task_init.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTT/MQTTConnect.h
@@ -192,12 +190,14 @@ f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTT/MQTTFormat.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTT/StackTrace.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/Common/mqtt_list.h
-f1 fsmc lvgl\ih_task_init.o: ../MQTT/Platform/FreeRTOS/platform_timer.h
-f1 fsmc lvgl\ih_task_init.o: ../MQTT/Platform/FreeRTOS/platform_memory.h
-f1 fsmc lvgl\ih_task_init.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
+f1 fsmc lvgl\ih_task_init.o: ..\MQTT\Platform\FreeRTOS\platform_timer.h
+f1 fsmc lvgl\ih_task_init.o: ..\MQTT\Platform\FreeRTOS\platform_memory.h
+f1 fsmc lvgl\ih_task_init.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-f1 fsmc lvgl\ih_task_init.o: ../MQTT/Platform/FreeRTOS/platform_thread.h
+f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+f1 fsmc lvgl\ih_task_init.o: ..\MQTT\Platform\FreeRTOS\platform_thread.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTTClient/mqtt_defconfig.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/MQTTClient/mqtt_config.h
 f1 fsmc lvgl\ih_task_init.o: ../MQTT/Network/network.h
@@ -207,6 +207,20 @@ f1 fsmc lvgl\ih_task_init.o: ../MQTT/Common/mqtt_log.h
 f1 fsmc lvgl\ih_task_init.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\ih_task_init.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
 f1 fsmc lvgl\ih_task_init.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/examples/porting/lv_port_disp.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/examples/porting/lv_port_indev.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/APP/UI_demo/ui_helpers.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\ih_task_init.o: ../LVGL/APP/UI_demo/ui_events.h
+f1 fsmc lvgl\ih_task_init.o: ..\BSP\DTH11\DTH11.h
+f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/tim.h
+f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+f1 fsmc lvgl\ih_task_init.o: ..\BSP\LightSensor\Lightsensor.h
+f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/adc.h
+f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/usart.h
+f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/rtc.h
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_Hardware_Init.h
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_MqttTask.h
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_LvglHandler.h

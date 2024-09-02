@@ -14,12 +14,17 @@ typedef int8_t s8;
 #define SYS_RTOS 1
 #define SYS_CLK 100
 
-#define __QILALA_DEBUG 0
+#define __QILALA_DEBUG 1
 
-#if(__QILALA_DEBUG==1) 
-#define QI_DEBUG(format,...)   printf("File: "__FILE__", Line: %05d: "format"/n", __LINE__, ##__VA_ARGS__)
+#if (__QILALA_DEBUG == 1)
+#define QI_DEBUG(format, ...) printf("File: "__FILE__              \
+                                     ", Line: %05d: " format "/n", \
+                                     __LINE__, ##__VA_ARGS__)
 #else
-#define QI_DEBUG(format,...)  
+#define QI_DEBUG(format, ...) \
+    do                        \
+    {                         \
+    } while (0)
 #endif
 
 #define BITBAND(addr, bitnum) ((addr & 0xF0000000) + 0x2000000 + ((addr & 0xFFFFF) << 5) + (bitnum << 2))

@@ -1,5 +1,15 @@
 f1 fsmc lvgl\ih_datamanage.o: ..\UserTask\IH_DataManage.c
 f1 fsmc lvgl\ih_datamanage.o: ..\UserTask\IH_DataManage.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+f1 fsmc lvgl\ih_datamanage.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stddef.h
+f1 fsmc lvgl\ih_datamanage.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdint.h
+f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/FreeRTOSConfig.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 f1 fsmc lvgl\ih_datamanage.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -8,14 +18,12 @@ f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Include/core_cm3.h
-f1 fsmc lvgl\ih_datamanage.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdint.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Include/cmsis_version.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-f1 fsmc lvgl\ih_datamanage.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stddef.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 f1 fsmc lvgl\ih_datamanage.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -170,6 +178,7 @@ f1 fsmc lvgl\ih_datamanage.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel
 f1 fsmc lvgl\ih_datamanage.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ih_datamanage.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ih_datamanage.o: ../LVGL/src/extra/widgets/span/lv_span.h
+f1 fsmc lvgl\ih_datamanage.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTT/MQTTConnect.h
@@ -180,21 +189,14 @@ f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTT/MQTTFormat.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTT/StackTrace.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Common/mqtt_list.h
-f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Platform/FreeRTOS/platform_timer.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/FreeRTOSConfig.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
-f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
-f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Platform/FreeRTOS/platform_memory.h
-f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
+f1 fsmc lvgl\ih_datamanage.o: ..\MQTT\Platform\FreeRTOS\platform_timer.h
+f1 fsmc lvgl\ih_datamanage.o: ..\MQTT\Platform\FreeRTOS\platform_memory.h
+f1 fsmc lvgl\ih_datamanage.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
 f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Platform/FreeRTOS/platform_thread.h
+f1 fsmc lvgl\ih_datamanage.o: ..\MQTT\Platform\FreeRTOS\platform_thread.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTTClient/mqtt_defconfig.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/MQTTClient/mqtt_config.h
 f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Network/network.h
@@ -204,3 +206,17 @@ f1 fsmc lvgl\ih_datamanage.o: ../MQTT/Common/mqtt_log.h
 f1 fsmc lvgl\ih_datamanage.o: ..\BSP\WIFI\ATcommand.h
 f1 fsmc lvgl\ih_datamanage.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
 f1 fsmc lvgl\ih_datamanage.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/examples/porting/lv_port_disp.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/examples/porting/lv_port_indev.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/APP/UI_demo/ui_helpers.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/APP/UI_demo/ui.h
+f1 fsmc lvgl\ih_datamanage.o: ../LVGL/APP/UI_demo/ui_events.h
+f1 fsmc lvgl\ih_datamanage.o: ..\BSP\DTH11\DTH11.h
+f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/tim.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+f1 fsmc lvgl\ih_datamanage.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+f1 fsmc lvgl\ih_datamanage.o: ..\BSP\LightSensor\Lightsensor.h
+f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/adc.h
+f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/usart.h
+f1 fsmc lvgl\ih_datamanage.o: ../Core/Inc/rtc.h

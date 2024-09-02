@@ -22,16 +22,37 @@ Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
 D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\MDK-ARM\F1 FSMC LVGL.uvprojx
-Project File Date:  09/01/2024
+Project File Date:  09/02/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil\ARM Start\ARM\ARMCC\Bin'
 Build target 'F1 FSMC LVGL'
+compiling ui_events.c...
+compiling IH_LvglHandler.c...
+..\UserTask\IH_LvglHandler.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UserTask\IH_LvglHandler.c: 1 warning, 0 errors
+compiling IH_Task_Init.c...
+..\UserTask\IH_MqttTask.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UserTask\IH_LvglHandler.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UserTask\IH_Task_Init.c: 2 warnings, 0 errors
+compiling freertos.c...
+compiling main.c...
+compiling IH_DataManage.c...
 compiling IH_Hardware_Init.c...
+..\UserTask\IH_Hardware_Init.c(110): warning:  #1-D: last line of file ends without a newline
+  }
+..\UserTask\IH_Hardware_Init.c: 1 warning, 0 errors
+compiling IH_MqttTask.c...
+..\UserTask\IH_MqttTask.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UserTask\IH_MqttTask.c: 1 warning, 0 errors
 linking...
-Program Size: Code=189500 RO-data=25556 RW-data=812 ZI-data=59724  
+Program Size: Code=198876 RO-data=81088 RW-data=1072 ZI-data=59720  
 FromELF: creating hex file...
-"F1 FSMC LVGL\F1 FSMC LVGL.axf" - 0 Error(s), 0 Warning(s).
+"F1 FSMC LVGL\F1 FSMC LVGL.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +75,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:10
+Build Time Elapsed:  00:00:12
 </pre>
 </body>
 </html>

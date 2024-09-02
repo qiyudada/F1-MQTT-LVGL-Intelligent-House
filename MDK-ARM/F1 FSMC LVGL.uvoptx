@@ -150,32 +150,20 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>26</LineNumber>
+          <LineNumber>25</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134242376</Address>
+          <Address>134222686</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\BSP\WIFI\WIFI_Uart_IRQ.c</Filename>
+          <Filename>..\LVGL\APP\UI_demo\ui_events.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../BSP/WIFI/WIFI_Uart_IRQ.c\26</Expression>
+          <Expression>\\F1_FSMC_LVGL\../LVGL/APP/UI_demo/ui_events.c\25</Expression>
         </Bp>
       </Breakpoint>
-      <WatchWindow1>
-        <Ww>
-          <count>0</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>D_Data</ItemText>
-        </Ww>
-        <Ww>
-          <count>1</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>MQTT_buffer</ItemText>
-        </Ww>
-      </WatchWindow1>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
@@ -2945,7 +2933,7 @@
 
   <Group>
     <GroupName>Middlewares/LVGL_APP</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
