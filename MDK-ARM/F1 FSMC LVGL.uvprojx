@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../LVGL/APP/UI_demo;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;..\MQTT\Platform\FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;..\LVGL\APP\UI_APP;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;..\MQTT\Platform\FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -3512,89 +3512,89 @@
           <GroupName>Middlewares/LVGL_APP</GroupName>
           <Files>
             <File>
-              <FileName>ui.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\ui.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_events.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\ui_events.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_helpers.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\ui_helpers.c</FilePath>
-            </File>
-            <File>
               <FileName>ui_comp_hook.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\components\ui_comp_hook.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\components\ui_comp_hook.c</FilePath>
             </File>
             <File>
               <FileName>ui_font_Number.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\fonts\ui_font_Number.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_bg1_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_bg1_png.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_bg4_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_bg4_png.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_btn_play_act_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_btn_play_act_png.c</FilePath>
-            </File>
-            <File>
-              <FileName>ui_img_btn_play_inact_png.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_btn_play_inact_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\fonts\ui_font_Number.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_cloud_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_cloud_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_cloud_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_co2_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_co2_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_dark_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_dark_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_dark_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_icn_control_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_icn_control_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_icn_home_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_icn_home_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_icn_home_png.c</FilePath>
             </File>
             <File>
-              <FileName>ui_img_iu_png.c</FileName>
+              <FileName>ui_img_iu1_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_iu_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_iu1_png.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_img_iu2_png.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_iu2_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_time_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_time_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_time_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_img_weather_1_png.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_img_weather_1_png.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_img_weather_1_png.c</FilePath>
             </File>
             <File>
               <FileName>ui_temporary_image.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\images\ui_temporary_image.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\images\ui_temporary_image.c</FilePath>
             </File>
             <File>
-              <FileName>ui_Message.c</FileName>
+              <FileName>ui_Control.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\LVGL\APP\UI_demo\screens\ui_Message.c</FilePath>
+              <FilePath>..\LVGL\APP\UI_APP\screens\ui_Control.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_Menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\screens\ui_Menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_events.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\ui_events.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_helpers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LVGL\APP\UI_APP\ui_helpers.c</FilePath>
             </File>
           </Files>
         </Group>

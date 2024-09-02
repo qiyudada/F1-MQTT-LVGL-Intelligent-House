@@ -1,6 +1,6 @@
-f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_demo\ui_helpers.c
-f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_demo\ui_helpers.h
-f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_demo\ui.h
+f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_APP\ui_helpers.c
+f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_APP\ui_helpers.h
+f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_APP\ui.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -131,5 +131,5 @@ f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ui_helpers.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_demo\ui_helpers.h
-f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_demo\ui_events.h
+f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_APP\ui_helpers.h
+f1 fsmc lvgl\ui_helpers.o: ..\LVGL\APP\UI_APP\ui_events.h

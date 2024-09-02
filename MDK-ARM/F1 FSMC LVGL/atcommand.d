@@ -210,10 +210,10 @@ f1 fsmc lvgl\atcommand.o: ../LVGL/src/extra/widgets/span/lv_span.h
 f1 fsmc lvgl\atcommand.o: ..\BSP\LCD\GUI.h
 f1 fsmc lvgl\atcommand.o: ../LVGL/examples/porting/lv_port_disp.h
 f1 fsmc lvgl\atcommand.o: ../LVGL/examples/porting/lv_port_indev.h
-f1 fsmc lvgl\atcommand.o: ../LVGL/APP/UI_demo/ui.h
-f1 fsmc lvgl\atcommand.o: ../LVGL/APP/UI_demo/ui_helpers.h
-f1 fsmc lvgl\atcommand.o: ../LVGL/APP/UI_demo/ui.h
-f1 fsmc lvgl\atcommand.o: ../LVGL/APP/UI_demo/ui_events.h
+f1 fsmc lvgl\atcommand.o: ..\LVGL\APP\UI_APP\ui.h
+f1 fsmc lvgl\atcommand.o: ..\LVGL\APP\UI_APP\ui_helpers.h
+f1 fsmc lvgl\atcommand.o: ..\LVGL\APP\UI_APP\ui.h
+f1 fsmc lvgl\atcommand.o: ..\LVGL\APP\UI_APP\ui_events.h
 f1 fsmc lvgl\atcommand.o: ..\BSP\DTH11\DTH11.h
 f1 fsmc lvgl\atcommand.o: ../Core/Inc/tim.h
 f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h

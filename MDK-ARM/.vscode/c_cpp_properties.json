@@ -13,7 +13,7 @@
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\src",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\src\\misc",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_demo",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_APP",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\MQTT\\Common\\PLOOC",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\MQTT\\Common",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\MQTT\\MQTT",
@@ -73,10 +73,10 @@
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\src\\extra\\widgets\\tileview",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\src\\extra\\widgets\\win",
                 "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\src\\extra",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_demo\\components",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_demo\\fonts",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_demo\\images",
-                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_demo\\screens"
+                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_APP\\components",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_APP\\fonts",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_APP\\images",
+                "d:\\2024710Embeded Learn\\My FreeRtos\\F1-MQTT-LVGL-Intelligent-House\\LVGL\\APP\\UI_APP\\screens"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

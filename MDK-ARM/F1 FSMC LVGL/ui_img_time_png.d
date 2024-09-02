@@ -1,5 +1,5 @@
-f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_demo\images\ui_img_time_png.c
-f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_demo\images\../ui.h
+f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_APP\images\ui_img_time_png.c
+f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_APP\images\../ui.h
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -130,6 +130,6 @@ f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwhe
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ui_img_time_png.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_demo\images\../ui_helpers.h
-f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_demo\images\../ui.h
-f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_demo\images\../ui_events.h
+f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_APP\images\../ui_helpers.h
+f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_APP\images\../ui.h
+f1 fsmc lvgl\ui_img_time_png.o: ..\LVGL\APP\UI_APP\images\../ui_events.h

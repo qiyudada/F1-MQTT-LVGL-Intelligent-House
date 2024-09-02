@@ -159,7 +159,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\LVGL\APP\UI_demo\ui_events.c</Filename>
+          <Filename>D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\LVGL\APP\UI_demo\ui_events.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\F1_FSMC_LVGL\../LVGL/APP/UI_demo/ui_events.c\25</Expression>
         </Bp>
@@ -225,7 +225,7 @@
 
   <Group>
     <GroupName>Application/MDK-ARM</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -397,7 +397,7 @@
 
   <Group>
     <GroupName>Application/User/Task</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -825,7 +825,7 @@
 
   <Group>
     <GroupName>Drivers/BSP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -2933,7 +2933,7 @@
 
   <Group>
     <GroupName>Middlewares/LVGL_APP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -2944,8 +2944,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\ui.c</PathWithFileName>
-      <FilenameWithoutPath>ui.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\components\ui_comp_hook.c</PathWithFileName>
+      <FilenameWithoutPath>ui_comp_hook.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2956,8 +2956,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\ui_events.c</PathWithFileName>
-      <FilenameWithoutPath>ui_events.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\fonts\ui_font_Number.c</PathWithFileName>
+      <FilenameWithoutPath>ui_font_Number.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2968,8 +2968,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\ui_helpers.c</PathWithFileName>
-      <FilenameWithoutPath>ui_helpers.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_cloud_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_cloud_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2980,8 +2980,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\components\ui_comp_hook.c</PathWithFileName>
-      <FilenameWithoutPath>ui_comp_hook.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_co2_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_co2_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2992,8 +2992,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\fonts\ui_font_Number.c</PathWithFileName>
-      <FilenameWithoutPath>ui_font_Number.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_dark_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_dark_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3004,8 +3004,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_bg1_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_bg1_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_icn_control_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_icn_control_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3016,8 +3016,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_bg4_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_bg4_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_icn_home_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_icn_home_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3028,8 +3028,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_btn_play_act_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_btn_play_act_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_iu1_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_iu1_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3040,8 +3040,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_btn_play_inact_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_btn_play_inact_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_iu2_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_iu2_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3052,8 +3052,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_cloud_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_cloud_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_time_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_time_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3064,8 +3064,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_dark_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_dark_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_img_weather_1_png.c</PathWithFileName>
+      <FilenameWithoutPath>ui_img_weather_1_png.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3076,8 +3076,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_icn_home_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_icn_home_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\images\ui_temporary_image.c</PathWithFileName>
+      <FilenameWithoutPath>ui_temporary_image.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3088,8 +3088,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_iu_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_iu_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\screens\ui_Control.c</PathWithFileName>
+      <FilenameWithoutPath>ui_Control.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3100,8 +3100,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_time_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_time_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\screens\ui_Menu.c</PathWithFileName>
+      <FilenameWithoutPath>ui_Menu.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3112,8 +3112,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_img_weather_1_png.c</PathWithFileName>
-      <FilenameWithoutPath>ui_img_weather_1_png.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\ui.c</PathWithFileName>
+      <FilenameWithoutPath>ui.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3124,8 +3124,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\images\ui_temporary_image.c</PathWithFileName>
-      <FilenameWithoutPath>ui_temporary_image.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\ui_events.c</PathWithFileName>
+      <FilenameWithoutPath>ui_events.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3136,8 +3136,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\LVGL\APP\UI_demo\screens\ui_Message.c</PathWithFileName>
-      <FilenameWithoutPath>ui_Message.c</FilenameWithoutPath>
+      <PathWithFileName>..\LVGL\APP\UI_APP\ui_helpers.c</PathWithFileName>
+      <FilenameWithoutPath>ui_helpers.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

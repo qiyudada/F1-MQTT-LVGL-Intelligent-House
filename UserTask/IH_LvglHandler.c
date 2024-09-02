@@ -17,6 +17,10 @@ void Lv_Label_Update(void)
     lv_event_send(ui_Hour, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_Minute, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_Second, LV_EVENT_VALUE_CHANGED, NULL);
+    lv_event_send(ui_Year, LV_EVENT_VALUE_CHANGED, NULL);
+    lv_event_send(ui_Month, LV_EVENT_VALUE_CHANGED, NULL);
+    lv_event_send(ui_Day, LV_EVENT_VALUE_CHANGED, NULL);
+
 }
 
 

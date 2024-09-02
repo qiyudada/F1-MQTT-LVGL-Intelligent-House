@@ -1,5 +1,5 @@
-f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_demo\fonts\ui_font_Number.c
-f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_demo\fonts\../ui.h
+f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_APP\fonts\ui_font_Number.c
+f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_APP\fonts\../ui.h
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -130,6 +130,6 @@ f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwhee
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ui_font_number.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_demo\fonts\../ui_helpers.h
-f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_demo\fonts\../ui.h
-f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_demo\fonts\../ui_events.h
+f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_APP\fonts\../ui_helpers.h
+f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_APP\fonts\../ui.h
+f1 fsmc lvgl\ui_font_number.o: ..\LVGL\APP\UI_APP\fonts\../ui_events.h

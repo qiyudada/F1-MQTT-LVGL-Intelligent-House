@@ -10,19 +10,24 @@
 extern "C" {
 #endif
 
-void Detect_From_Tempature(lv_event_t * e);
 void Get_From_Tempature(lv_event_t * e);
 void Get_from_Humidity(lv_event_t * e);
-void LED1_OFF(lv_event_t * e);
-void LED1_Open(lv_event_t * e);
-void LED2_Off(lv_event_t * e);
-void LED2_Open(lv_event_t * e);
 void Get_From_Hour(lv_event_t * e);
 void Get_From_Min(lv_event_t * e);
 void Get_From_Sec(lv_event_t * e);
-void Beep_Close(lv_event_t * e);
-void Beep_Open(lv_event_t * e);
+void Get_From_Year(lv_event_t * e);
+void Get_From_Month(lv_event_t * e);
+void Get_From_Day(lv_event_t * e);
 void Get_from_Light(lv_event_t * e);
+void Get_from_CO2(lv_event_t * e);
+void LED1_Open(lv_event_t * e);
+void LED1_OFF(lv_event_t * e);
+void LED2_OPEN(lv_event_t * e);
+void LED2_OFF(lv_event_t * e);
+void BEEP_OPEN(lv_event_t * e);
+void BEEP_OFF(lv_event_t * e);
+void Motor_On(lv_event_t * e);
+void Motor_Off(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

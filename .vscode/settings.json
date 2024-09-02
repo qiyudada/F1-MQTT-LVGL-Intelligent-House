@@ -39,7 +39,9 @@
         "ih_lvglhandler.h": "c",
         "ih_datamanage.h": "c",
         "ih_mqtttask.h": "c",
-        "ih_hardware_init.h": "c"
+        "ih_hardware_init.h": "c",
+        "ui.h": "c",
+        "ui_events.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

@@ -219,10 +219,10 @@ f1 fsmc lvgl\main.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
 f1 fsmc lvgl\main.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\main.o: ../LVGL/examples/porting/lv_port_disp.h
 f1 fsmc lvgl\main.o: ../LVGL/examples/porting/lv_port_indev.h
-f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui.h
-f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui_helpers.h
-f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui.h
-f1 fsmc lvgl\main.o: ../LVGL/APP/UI_demo/ui_events.h
+f1 fsmc lvgl\main.o: ..\LVGL\APP\UI_APP\ui.h
+f1 fsmc lvgl\main.o: ..\LVGL\APP\UI_APP\ui_helpers.h
+f1 fsmc lvgl\main.o: ..\LVGL\APP\UI_APP\ui.h
+f1 fsmc lvgl\main.o: ..\LVGL\APP\UI_APP\ui_events.h
 f1 fsmc lvgl\main.o: ..\BSP\DTH11\DTH11.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
