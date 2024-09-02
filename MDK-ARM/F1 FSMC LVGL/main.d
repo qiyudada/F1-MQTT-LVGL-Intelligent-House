@@ -187,6 +187,8 @@ f1 fsmc lvgl\main.o: ../Core/Inc/gpio.h
 f1 fsmc lvgl\main.o: ../Core/Inc/fsmc.h
 f1 fsmc lvgl\main.o: ..\UserTask\IH_Hardware_Init.h
 f1 fsmc lvgl\main.o: ..\UserTask\IH_DataManage.h
+f1 fsmc lvgl\main.o: ..\UserTask\IH_Task_Init.h
+f1 fsmc lvgl\main.o: ..\UserTask\IH_DataManage.h
 f1 fsmc lvgl\main.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\main.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
 f1 fsmc lvgl\main.o: ..\BSP\LCD\GUI.h

@@ -9,7 +9,7 @@
 #include "IH_DataManage.h"
 
 
-static void Lv_Label_Update(void)
+void Lv_Label_Update(void)
 {
     lv_event_send(ui_TempLabel, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_HumidLabel, LV_EVENT_VALUE_CHANGED, NULL);
@@ -31,8 +31,8 @@ void LvHandlerTask(void *argument)
     //uint8_t IdleBreakstr = 0;
     while (1)
     {
-        Lv_Label_Update();
         lv_task_handler();
+        QI_DEBUG("lvtaskhandler stack is %d\r\n", (int *)osThreadGetStackSpace(LvHandler_TaskHandle));
         osDelay(10);
     }
 }

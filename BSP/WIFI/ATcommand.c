@@ -1,4 +1,5 @@
 #include "ATcommand.h"
+#include "IH_Task_Init.h"
 
 static int ATstatus = 0;
 static ring_buffer g_packet_buffer;
@@ -237,6 +238,7 @@ void AT_RecvParse(void *arg)
         {
             i = 0;
         }
+        QI_DEBUG("ATReceiver stack is %d\r\n", (int *)osThreadGetStackSpace(ATRece_TaskHandle));
     }
 }
 

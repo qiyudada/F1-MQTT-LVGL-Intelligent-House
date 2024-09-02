@@ -8,6 +8,7 @@ extern "C"
 
 #include "FreeRTOS.h"
 #include "cmsis_os2.h"
+#include "IH_Task_Init.h"
 
 #define IH_USE_HARDWARE 1
 /*User configuration*/

@@ -11,6 +11,7 @@ f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_Task_Init.h
 f1 fsmc lvgl\ih_task_init.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\ih_task_init.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/stm32f1xx_hal_conf.h

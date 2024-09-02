@@ -15,8 +15,6 @@
 /*Task*/
 #include "IH_Task_Init.h"
 
-
-
 void HardwareInitTask(void *argument)
 {
     while (1)
@@ -57,7 +55,7 @@ void HardwareInitTask(void *argument)
         /*Initiation completed*/
         printf("Hello World!\r\n");
 
-        // QI_DEBUG("HardwareInit stack is %d\r\n",(int*)osThreadGetStackSpace(HardwareInit_TaskHandle));
+        QI_DEBUG("HardwareInit stack is %d\r\n", (int *)osThreadGetStackSpace(HardwareInit_TaskHandle));
         /*********************TIM INITATION***************************/
         // HAL_TIM_Base_Start_IT(&htim3);
         vTaskDelete(NULL);
@@ -97,6 +95,8 @@ void MessageUpdateTask(void *argument)
             }
             uint8_t MesCompStr = 0;
             osMessageQueuePut(MessageUpComplete_Queue, &MesCompStr, NULL, 10);
+            QI_DEBUG("Messageupdate stack is %d\r\n", (int *)osThreadGetStackSpace(MessageUpdate_TaskHandle));
+
             QI_DEBUG("MessageUpdateTask end\r\n");
         }
         osDelay(500);
@@ -106,5 +106,6 @@ void MessageUpdateTask(void *argument)
 void UpdataTimerCallback(void *argument)
 {
     uint8_t MesSendStr = 0;
+    Lv_Label_Update();
     osMessageQueuePut(MessageUpdate_Queue, &MesSendStr, NULL, 1);
 }

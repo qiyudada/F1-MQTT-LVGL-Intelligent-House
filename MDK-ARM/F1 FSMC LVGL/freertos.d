@@ -50,6 +50,7 @@ f1 fsmc lvgl\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V
 f1 fsmc lvgl\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 f1 fsmc lvgl\freertos.o: ..\UserTask\IH_Task_Init.h
 f1 fsmc lvgl\freertos.o: ..\UserTask\IH_DataManage.h
+f1 fsmc lvgl\freertos.o: ..\UserTask\IH_Task_Init.h
 f1 fsmc lvgl\freertos.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\freertos.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
 f1 fsmc lvgl\freertos.o: ..\SYSTEM\Delay\Delay.h

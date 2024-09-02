@@ -56,6 +56,7 @@ void MqttInitTask(void* argument)
                 QI_DEBUG("subscribe destination successfully\r\n");
             }
         }
+        QI_DEBUG("Mqttinitiation stack is %d\r\n", (int *)osThreadGetStackSpace(MQTTInit_TaskHandle));
         vTaskSuspend(NULL);
     }
 }
@@ -88,8 +89,9 @@ void MqttSendTask(void* argument)
         {
             QI_DEBUG("No data received\r\n");
         }
+        QI_DEBUG("Mqttupload stack is %d\r\n", (int *)osThreadGetStackSpace(MessageUpload_TaskHandle));
        // osMutexRelease(MessageUpload_MutexHandle);
-        osDelay(pdMS_TO_TICKS(500));
+        osDelay(pdMS_TO_TICKS(1000));
     }
 }
 

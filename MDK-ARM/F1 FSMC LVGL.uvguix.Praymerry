@@ -1580,7 +1580,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0100000099020000FD050000B4020000</Data>
+          <Data>010000009902000090020000B4020000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1600,7 +1600,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>0100000082020000FD0500009D020000</Data>
+          <Data>01000000820200003B0000009D020000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -1620,7 +1620,7 @@
         <RecentRowIndex>0</RecentRowIndex>
         <RectRecentDocked>
           <Len>16</Len>
-          <Data>B10300007D0000006D04000098000000</Data>
+          <Data>B10300007D0000005104000098000000</Data>
         </RectRecentDocked>
         <RectRecentFloat>
           <Len>16</Len>
@@ -3525,9 +3525,9 @@
       </Doc>
       <Doc>
         <Name>..\UserTask\IH_Hardware_Init.c</Name>
-        <ColumnNumber>1</ColumnNumber>
+        <ColumnNumber>38</ColumnNumber>
         <TopLine>82</TopLine>
-        <CurrentLine>99</CurrentLine>
+        <CurrentLine>98</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -3598,7 +3598,7 @@
       <Doc>
         <Name>..\UserTask\IH_MqttTask.c</Name>
         <ColumnNumber>0</ColumnNumber>
-        <TopLine>67</TopLine>
+        <TopLine>69</TopLine>
         <CurrentLine>89</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
@@ -3615,9 +3615,9 @@
       </Doc>
       <Doc>
         <Name>..\LVGL\APP\UI_demo\ui_events.c</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>66</TopLine>
-        <CurrentLine>87</CurrentLine>
+        <ColumnNumber>32</ColumnNumber>
+        <TopLine>57</TopLine>
+        <CurrentLine>81</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

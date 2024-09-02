@@ -3,5 +3,6 @@
 
 
 void LvHandlerTask(void *argument);
+void Lv_Label_Update(void);
 
 #endif

@@ -37,7 +37,7 @@ const osThreadAttr_t ATReceTask_attributes = {
 osThreadId_t MQTTInit_TaskHandle;
 const osThreadAttr_t MqttInitTask_attributes = {
     .name = "MqttInitTask",
-    .stack_size = 128 * 10,
+    .stack_size = 128 * 8,
     .priority = (osPriority_t)osPriorityHigh2,
 };
 /*LVGL Handler Task*/
@@ -51,14 +51,14 @@ const osThreadAttr_t LvHandlerTask_attributes = {
 osThreadId_t MessageUpload_TaskHandle;
 const osThreadAttr_t MessageUpload_attributes = {
     .name = "MesuploadTask",
-    .stack_size = 128 * 10,
+    .stack_size = 128 * 8,
     .priority = (osPriority_t)osPriorityLow,
 };
 /*Message Update Task*/
 osThreadId_t MessageUpdate_TaskHandle;
 const osThreadAttr_t MessageUpdate_attributes = {
     .name = "MesupdateTask",
-    .stack_size = 128 * 10,
+    .stack_size = 128 * 6,
     .priority = (osPriority_t)osPriorityLow1,
 };
 /*MUTEX------------------------------------------------------*/

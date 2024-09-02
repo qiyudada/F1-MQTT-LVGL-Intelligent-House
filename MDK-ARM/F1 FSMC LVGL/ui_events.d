@@ -178,6 +178,8 @@ f1 fsmc lvgl\ui_events.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/dep
 f1 fsmc lvgl\ui_events.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
 f1 fsmc lvgl\ui_events.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 f1 fsmc lvgl\ui_events.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+f1 fsmc lvgl\ui_events.o: ..\UserTask\IH_Task_Init.h
+f1 fsmc lvgl\ui_events.o: ..\UserTask\IH_DataManage.h
 f1 fsmc lvgl\ui_events.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\ui_events.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
 f1 fsmc lvgl\ui_events.o: ..\SYSTEM\Delay\Delay.h

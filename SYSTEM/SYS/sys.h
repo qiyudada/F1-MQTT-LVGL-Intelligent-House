@@ -14,7 +14,7 @@ typedef int8_t s8;
 #define SYS_RTOS 1
 #define SYS_CLK 100
 
-#define __QILALA_DEBUG 1
+#define __QILALA_DEBUG 0
 
 #if (__QILALA_DEBUG == 1)
 #define QI_DEBUG(format, ...) printf("File: "__FILE__              \

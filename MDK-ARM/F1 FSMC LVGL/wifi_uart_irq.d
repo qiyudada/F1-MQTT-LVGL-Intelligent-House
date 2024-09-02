@@ -1,7 +1,7 @@
 f1 fsmc lvgl\wifi_uart_irq.o: ..\BSP\WIFI\WIFI_Uart_IRQ.c
 f1 fsmc lvgl\wifi_uart_irq.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
 f1 fsmc lvgl\wifi_uart_irq.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\wifi_uart_irq.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
+f1 fsmc lvgl\wifi_uart_irq.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
 f1 fsmc lvgl\wifi_uart_irq.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\wifi_uart_irq.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stddef.h
 f1 fsmc lvgl\wifi_uart_irq.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdint.h
