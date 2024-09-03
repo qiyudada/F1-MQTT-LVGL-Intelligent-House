@@ -1074,7 +1074,7 @@ exit:
                 platform_thread_startup(c->mqtt_thread);
                 platform_thread_start(c->mqtt_thread);       /* start run mqtt thread */
             } else {
-                /*creat the thread fail and disconnect the mqtt socket connect*/
+                /*create the thread fail and disconnect the mqtt socket connect*/
                 network_release(c->mqtt_network);
                 rc = MQTT_CONNECT_FAILED_ERROR;
                 MQTT_LOG_W("%s:%d %s()... mqtt yield thread creat failed...", __FILE__, __LINE__, __FUNCTION__);    

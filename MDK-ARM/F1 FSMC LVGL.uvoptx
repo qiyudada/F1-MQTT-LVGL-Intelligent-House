@@ -150,18 +150,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>49</LineNumber>
+          <LineNumber>618</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134222912</Address>
+          <Address>134382306</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\LVGL\APP\UI_APP\ui_events.c</Filename>
+          <Filename>..\MQTT\MQTTClient\mqttclient.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../LVGL/APP/UI_APP/ui_events.c\49</Expression>
+          <Expression>\\F1_FSMC_LVGL\../MQTT/MQTTClient/mqttclient.c\618</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>1491</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134379414</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\MQTT\MQTTClient\mqttclient.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\F1_FSMC_LVGL\../MQTT/MQTTClient/mqttclient.c\1491</Expression>
         </Bp>
       </Breakpoint>
       <MemoryWindow1>
