@@ -36,8 +36,6 @@ f1 fsmc lvgl\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
 f1 fsmc lvgl\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\tim.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\tim.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\tim.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\tim.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\tim.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -166,5 +164,6 @@ f1 fsmc lvgl\tim.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\tim.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\tim.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\tim.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\tim.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\tim.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\tim.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\tim.o: ../SYSTEM/SYS/sys.h
+f1 fsmc lvgl\tim.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h

@@ -14,6 +14,7 @@ void Lv_Label_Update(void)
     lv_event_send(ui_TempLabel, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_HumidLabel, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_DarkLabel, LV_EVENT_VALUE_CHANGED, NULL);
+    lv_event_send(ui_CO2Label, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_Hour, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_Minute, LV_EVENT_VALUE_CHANGED, NULL);
     lv_event_send(ui_Second, LV_EVENT_VALUE_CHANGED, NULL);

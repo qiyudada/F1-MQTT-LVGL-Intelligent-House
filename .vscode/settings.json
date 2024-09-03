@@ -41,7 +41,10 @@
         "ih_mqtttask.h": "c",
         "ih_hardware_init.h": "c",
         "ui.h": "c",
-        "ui_events.h": "c"
+        "ui_events.h": "c",
+        "mq2.h": "c",
+        "cmath": "c",
+        "*.tcc": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

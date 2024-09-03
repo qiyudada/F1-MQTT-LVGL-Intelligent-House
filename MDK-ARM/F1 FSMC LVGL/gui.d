@@ -165,9 +165,8 @@ f1 fsmc lvgl\gui.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\gui.o: ../LVGL/src/extra/widgets/span/lv_span.h
 f1 fsmc lvgl\gui.o: ..\BSP\LCD\Lcd.h
 f1 fsmc lvgl\gui.o: ../Core/Inc/main.h
-f1 fsmc lvgl\gui.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\gui.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\gui.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\gui.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\gui.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\gui.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\gui.o: ../SYSTEM/SYS/sys.h
+f1 fsmc lvgl\gui.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\gui.o: ..\BSP\LCD\font.h

@@ -47,8 +47,6 @@ f1 fsmc lvgl\dth11.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 f1 fsmc lvgl\dth11.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\dth11.o: ../Core/Inc/tim.h
 f1 fsmc lvgl\dth11.o: ../Core/Inc/main.h
-f1 fsmc lvgl\dth11.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\dth11.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\dth11.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\dth11.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\dth11.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -177,12 +175,13 @@ f1 fsmc lvgl\dth11.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\dth11.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\dth11.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\dth11.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\dth11.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\dth11.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\dth11.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\dth11.o: ../SYSTEM/SYS/sys.h
+f1 fsmc lvgl\dth11.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\dth11.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\dth11.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 f1 fsmc lvgl\dth11.o: ../Core/Inc/usart.h
-f1 fsmc lvgl\dth11.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
+f1 fsmc lvgl\dth11.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
 f1 fsmc lvgl\dth11.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTT/MQTTPacket.h
@@ -194,17 +193,18 @@ f1 fsmc lvgl\dth11.o: ../MQTT/MQTT/MQTTFormat.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTT/StackTrace.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\dth11.o: ../MQTT/Common/mqtt_list.h
-f1 fsmc lvgl\dth11.o: ..\MQTT\Platform\FreeRTOS\platform_timer.h
-f1 fsmc lvgl\dth11.o: ..\MQTT\Platform\FreeRTOS\platform_memory.h
+f1 fsmc lvgl\dth11.o: ../MQTT/Platform/FreeRTOS/platform_timer.h
+f1 fsmc lvgl\dth11.o: ../MQTT/Platform/FreeRTOS/platform_memory.h
 f1 fsmc lvgl\dth11.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\dth11.o: ..\MQTT\Platform\FreeRTOS\platform_thread.h
+f1 fsmc lvgl\dth11.o: ../MQTT/Platform/FreeRTOS/platform_thread.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTTClient/mqtt_defconfig.h
 f1 fsmc lvgl\dth11.o: ../MQTT/MQTTClient/mqtt_config.h
 f1 fsmc lvgl\dth11.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\dth11.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\dth11.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\dth11.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\dth11.o: ..\BSP\WIFI\ATcommand.h
-f1 fsmc lvgl\dth11.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
-f1 fsmc lvgl\dth11.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
-f1 fsmc lvgl\dth11.o: ..\BSP\LCD\Lcd.h
+f1 fsmc lvgl\dth11.o: ../BSP/WIFI/ATcommand.h
+f1 fsmc lvgl\dth11.o: ../SYSTEM/Hal_Uart/Hal_Uart.h
+f1 fsmc lvgl\dth11.o: ../SYSTEM/RingBuffer/ring_buffer.h
+f1 fsmc lvgl\dth11.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
+f1 fsmc lvgl\dth11.o: ../BSP/LCD/Lcd.h

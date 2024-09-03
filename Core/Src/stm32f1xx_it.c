@@ -57,6 +57,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern ADC_HandleTypeDef hadc1;
+extern ADC_HandleTypeDef hadc2;
 extern I2C_HandleTypeDef hi2c1;
 extern RTC_HandleTypeDef hrtc;
 extern TIM_HandleTypeDef htim3;
@@ -189,6 +190,7 @@ void ADC1_2_IRQHandler(void)
 
   /* USER CODE END ADC1_2_IRQn 0 */
   HAL_ADC_IRQHandler(&hadc1);
+  HAL_ADC_IRQHandler(&hadc2);
   /* USER CODE BEGIN ADC1_2_IRQn 1 */
 
   /* USER CODE END ADC1_2_IRQn 1 */

@@ -28,6 +28,5 @@ void DHT11_PinCfgAsOutput(void);
 void DHT11_PinCfgAsInput(void);
 void DHT11_Start(void);
 int DHT11_Wait_Ack(void);
-void Lv_DTH11_Task(void);
 
 #endif

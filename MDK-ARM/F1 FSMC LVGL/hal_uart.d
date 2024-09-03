@@ -1,7 +1,7 @@
 f1 fsmc lvgl\hal_uart.o: ..\SYSTEM\Hal_Uart\Hal_Uart.c
 f1 fsmc lvgl\hal_uart.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
 f1 fsmc lvgl\hal_uart.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\hal_uart.o: ..\SYSTEM\RingBuffer\ring_buffer.h
+f1 fsmc lvgl\hal_uart.o: ../SYSTEM/RingBuffer/ring_buffer.h
 f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\hal_uart.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -37,8 +37,8 @@ f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_e
 f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\hal_uart.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\hal_uart.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
-f1 fsmc lvgl\hal_uart.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
+f1 fsmc lvgl\hal_uart.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
+f1 fsmc lvgl\hal_uart.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
 f1 fsmc lvgl\hal_uart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\hal_uart.o: ../Core/Inc/FreeRTOSConfig.h
 f1 fsmc lvgl\hal_uart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h

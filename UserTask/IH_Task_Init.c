@@ -74,30 +74,37 @@ osMessageQueueId_t MessageUpComplete_Queue;
 /* Timers-------------------------------------------------------*/
 osTimerId_t UpdataTimerHandle;
 
+/**
+ * @brief  Initialize all the tasks
+ */
 void User_Tasks_Init(void)
 {
 
     UpdataTimerHandle = osTimerNew(UpdataTimerCallback, osTimerPeriodic, NULL, NULL);
-	osTimerStart(UpdataTimerHandle,1000);//1s
+    osTimerStart(UpdataTimerHandle, 1000); // 1s
 
     /*add queue,...*/
     MessageUpdate_Queue = osMessageQueueNew(1, 1, NULL);
-    MessageUpComplete_Queue= osMessageQueueNew(1, 1, NULL);
+    MessageUpComplete_Queue = osMessageQueueNew(1, 1, NULL);
     /* add Mutex,...*/
-    MessageUpload_MutexHandle = osMutexNew(&MessageUpload_Mutex_attributes);
+    MessageUpload_MutexHandle = osMutexNew(&MessageUpload_Mutex_attributes);/*No use Temporarily*/
 
     /* add threads, ... */
-    HardwareInit_TaskHandle = osThreadNew(HardwareInitTask, NULL, &HardwareInitTask_attributes);
-    ATRece_TaskHandle = osThreadNew(AT_RecvParse, NULL, &ATReceTask_attributes);
-    MQTTInit_TaskHandle = osThreadNew(MqttInitTask, NULL, &MqttInitTask_attributes);
-    LvHandler_TaskHandle = osThreadNew(LvHandlerTask, NULL, &LvHandlerTask_attributes);
-    MessageUpload_TaskHandle = osThreadNew(MqttSendTask, NULL, &MessageUpload_attributes);
-    MessageUpdate_TaskHandle = osThreadNew(MessageUpdateTask, NULL, &MessageUpdate_attributes);
-
+    /*Priority reference:(1)is biggest*/
+    HardwareInit_TaskHandle = osThreadNew(HardwareInitTask, NULL, &HardwareInitTask_attributes); //(1)
+    MQTTInit_TaskHandle = osThreadNew(MqttInitTask, NULL, &MqttInitTask_attributes);             //(2)
+    ATRece_TaskHandle = osThreadNew(AT_RecvParse, NULL, &ATReceTask_attributes);                 //(3)
+    MessageUpdate_TaskHandle = osThreadNew(MessageUpdateTask, NULL, &MessageUpdate_attributes);  //(4)
+    MessageUpload_TaskHandle = osThreadNew(MqttSendTask, NULL, &MessageUpload_attributes);       //(5)
+    LvHandler_TaskHandle = osThreadNew(LvHandlerTask, NULL, &LvHandlerTask_attributes);          //(5)
     /* add  others ... */
-	uint8_t MessUpdataStr;
-	osMessageQueuePut(MessageUpdate_Queue, &MessUpdataStr, 0, 1);
+    uint8_t MessUpdataStr;
+    osMessageQueuePut(MessageUpdate_Queue, &MessUpdataStr, 0, 1);/*first update message*/
 }
+
+/**
+ * @brief Support heartbeat to LVGL
+ */
 void TaskTickHook(void)
 {
     lv_tick_inc(1);

@@ -6,6 +6,7 @@ extern "C"
 {
 #endif
 
+#include <stdio.h>
 #include "FreeRTOS.h"
 #include "cmsis_os2.h"
 #include "IH_Task_Init.h"
@@ -13,18 +14,25 @@ extern "C"
 #define IH_USE_HARDWARE 1
 /*User configuration*/
 #if (IH_USE_HARDWARE)
+#define IH_USE_SYS 1
 #define IH_USE_LCD 1
 #define IH_USE_MQTT 1
 #define IH_USE_WIFI 1
 #define IH_USE_LVGL 1
 #define IH_USE_DTH11 1
 #define IH_USE_Light 1
-#define IH_USE_Buzzer 1
+#define IH_USE_Buzzer 0
 #define IH_USE_RTC 1
 #define IH_USE_Smoke 1
+#define IH_USE_MOTOR 0
 #endif
 
 /*User hardware include*/
+#if (IH_USE_SYS)
+#include "main.h"
+#include "ring_buffer.h"
+#endif
+
 #if (IH_USE_LCD)
 #include "Lcd.h"
 #include "GUI.h"
@@ -54,7 +62,7 @@ extern "C"
 #endif
 
 #if (IH_USE_Buzzer)
-    // #include "Buzzer.h"
+#include "Buzzer.h"
 #endif
 
 #if (IH_USE_RTC)
@@ -62,7 +70,11 @@ extern "C"
 #endif
 
 #if (IH_USE_Smoke)
-    // #include "SmokeDetect.h"
+#include "MQ2.h"
+#endif
+
+#if (IH_USE_MOTOR)
+#include "Motor.h"
 #endif
 
     /*
@@ -87,6 +99,7 @@ extern "C"
         int humidity;
         int (*DTH11_ReadData)(int *temp, int *humid);
     } DTH11_Family_TypeDef;
+
     /*
      * @typedef Lightsensor_Family_Structure
      */
@@ -97,6 +110,15 @@ extern "C"
         int (*Light_Read_Data)(int *Light);
     } Light_Family_TypeDef;
 
+    /*
+     * @typedef MQ2sensor_Family_Structure
+     */
+    typedef struct
+    {
+        int ConnectionError;
+        int Concentration_Value;
+        int (*MQ2_Read_Data)(int *Concentration);
+    } MQ2_Family_TypeDef;
     /**
      * @brief  IH RTC DateTime structure definition
      */
@@ -143,10 +165,11 @@ extern "C"
     typedef struct
     {
         DateTime_Family_TypeDef NOWTIME;
-        RTC_Family_TypeDef      TIME;
-        Light_Family_TypeDef    Light;
-        DTH11_Family_TypeDef    DTH11;
-        Mqtt_Family_TypeDef     MQTT;
+        RTC_Family_TypeDef TIME;
+        Light_Family_TypeDef Light;
+        MQ2_Family_TypeDef CO2;
+        DTH11_Family_TypeDef DTH11;
+        Mqtt_Family_TypeDef MQTT;
     } IH_Family_TypeDef;
 
     extern IH_Family_TypeDef IH_Family;

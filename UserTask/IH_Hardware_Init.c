@@ -5,16 +5,18 @@
 /*
  * @other include
  */
-/*SYSTEM*/
-#include "main.h"
-#include "ring_buffer.h"
-
 /*Data managemrnt*/
 #include "IH_DataManage.h"
 
 /*Task*/
 #include "IH_Task_Init.h"
 
+/*Lvgl*/
+#include "IH_LvglHandler.h"
+
+/**
+ * @brief Hardware Init Task
+ */
 void HardwareInitTask(void *argument)
 {
     while (1)
@@ -23,6 +25,10 @@ void HardwareInitTask(void *argument)
         /*!!! Any about Mutex/Semaphore/Queue/Timer/etc. should be initated out of vTasksuspend line!!!*/
         Uart3_Lock_Init();
         ATInit();
+        
+        HAL_ADCEx_Calibration_Start(&hadc1);
+        HAL_ADCEx_Calibration_Start(&hadc2);
+
         uint8_t num = 3;
         // Delay_init();
         /*********************DTH11 INITATION**********************/
@@ -47,6 +53,17 @@ void HardwareInitTask(void *argument)
         {
             QI_DEBUG("LightSensor Init error!\r\n");
         }
+        /*********************MQ2sensor INITATION**********************/
+        num = 3;
+        while (num && IH_Family.CO2.ConnectionError)
+        {
+            num--;
+            IH_Family.CO2.ConnectionError = MQ2Sensor_Init();
+        }
+        if (IH_Family.CO2.ConnectionError)
+        {
+            QI_DEBUG("LightSensor Init error!\r\n");
+        }
         /*********************LVGL INITATION**********************/
         lv_init();
         lv_port_disp_init();
@@ -63,6 +80,9 @@ void HardwareInitTask(void *argument)
     }
 }
 
+/**
+ * @brief Message Update Task
+ */
 void MessageUpdateTask(void *argument)
 {
     while (1)
@@ -93,19 +113,30 @@ void MessageUpdateTask(void *argument)
                 IH_Family.Light.Light_Read_Data(&lightintens);
                 IH_Family.Light.Light_Value = lightintens;
             }
+            /*MQ2sensor data*/
+            if (!(IH_Family.CO2.ConnectionError))
+            {
+                int Concentrations;
+                IH_Family.CO2.MQ2_Read_Data(&Concentrations);
+                IH_Family.CO2.Concentration_Value = Concentrations;
+            }
             uint8_t MesCompStr = 0;
             osMessageQueuePut(MessageUpComplete_Queue, &MesCompStr, NULL, 10);
             QI_DEBUG("Messageupdate stack is %d\r\n", (int *)osThreadGetStackSpace(MessageUpdate_TaskHandle));
-
             QI_DEBUG("MessageUpdateTask end\r\n");
         }
         osDelay(500);
     }
 }
 
+/**
+ * @brief Timer call back to update
+ */
 void UpdataTimerCallback(void *argument)
 {
     uint8_t MesSendStr = 0;
+    /*send event to lvgl to feedback*/
     Lv_Label_Update();
+    /*per 1s to restart the messageupdate task*/
     osMessageQueuePut(MessageUpdate_Queue, &MesSendStr, NULL, 1);
 }

@@ -99,7 +99,6 @@ void MX_FREERTOS_Init(void)
 {
   /* USER CODE BEGIN Init */
   User_Tasks_Init();
-
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -139,17 +138,17 @@ void MX_FREERTOS_Init(void)
  * @retval None
  */
 /* USER CODE END Header_StartDefaultTask */
-// void StartDefaultTask(void *argument)
-//{
-/* USER CODE BEGIN StartDefaultTask */
-//   /* Infinite loop */
-//   for (;;)
-//   {
-//     printf("start default task\r\n");
-//     osDelay(1);
-//   }
-/* USER CODE END StartDefaultTask */
-//}
+void StartDefaultTask(void *argument)
+{
+  /* USER CODE BEGIN StartDefaultTask */
+  /* Infinite loop */
+  for (;;)
+  {
+    printf("start default task\r\n");
+    osDelay(1);
+  }
+  /* USER CODE END StartDefaultTask */
+}
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */

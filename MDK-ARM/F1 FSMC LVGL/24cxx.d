@@ -1,6 +1,6 @@
 f1 fsmc lvgl\24cxx.o: ..\BSP\AT24Cxx\24cxx.c
 f1 fsmc lvgl\24cxx.o: ..\BSP\AT24Cxx\24cxx.h
-f1 fsmc lvgl\24cxx.o: ..\SYSTEM\MyIIC\myiic.h
+f1 fsmc lvgl\24cxx.o: ../SYSTEM/MyIIC/myiic.h
 f1 fsmc lvgl\24cxx.o: ../Core/Inc/main.h
 f1 fsmc lvgl\24cxx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\24cxx.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -37,7 +37,6 @@ f1 fsmc lvgl\24cxx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
 f1 fsmc lvgl\24cxx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\24cxx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\24cxx.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+f1 fsmc lvgl\24cxx.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\24cxx.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\24cxx.o: ..\SYSTEM\RingBuffer\ring_buffer.h
-f1 fsmc lvgl\24cxx.o: ..\SYSTEM\SYS\sys.h
-f1 fsmc lvgl\24cxx.o: ..\SYSTEM\Delay\Delay.h
+f1 fsmc lvgl\24cxx.o: ../SYSTEM/Delay/Delay.h

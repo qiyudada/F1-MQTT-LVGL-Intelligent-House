@@ -44,8 +44,8 @@ void Get_From_Sec(lv_event_t *e)
 
 void Get_From_Year(lv_event_t *e)
 {
-	static char Lv_Years[8];
-	sprintf(Lv_Years, "%d Y", 2000 + IH_Family.NOWTIME.Year);
+	static char Lv_Years[6];
+	sprintf(Lv_Years, "%d Y",(2000 + IH_Family.NOWTIME.Year));
 	lv_label_set_text_fmt(e->target, Lv_Years);
 }
 
@@ -58,7 +58,7 @@ void Get_From_Month(lv_event_t *e)
 
 void Get_From_Day(lv_event_t *e)
 {
-	static char Lv_Day[6];
+	static char Lv_Day[4];
 	sprintf(Lv_Day, "%d D", IH_Family.NOWTIME.Date);
 	lv_label_set_text_fmt(e->target, Lv_Day);
 }
@@ -66,13 +66,15 @@ void Get_From_Day(lv_event_t *e)
 void Get_from_Light(lv_event_t *e)
 {
 	static char LightSensor_buf[8];
-	sprintf(LightSensor_buf, "%d Lux", IH_Family.Light.Light_Value);
+	sprintf(LightSensor_buf, "%d LUX", IH_Family.Light.Light_Value);
 	lv_label_set_text_fmt(e->target, LightSensor_buf);
 }
 
 void Get_from_CO2(lv_event_t *e)
 {
-	// Your code here
+	static char MQ2Sensor_buf[8];
+	sprintf(MQ2Sensor_buf, "%d PPM", IH_Family.CO2.Concentration_Value);
+	lv_label_set_text_fmt(e->target, MQ2Sensor_buf);
 }
 
 void LED1_Open(lv_event_t *e)

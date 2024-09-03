@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;..\LVGL\APP\UI_APP;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;..\MQTT\Platform\FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;..\UserTask;..\SYSTEM\Delay;..\SYSTEM\Hal_Uart;..\SYSTEM\RingBuffer;..\SYSTEM\MyIIC;..\SYSTEM\SYS;..\SYSTEM\Uart_Redefine;..\BSP\TOUCH;..\BSP\WIFI;..\BSP\DTH11;..\BSP\LCD;..\BSP\LightSensor;..\BSP\AT24Cxx</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../LVGL;../LVGL/examples/porting;../LVGL/APP;../LVGL/src;../LVGL/src/misc;../LVGL/APP/UI_APP;../MQTT/Common/PLOOC;../MQTT/Common;../MQTT/MQTT;../MQTT/MQTTClient;../MQTT/Network;../MQTT/Platform/FreeRTOS;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../UserTask;../SYSTEM/Delay;../SYSTEM/Hal_Uart;../SYSTEM/RingBuffer;../SYSTEM/MyIIC;../SYSTEM/SYS;../SYSTEM/Uart_Redefine;../BSP/TOUCH;../BSP/WIFI;../BSP/DTH11;../BSP/LCD;../BSP/LightSensor;../BSP/AT24Cxx;..\BSP\MQ2</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -756,24 +756,24 @@
           <GroupName>Application/User/Task</GroupName>
           <Files>
             <File>
-              <FileName>IH_Task_Init.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UserTask\IH_Task_Init.c</FilePath>
-            </File>
-            <File>
               <FileName>IH_DataManage.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UserTask\IH_DataManage.c</FilePath>
             </File>
             <File>
-              <FileName>IH_MqttTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\UserTask\IH_MqttTask.c</FilePath>
-            </File>
-            <File>
               <FileName>IH_Hardware_Init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UserTask\IH_Hardware_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_Task_Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_Task_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>IH_MqttTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_MqttTask.c</FilePath>
             </File>
             <File>
               <FileName>IH_LvglHandler.c</FileName>
@@ -2097,6 +2097,11 @@
               <FileName>Lightsensor.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\LightSensor\Lightsensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>MQ2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\MQ2\MQ2.c</FilePath>
             </File>
           </Files>
         </Group>

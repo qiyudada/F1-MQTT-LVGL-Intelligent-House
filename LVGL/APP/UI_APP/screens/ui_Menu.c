@@ -268,15 +268,15 @@ void ui_Menu_screen_init(void)
     lv_obj_set_align(ui_CO2Text, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_CO2Text, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_CO2Lable = lv_label_create(ui_CO2Text);
-    lv_obj_set_width(ui_CO2Lable, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_CO2Lable, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_CO2Lable, -6);
-    lv_obj_set_y(ui_CO2Lable, -1);
-    lv_obj_set_align(ui_CO2Lable, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_CO2Lable, "CO2");
-    lv_obj_add_flag(ui_CO2Lable, LV_OBJ_FLAG_CHECKABLE);     /// Flags
-    lv_obj_set_style_text_font(ui_CO2Lable, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_CO2Label = lv_label_create(ui_CO2Text);
+    lv_obj_set_width(ui_CO2Label, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_CO2Label, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_CO2Label, -6);
+    lv_obj_set_y(ui_CO2Label, -1);
+    lv_obj_set_align(ui_CO2Label, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_CO2Label, "CO2");
+    lv_obj_add_flag(ui_CO2Label, LV_OBJ_FLAG_CHECKABLE);     /// Flags
+    lv_obj_set_style_text_font(ui_CO2Label, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Controlpage = lv_obj_create(ui_Menu);
     lv_obj_remove_style_all(ui_Controlpage);
@@ -299,7 +299,7 @@ void ui_Menu_screen_init(void)
     lv_obj_add_event_cb(ui_Month, ui_event_Month, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Day, ui_event_Day, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_DarkLabel, ui_event_DarkLabel, LV_EVENT_ALL, NULL);
-    lv_obj_add_event_cb(ui_CO2Lable, ui_event_CO2Lable, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_CO2Label, ui_event_CO2Lable, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Controlpage, ui_event_Controlpage, LV_EVENT_ALL, NULL);
 
 }

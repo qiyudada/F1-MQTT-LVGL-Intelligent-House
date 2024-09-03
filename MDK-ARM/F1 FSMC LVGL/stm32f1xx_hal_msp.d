@@ -35,5 +35,3 @@ f1 fsmc lvgl\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_
 f1 fsmc lvgl\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\stm32f1xx_hal_msp.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\stm32f1xx_hal_msp.o: ..\SYSTEM\RingBuffer\ring_buffer.h

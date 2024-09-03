@@ -94,6 +94,7 @@ uint8_t IH_weekday_calculate(uint8_t setyear, uint8_t setmonth, uint8_t setday, 
     return w;
 }
 
+/*USER DATA DEFINE*/
 IH_Family_TypeDef IH_Family = {
     .MQTT = {
         .client = NULL,
@@ -111,6 +112,11 @@ IH_Family_TypeDef IH_Family = {
         .ConnectionError = 1,
         .Light_Value = 1000,
         .Light_Read_Data = LightSensor_Read,
+    },
+    .CO2 = {
+        .ConnectionError = 1,
+        .Concentration_Value = 10,
+        .MQ2_Read_Data = MQ2Sensor_Read,
     },
     .TIME = {
         .GetTimeDate = IH_RTC_Get_TimeDate,

@@ -53,7 +53,7 @@ extern lv_obj_t * ui_CO2;
 extern lv_obj_t * ui_CO2Pic;
 extern lv_obj_t * ui_CO2Text;
 void ui_event_CO2Lable(lv_event_t * e);
-extern lv_obj_t * ui_CO2Lable;
+extern lv_obj_t * ui_CO2Label;
 void ui_event_Controlpage(lv_event_t * e);
 extern lv_obj_t * ui_Controlpage;
 // SCREEN: ui_Control

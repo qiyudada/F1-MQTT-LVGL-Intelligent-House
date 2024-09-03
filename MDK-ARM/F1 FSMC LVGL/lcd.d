@@ -36,11 +36,10 @@ f1 fsmc lvgl\lcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\lcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\lcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 f1 fsmc lvgl\lcd.o: ../Core/Inc/main.h
-f1 fsmc lvgl\lcd.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\lcd.o: ..\SYSTEM\RingBuffer\ring_buffer.h
 f1 fsmc lvgl\lcd.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\lcd.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\lcd.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\lcd.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\lcd.o: ../SYSTEM/SYS/sys.h
+f1 fsmc lvgl\lcd.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\lcd.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\lcd.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\lcd.o: ../LVGL/src/misc/../lv_conf_internal.h

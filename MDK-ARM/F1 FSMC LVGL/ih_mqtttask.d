@@ -2,6 +2,7 @@ f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_MqttTask.c
 f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_MqttTask.h
 f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_Task_Init.h
 f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_DataManage.h
+f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stddef.h
 f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdint.h
@@ -13,7 +14,7 @@ f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_Task_Init.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\LCD\Lcd.h
+f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/main.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -47,12 +48,11 @@ f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rt
 f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/main.h
-f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\SYSTEM\RingBuffer\ring_buffer.h
+f1 fsmc lvgl\ih_mqtttask.o: ../SYSTEM/RingBuffer/ring_buffer.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/LCD/Lcd.h
 f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\ih_mqtttask.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\ih_mqtttask.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -181,7 +181,7 @@ f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\LCD\GUI.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/LCD/GUI.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTTClient/mqttclient.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTT/MQTTConnect.h
@@ -192,34 +192,35 @@ f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTT/MQTTFormat.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTT/StackTrace.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTT/MQTTPacket.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/mqtt_list.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\MQTT\Platform\FreeRTOS\platform_timer.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\MQTT\Platform\FreeRTOS\platform_memory.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
+f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Platform/FreeRTOS/platform_timer.h
+f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Platform/FreeRTOS/platform_memory.h
+f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Platform/FreeRTOS/platform_mutex.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\MQTT\Platform\FreeRTOS\platform_thread.h
+f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Platform/FreeRTOS/platform_thread.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTTClient/mqtt_defconfig.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/MQTTClient/mqtt_config.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\WIFI\ATcommand.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\SYSTEM\Hal_Uart\Hal_Uart.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\WIFI\WIFI_Uart_IRQ.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/WIFI/ATcommand.h
+f1 fsmc lvgl\ih_mqtttask.o: ../SYSTEM/Hal_Uart/Hal_Uart.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/examples/porting/lv_port_disp.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/examples/porting/lv_port_indev.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\LVGL\APP\UI_APP\ui.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\LVGL\APP\UI_APP\ui_helpers.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\LVGL\APP\UI_APP\ui.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\LVGL\APP\UI_APP\ui_events.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\DTH11\DTH11.h
+f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/APP/UI_APP/ui.h
+f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/APP/UI_APP/ui_helpers.h
+f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/APP/UI_APP/ui.h
+f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/APP/UI_APP/ui_events.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/DTH11/DTH11.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/tim.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
-f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\LightSensor\Lightsensor.h
+f1 fsmc lvgl\ih_mqtttask.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/adc.h
-f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/usart.h
 f1 fsmc lvgl\ih_mqtttask.o: ../Core/Inc/rtc.h
+f1 fsmc lvgl\ih_mqtttask.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\ih_mqtttask.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h

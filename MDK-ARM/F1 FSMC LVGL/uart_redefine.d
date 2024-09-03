@@ -38,4 +38,3 @@ f1 fsmc lvgl\uart_redefine.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_
 f1 fsmc lvgl\uart_redefine.o: ../Core/Inc/usart.h
 f1 fsmc lvgl\uart_redefine.o: ../Core/Inc/main.h
 f1 fsmc lvgl\uart_redefine.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\uart_redefine.o: ..\SYSTEM\RingBuffer\ring_buffer.h

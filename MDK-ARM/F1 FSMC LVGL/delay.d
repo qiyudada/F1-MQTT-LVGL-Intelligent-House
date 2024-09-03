@@ -35,5 +35,5 @@ f1 fsmc lvgl\delay.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
 f1 fsmc lvgl\delay.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\delay.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\delay.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\delay.o: ..\SYSTEM\SYS\sys.h
+f1 fsmc lvgl\delay.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\delay.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h

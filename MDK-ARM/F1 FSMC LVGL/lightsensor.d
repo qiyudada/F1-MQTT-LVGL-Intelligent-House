@@ -35,24 +35,13 @@ f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rt
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\lightsensor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\lightsensor.o: ..\MQTT\Platform\FreeRTOS\platform_mutex.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-f1 fsmc lvgl\lightsensor.o: ../Core/Inc/FreeRTOSConfig.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
-f1 fsmc lvgl\lightsensor.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+f1 fsmc lvgl\lightsensor.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
 f1 fsmc lvgl\lightsensor.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\lightsensor.o: ../Core/Inc/main.h
-f1 fsmc lvgl\lightsensor.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\lightsensor.o: ..\SYSTEM\RingBuffer\ring_buffer.h
-f1 fsmc lvgl\lightsensor.o: ../Core/Inc/usart.h
-f1 fsmc lvgl\lightsensor.o: ../Core/Inc/tim.h
+f1 fsmc lvgl\lightsensor.o: ../BSP/LCD/Lcd.h
+f1 fsmc lvgl\lightsensor.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
+f1 fsmc lvgl\lightsensor.o: ../SYSTEM/Delay/Delay.h
+f1 fsmc lvgl\lightsensor.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -181,7 +170,3 @@ f1 fsmc lvgl\lightsensor.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\lightsensor.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\lightsensor.o: ..\SYSTEM\Delay\Delay.h
-f1 fsmc lvgl\lightsensor.o: ..\SYSTEM\SYS\sys.h
-f1 fsmc lvgl\lightsensor.o: ..\BSP\LCD\Lcd.h
-f1 fsmc lvgl\lightsensor.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
