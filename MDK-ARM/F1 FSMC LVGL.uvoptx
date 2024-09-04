@@ -150,41 +150,41 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>618</LineNumber>
+          <LineNumber>80</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134382306</Address>
+          <Address>134241174</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\MQTT\MQTTClient\mqttclient.c</Filename>
+          <Filename>..\UserTask\IH_MqttTask.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../MQTT/MQTTClient/mqttclient.c\618</Expression>
+          <Expression>\\F1_FSMC_LVGL\../UserTask/IH_MqttTask.c\80</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>1491</LineNumber>
+          <LineNumber>539</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134379414</Address>
+          <Address>134244354</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\MQTT\MQTTClient\mqttclient.c</Filename>
+          <Filename>..\BSP\TOUCH\touch.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../MQTT/MQTTClient/mqttclient.c\1491</Expression>
+          <Expression>\\F1_FSMC_LVGL\../BSP/TOUCH/touch.c\539</Expression>
         </Bp>
       </Breakpoint>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>8</SubType>
-          <ItemText>0x20004654</ItemText>
+          <ItemText>IH_Family.MQTT.Msg_Buffer</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
@@ -230,6 +230,12 @@
       <pszMrulep></pszMrulep>
       <pSingCmdsp></pSingCmdsp>
       <pMultCmdsp></pMultCmdsp>
+      <SystemViewers>
+        <Entry>
+          <Name>System Viewer\GPIOB</Name>
+          <WinId>35905</WinId>
+        </Entry>
+      </SystemViewers>
       <DebugDescription>
         <Enable>1</Enable>
         <EnableLog>0</EnableLog>
@@ -761,7 +767,7 @@
 
   <Group>
     <GroupName>Drivers/SYSTEM</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -2961,7 +2967,7 @@
 
   <Group>
     <GroupName>Middlewares/LVGL_APP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

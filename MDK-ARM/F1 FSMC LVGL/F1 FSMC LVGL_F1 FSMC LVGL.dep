@@ -179,13 +179,13 @@ I (../LVGL/src/extra/widgets/led/lv_led.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/span/lv_span.h)(0x66C5F62B)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Core/Inc/usart.h)(0x66C71007)
 I (../Core/Inc/gpio.h)(0x66C71003)
 I (../Core/Inc/fsmc.h)(0x66C71006)
 I (../UserTask/IH_Hardware_Init.h)(0x66D6BE52)
-I (../UserTask/IH_DataManage.h)(0x66D71106)
+I (../UserTask/IH_DataManage.h)(0x66D7C05F)
 I (../UserTask/IH_Task_Init.h)(0x66D583D4)
 I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
@@ -311,13 +311,13 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x66C859AE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x66C859AE)
 I (../UserTask/IH_Task_Init.h)(0x66D583D4)
-I (../UserTask/IH_DataManage.h)(0x66D71106)
+I (../UserTask/IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -797,7 +797,7 @@ I (../LVGL/src/extra/widgets/led/lv_led.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/span/lv_span.h)(0x66C5F62B)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (../Core/Src/usart.c)(0x66D6DEB4)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\usart.o" --omf_browse "f1 fsmc lvgl\usart.crf" --depend "f1 fsmc lvgl\usart.d")
 I (../Core/Inc/usart.h)(0x66C71007)
@@ -944,8 +944,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-F (..\UserTask\IH_DataManage.c)(0x66D6E9B2)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_datamanage.o" --omf_browse "f1 fsmc lvgl\ih_datamanage.crf" --depend "f1 fsmc lvgl\ih_datamanage.d")
-I (..\UserTask\IH_DataManage.h)(0x66D71106)
+F (..\UserTask\IH_DataManage.c)(0x66D7C079)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_datamanage.o" --omf_browse "f1 fsmc lvgl\ih_datamanage.crf" --depend "f1 fsmc lvgl\ih_datamanage.d")
+I (..\UserTask\IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -995,7 +995,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -1166,7 +1166,7 @@ I (..\BSP\MQ2\MQ2.h)(0x66D710F2)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\math.h)(0x588B8344)
 F (..\UserTask\IH_Hardware_Init.c)(0x66D702B2)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_hardware_init.o" --omf_browse "f1 fsmc lvgl\ih_hardware_init.crf" --depend "f1 fsmc lvgl\ih_hardware_init.d")
 I (..\UserTask\IH_Hardware_Init.h)(0x66D6BE52)
-I (..\UserTask\IH_DataManage.h)(0x66D71106)
+I (..\UserTask\IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -1216,7 +1216,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -1386,9 +1386,9 @@ I (../Core/Inc/rtc.h)(0x66D5433E)
 I (..\BSP\MQ2\MQ2.h)(0x66D710F2)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\math.h)(0x588B8344)
 I (..\UserTask\IH_LvglHandler.h)(0x66D6D01F)
-F (..\UserTask\IH_Task_Init.c)(0x66D7126B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_task_init.o" --omf_browse "f1 fsmc lvgl\ih_task_init.crf" --depend "f1 fsmc lvgl\ih_task_init.d")
+F (..\UserTask\IH_Task_Init.c)(0x66D7BDE5)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_task_init.o" --omf_browse "f1 fsmc lvgl\ih_task_init.crf" --depend "f1 fsmc lvgl\ih_task_init.d")
 I (..\UserTask\IH_Task_Init.h)(0x66D583D4)
-I (..\UserTask\IH_DataManage.h)(0x66D71106)
+I (..\UserTask\IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -1437,7 +1437,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -1609,10 +1609,10 @@ I (D:\Keil\ARM Start\ARM\ARMCC\include\math.h)(0x588B8344)
 I (..\UserTask\IH_Hardware_Init.h)(0x66D6BE52)
 I (..\UserTask\IH_MqttTask.h)(0x66D6D01F)
 I (..\UserTask\IH_LvglHandler.h)(0x66D6D01F)
-F (..\UserTask\IH_MqttTask.c)(0x66D71100)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_mqtttask.o" --omf_browse "f1 fsmc lvgl\ih_mqtttask.crf" --depend "f1 fsmc lvgl\ih_mqtttask.d")
+F (..\UserTask\IH_MqttTask.c)(0x66D7C0A8)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_mqtttask.o" --omf_browse "f1 fsmc lvgl\ih_mqtttask.crf" --depend "f1 fsmc lvgl\ih_mqtttask.d")
 I (..\UserTask\IH_MqttTask.h)(0x66D6D01F)
 I (..\UserTask\IH_Task_Init.h)(0x66D583D4)
-I (..\UserTask\IH_DataManage.h)(0x66D71106)
+I (..\UserTask\IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -1661,7 +1661,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -1832,7 +1832,7 @@ I (..\BSP\MQ2\MQ2.h)(0x66D710F2)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\math.h)(0x588B8344)
 F (..\UserTask\IH_LvglHandler.c)(0x66D6D3E9)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ih_lvglhandler.o" --omf_browse "f1 fsmc lvgl\ih_lvglhandler.crf" --depend "f1 fsmc lvgl\ih_lvglhandler.d")
 I (..\UserTask\IH_LvglHandler.h)(0x66D6D01F)
-I (..\UserTask\IH_DataManage.h)(0x66D71106)
+I (..\UserTask\IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stddef.h)(0x588B8344)
@@ -1882,7 +1882,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -2893,7 +2893,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (..\SYSTEM\SYS\sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\SYSTEM\Hal_Uart\Hal_Uart.c)(0x66C5F62B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\hal_uart.o" --omf_browse "f1 fsmc lvgl\hal_uart.crf" --depend "f1 fsmc lvgl\hal_uart.d")
 I (..\SYSTEM\Hal_Uart\Hal_Uart.h)(0x66C88C6D)
@@ -2983,11 +2983,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (..\SYSTEM\SYS\sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\SYSTEM\Delay\Delay.h)(0x66D47D55)
+I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
 F (..\SYSTEM\SYS\sys.c)(0x66C5F62B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\sys.o" --omf_browse "f1 fsmc lvgl\sys.crf" --depend "f1 fsmc lvgl\sys.d")
-I (..\SYSTEM\SYS\sys.h)(0x66D59E83)
+I (..\SYSTEM\SYS\sys.h)(0x66D7C36D)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66C859AE)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x66D6BE51)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x66C859AE)
@@ -3064,7 +3064,7 @@ I (../Core/Inc/main.h)(0x66D6C023)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\BSP\AT24Cxx\24cxx.c)(0x66C5F62B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\24cxx.o" --omf_browse "f1 fsmc lvgl\24cxx.crf" --depend "f1 fsmc lvgl\24cxx.d")
 I (..\BSP\AT24Cxx\24cxx.h)(0x66C5F62B)
-I (..\SYSTEM\MyIIC\myiic.h)(0x66D472D8)
+I (../SYSTEM/MyIIC/myiic.h)(0x66D472D8)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66C859AE)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x66D6BE51)
@@ -3100,9 +3100,9 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (..\SYSTEM\SYS\sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\SYSTEM\Delay\Delay.h)(0x66D47D55)
+I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
 F (..\BSP\WIFI\ATcommand.c)(0x66D5937C)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\atcommand.o" --omf_browse "f1 fsmc lvgl\atcommand.crf" --depend "f1 fsmc lvgl\atcommand.d")
 I (..\BSP\WIFI\ATcommand.h)(0x66C8B3B3)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\string.h)(0x588B8344)
@@ -3176,12 +3176,12 @@ I (../MQTT/Common/random.h)(0x66667305)
 I (../MQTT/Common/mqtt_error.h)(0x66667305)
 I (../MQTT/Common/mqtt_log.h)(0x66667305)
 I (../UserTask/IH_Task_Init.h)(0x66D583D4)
-I (../UserTask/IH_DataManage.h)(0x66D71106)
+I (../UserTask/IH_DataManage.h)(0x66D7C05F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x66C859AE)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -3373,8 +3373,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-F (..\BSP\TOUCH\touch.c)(0x66C5F62B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\touch.o" --omf_browse "f1 fsmc lvgl\touch.crf" --depend "f1 fsmc lvgl\touch.d")
-I (..\BSP\TOUCH\touch.h)(0x66C5F62B)
+F (..\BSP\TOUCH\touch.c)(0x66D7CA0B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\touch.o" --omf_browse "f1 fsmc lvgl\touch.crf" --depend "f1 fsmc lvgl\touch.d")
+I (..\BSP\TOUCH\touch.h)(0x66D7C8B0)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66C859AE)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x66D6BE51)
@@ -3410,7 +3410,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
@@ -3722,7 +3722,7 @@ I (../LVGL/src/extra/widgets/led/lv_led.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/span/lv_span.h)(0x66C5F62B)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x66C859AE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x66C859AE)
@@ -3920,7 +3920,7 @@ I (..\BSP\LCD\Lcd.h)(0x66D45B92)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\BSP\LCD\font.h)(0x66D45B92)
 F (..\BSP\LCD\Lcd.c)(0x66D45B92)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\lcd.o" --omf_browse "f1 fsmc lvgl\lcd.crf" --depend "f1 fsmc lvgl\lcd.d")
@@ -3962,7 +3962,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
@@ -4133,7 +4133,7 @@ I (../Core/Inc/main.h)(0x66D6C023)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -4304,7 +4304,7 @@ I (../Core/Inc/main.h)(0x66D6C023)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../LVGL/lvgl.h)(0x66C5F62B)
 I (../LVGL/src/misc/lv_log.h)(0x66C5F62B)
 I (../LVGL/src/misc/../lv_conf_internal.h)(0x66C5F62B)
@@ -15047,7 +15047,7 @@ I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\LVGL\examples\porting\lv_port_fs.c)(0x66C5F62B)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\lv_port_fs.o" --omf_browse "f1 fsmc lvgl\lv_port_fs.crf" --depend "f1 fsmc lvgl\lv_port_fs.d")
 F (..\LVGL\examples\porting\lv_port_indev.c)(0x66D56083)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\lv_port_indev.o" --omf_browse "f1 fsmc lvgl\lv_port_indev.crf" --depend "f1 fsmc lvgl\lv_port_indev.d")
@@ -15181,7 +15181,7 @@ I (../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/led/lv_led.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h)(0x66C5F62B)
 I (../LVGL/src/extra/widgets/span/lv_span.h)(0x66C5F62B)
-I (../BSP/TOUCH/touch.h)(0x66C5F62B)
+I (../BSP/TOUCH/touch.h)(0x66D7C8B0)
 I (../Core/Inc/main.h)(0x66D6C023)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x66C859AE)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x66D6BE51)
@@ -15215,7 +15215,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 F (..\LVGL\APP\UI_APP\components\ui_comp_hook.c)(0x66D5DC2C)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ui_comp_hook.o" --omf_browse "f1 fsmc lvgl\ui_comp_hook.crf" --depend "f1 fsmc lvgl\ui_comp_hook.d")
 F (..\LVGL\APP\UI_APP\fonts\ui_font_Number.c)(0x66A872CE)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\ui_font_number.o" --omf_browse "f1 fsmc lvgl\ui_font_number.crf" --depend "f1 fsmc lvgl\ui_font_number.d")
@@ -17246,7 +17246,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x66C859AE)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x66C859AE)
-I (../UserTask/IH_DataManage.h)(0x66D71106)
+I (../UserTask/IH_DataManage.h)(0x66D7C05F)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x66C859AE)
 I (../Core/Inc/FreeRTOSConfig.h)(0x66D6CC12)
@@ -17261,7 +17261,7 @@ I (../SYSTEM/RingBuffer/ring_buffer.h)(0x66C5F62B)
 I (../BSP/LCD/Lcd.h)(0x66D45B92)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdlib.h)(0x588B8344)
 I (../SYSTEM/Delay/Delay.h)(0x66D47D55)
-I (../SYSTEM/SYS/sys.h)(0x66D59E83)
+I (../SYSTEM/SYS/sys.h)(0x66D7C36D)
 I (../BSP/LCD/GUI.h)(0x66D45B92)
 I (../MQTT/MQTTClient/mqttclient.h)(0x66667305)
 I (../MQTT/MQTT/MQTTPacket.h)(0x66667305)
@@ -17550,7 +17550,7 @@ I (..\MQTT\MQTT\MQTTFormat.h)(0x66667305)
 I (..\MQTT\MQTT\StackTrace.h)(0x66667305)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\string.h)(0x588B8344)
-F (..\MQTT\MQTTClient\mqttclient.c)(0x66D71F1E)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\mqttclient.o" --omf_browse "f1 fsmc lvgl\mqttclient.crf" --depend "f1 fsmc lvgl\mqttclient.d")
+F (..\MQTT\MQTTClient\mqttclient.c)(0x66D72932)(--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../LVGL -I ../LVGL/examples/porting -I ../LVGL/APP -I ../LVGL/src -I ../LVGL/src/misc -I ../LVGL/APP/UI_APP -I ../MQTT/Common/PLOOC -I ../MQTT/Common -I ../MQTT/MQTT -I ../MQTT/MQTTClient -I ../MQTT/Network -I ../MQTT/Platform/FreeRTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../UserTask -I ../SYSTEM/Delay -I ../SYSTEM/Hal_Uart -I ../SYSTEM/RingBuffer -I ../SYSTEM/MyIIC -I ../SYSTEM/SYS -I ../SYSTEM/Uart_Redefine -I ../BSP/TOUCH -I ../BSP/WIFI -I ../BSP/DTH11 -I ../BSP/LCD -I ../BSP/LightSensor -I ../BSP/AT24Cxx -I ..\BSP\MQ2-I.\RTE\_F1_FSMC_LVGL-I"D:\Keil\ARM Start\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Keil\ARM Start\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o "f1 fsmc lvgl\mqttclient.o" --omf_browse "f1 fsmc lvgl\mqttclient.crf" --depend "f1 fsmc lvgl\mqttclient.d")
 I (..\MQTT\MQTTClient\mqttclient.h)(0x66667305)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\Keil\ARM Start\ARM\ARMCC\include\stdint.h)(0x588B8344)

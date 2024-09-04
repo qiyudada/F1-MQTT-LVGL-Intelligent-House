@@ -87,6 +87,7 @@ extern "C"
         char *User_Topic;
         mqtt_client_t *client;
         mqtt_message_t msg;
+        char Msg_Buffer[512];
     } Mqtt_Family_TypeDef;
 
     /*

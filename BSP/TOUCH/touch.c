@@ -298,7 +298,7 @@ u8 TP_Get_Adjdata(void)
 {
 	s32 tempfac;
 	tempfac = AT24CXX_ReadOneByte(SAVE_ADDR_BASE + 13);
-	if (tempfac == 0X0A)
+	if (tempfac == 0X1A)
 	{
 		tempfac = AT24CXX_ReadLenByte(SAVE_ADDR_BASE, 4);
 		tp_dev.xfac = (float)tempfac / 100000000;

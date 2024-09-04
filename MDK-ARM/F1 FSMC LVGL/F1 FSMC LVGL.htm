@@ -3,7 +3,7 @@
 <title>Static Call Graph - [F1 FSMC LVGL\F1 FSMC LVGL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image F1 FSMC LVGL\F1 FSMC LVGL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Tue Sep 03 22:53:31 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Sep 04 10:46:43 2024
 <BR><P>
 <H3>Maximum Stack Usage =        976 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -370,8 +370,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[12e]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<BR><BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
 <P><STRONG><a name="[12f]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -491,8 +491,8 @@ Global Symbols
 <P><STRONG><a name="[72e]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[130]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<BR><BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
 <P><STRONG><a name="[72f]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
@@ -777,6 +777,8 @@ Global Symbols
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MqttSendTask
+<LI><a href="#[686]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_net_socket_write_timeout
+<LI><a href="#[680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_net_socket_connect
 <LI><a href="#[19a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_from_Light
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_from_Humidity
 <LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_from_CO2
@@ -787,8 +789,6 @@ Global Symbols
 <LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_From_Min
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_From_Hour
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_From_Day
-<LI><a href="#[686]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_net_socket_write_timeout
-<LI><a href="#[680]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_net_socket_connect
 </UL>
 
 <P><STRONG><a name="[14b]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
@@ -845,8 +845,8 @@ Global Symbols
 <P><STRONG><a name="[151]"></a>srand</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, rand.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = srand
 </UL>
-<BR>[Called By]<UL><LI><a href="#[375]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_random
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+<LI><a href="#[375]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_random
 </UL>
 
 <P><STRONG><a name="[139]"></a>_rand_init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rand.o(.text))
@@ -901,11 +901,11 @@ Global Symbols
 <LI><a href="#[310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwd_char_hider
 <LI><a href="#[5ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_spinbox_updatevalue
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_spinbox_event
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTstrlen
 <LI><a href="#[66f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_is_exist
 <LI><a href="#[664]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_deliver_message
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_equals
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
+<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTstrlen
 </UL>
 
 <P><STRONG><a name="[244]"></a>strncmp</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, strncmp.o(.text))
@@ -919,12 +919,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT_SendCmd
 <LI><a href="#[6ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
 <LI><a href="#[6ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
-<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
 <LI><a href="#[666]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_new_message_data
 <LI><a href="#[64f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_record
 <LI><a href="#[64b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_handler_resend
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
 </UL>
 
 <P><STRONG><a name="[152]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
@@ -955,8 +955,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[667]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memclr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[664]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_deliver_message
+<BR><BR>[Called By]<UL><LI><a href="#[664]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_deliver_message
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 
 <P><STRONG><a name="[156]"></a>__rt_memclr</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, rt_memclr.o(.text), UNUSED)
@@ -2571,21 +2571,21 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_decode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
+<BR>[Called By]<UL><LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
+<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
 <LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_ack
 <LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_connack
-<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
 </UL>
 
 <P><STRONG><a name="[247]"></a>MQTTPacket_encode</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, mqttpacket.o(i.MQTTPacket_encode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MQTTPacket_encode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_zero
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
-<LI><a href="#[670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_read_packet
+<BR>[Called By]<UL><LI><a href="#[670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_read_packet
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_ack
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_zero
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 </UL>
 
 <P><STRONG><a name="[243]"></a>MQTTPacket_equals</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, mqttpacket.o(i.MQTTPacket_equals))
@@ -2598,9 +2598,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[24b]"></a>MQTTPacket_len</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, mqttpacket.o(i.MQTTPacket_len))
-<BR><BR>[Called By]<UL><LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
+<BR><BR>[Called By]<UL><LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 </UL>
 
 <P><STRONG><a name="[245]"></a>MQTTSerialize_ack</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, mqttserializepublish.o(i.MQTTSerialize_ack))
@@ -2641,15 +2641,15 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[251]"></a>MQTTSerialize_publish</STRONG> (Thumb, 134 bytes, Stack size 48 bytes, mqttserializepublish.o(i.MQTTSerialize_publish))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MQTTSerialize_publish &rArr; writeMQTTString &rArr; writeCString &rArr; writeInt
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MQTTSerialize_publish &rArr; writeMQTTString &rArr; writeCString &rArr; strlen
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
+<BR>[Calls]<UL><LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publishLength
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeChar
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_len
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_encode
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publishLength
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[273]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_publish
 </UL>
@@ -2663,14 +2663,14 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[253]"></a>MQTTSerialize_subscribe</STRONG> (Thumb, 140 bytes, Stack size 64 bytes, mqttsubscribeclient.o(i.MQTTSerialize_subscribe))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = MQTTSerialize_subscribe &rArr; writeMQTTString &rArr; writeCString &rArr; writeInt
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = MQTTSerialize_subscribe &rArr; writeMQTTString &rArr; writeCString &rArr; strlen
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
+<BR>[Calls]<UL><LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribeLength
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeChar
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_len
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_encode
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribeLength
 </UL>
 <BR>[Called By]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subscribe
 </UL>
@@ -2697,9 +2697,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connectLength
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribeLength
+<BR>[Called By]<UL><LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribeLength
 <LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publishLength
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connectLength
 </UL>
 
 <P><STRONG><a name="[255]"></a>MX_ADC1_Init</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, adc.o(i.MX_ADC1_Init))
@@ -2843,8 +2843,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ih_task_init.o(i.User_Tasks_Init)
 </UL>
-<P><STRONG><a name="[68]"></a>MqttSendTask</STRONG> (Thumb, 98 bytes, Stack size 216 bytes, ih_mqtttask.o(i.MqttSendTask))
-<BR><BR>[Stack]<UL><LI>Max Depth = 592 + Unknown Stack Size
+<P><STRONG><a name="[68]"></a>MqttSendTask</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, ih_mqtttask.o(i.MqttSendTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 392 + Unknown Stack Size
 <LI>Call Chain = MqttSendTask &rArr; mqtt_publish &rArr; mqtt_send_packet &rArr; network_write &rArr; nettype_tcp_write &rArr; platform_net_socket_write_timeout &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
@@ -10541,13 +10541,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 328 + Unknown Stack Size
 <LI>Call Chain = mqtt_keep_alive &rArr; mqtt_send_packet &rArr; network_write &rArr; nettype_tcp_write &rArr; platform_net_socket_write_timeout &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_pingreq
-<LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
+<BR>[Calls]<UL><LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
 <LI><a href="#[660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;network_release
 <LI><a href="#[65b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_set_client_state
 <LI><a href="#[64e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_send_packet
 <LI><a href="#[66d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_is_connected
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_pingreq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
 </UL>
@@ -10556,9 +10556,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = mqtt_lease &rArr; mqtt_init &rArr; platform_mutex_init &rArr; xQueueGenericCreate &rArr; pvPortMalloc &rArr; vApplicationMallocFailedHook &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[669]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_init
+<BR>[Calls]<UL><LI><a href="#[669]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_init
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MqttInitTask
 </UL>
@@ -10601,8 +10601,6 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_unlock
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_lock
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeChar
-<LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readChar
 <LI><a href="#[660]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;network_release
 <LI><a href="#[65b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_set_client_state
 <LI><a href="#[64e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_send_packet
@@ -10611,6 +10609,8 @@ Global Symbols
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeChar
+<LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readChar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MqttSendTask
 </UL>
@@ -10683,12 +10683,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_unlock
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_lock
-<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[652]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_init
 <LI><a href="#[64e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_send_packet
 <LI><a href="#[668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_get_next_packet_id
 <LI><a href="#[64f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_record
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
+<LI><a href="#[652]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MqttInitTask
 <LI><a href="#[67a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_try_resubscribe
@@ -11020,8 +11020,8 @@ Global Symbols
 
 <P><STRONG><a name="[661]"></a>platform_thread_init</STRONG> (Thumb, 56 bytes, Stack size 40 bytes, platform_thread.o(i.platform_thread_init), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[694]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
-<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 <LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_connect_with_results
 </UL>
@@ -11188,17 +11188,17 @@ Global Symbols
 
 <P><STRONG><a name="[23a]"></a>readChar</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mqttpacket.o(i.readChar))
 <BR><BR>[Called By]<UL><LI><a href="#[273]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_publish
+<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
 <LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
 <LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_ack
 <LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_connack
-<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
 </UL>
 
 <P><STRONG><a name="[23c]"></a>readInt</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, mqttpacket.o(i.readInt))
-<BR><BR>[Called By]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
+<BR><BR>[Called By]<UL><LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
+<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
 <LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_ack
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readMQTTLenString
-<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
 </UL>
 
 <P><STRONG><a name="[23f]"></a>readMQTTLenString</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, mqttpacket.o(i.readMQTTLenString))
@@ -11774,11 +11774,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[24c]"></a>writeCString</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, mqttpacket.o(i.writeCString))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = writeCString &rArr; writeInt
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = writeCString &rArr; strlen
 </UL>
-<BR>[Calls]<UL><LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
 <LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
@@ -11786,34 +11786,34 @@ Global Symbols
 
 <P><STRONG><a name="[246]"></a>writeChar</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, mqttpacket.o(i.writeChar))
 <BR><BR>[Called By]<UL><LI><a href="#[273]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_publish
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_zero
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_ack
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_zero
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 </UL>
 
 <P><STRONG><a name="[248]"></a>writeInt</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, mqttpacket.o(i.writeInt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = writeInt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
+<BR>[Called By]<UL><LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_ack
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeMQTTString
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 </UL>
 
 <P><STRONG><a name="[24d]"></a>writeMQTTString</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, mqttpacket.o(i.writeMQTTString))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = writeMQTTString &rArr; writeCString &rArr; writeInt
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = writeMQTTString &rArr; writeCString &rArr; strlen
 </UL>
-<BR>[Calls]<UL><LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
+<BR>[Calls]<UL><LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeInt
 <LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeCString
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
+<BR>[Called By]<UL><LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_subscribe
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_publish
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
 </UL>
 
 <P><STRONG><a name="[6e4]"></a>xPortStartScheduler</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, port.o(i.xPortStartScheduler))
@@ -12026,10 +12026,10 @@ Global Symbols
 
 <P><STRONG><a name="[69d]"></a>xTaskGetTickCount</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, tasks.o(i.xTaskGetTickCount))
 <BR><BR>[Called By]<UL><LI><a href="#[6bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvSampleTimeNow
-<LI><a href="#[69e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_now
 <LI><a href="#[674]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_remain
 <LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
 <LI><a href="#[64d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_cutdown
+<LI><a href="#[69e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_now
 </UL>
 
 <P><STRONG><a name="[6e8]"></a>xTaskIncrementTick</STRONG> (Thumb, 206 bytes, Stack size 24 bytes, tasks.o(i.xTaskIncrementTick))
@@ -19594,8 +19594,8 @@ Local Symbols
 <P><STRONG><a name="[648]"></a>mqtt_ack_handler_destroy</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mqttclient.o(i.mqtt_ack_handler_destroy))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = mqtt_ack_handler_destroy &rArr; platform_memory_free &rArr; vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
-<LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<BR>[Calls]<UL><LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
 </UL>
 <BR>[Called By]<UL><LI><a href="#[658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_unrecord
 <LI><a href="#[654]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_scan
@@ -19622,13 +19622,13 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_unlock
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_lock
+<LI><a href="#[64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_init
+<LI><a href="#[64d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_cutdown
+<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 <LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 <LI><a href="#[652]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_init
 <LI><a href="#[653]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_add_tail
-<LI><a href="#[64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_init
-<LI><a href="#[64d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_cutdown
-<LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subscribe
 <LI><a href="#[273]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_publish
@@ -19640,12 +19640,12 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 368 + Unknown Stack Size
 <LI>Call Chain = mqtt_ack_list_scan &rArr; mqtt_ack_handler_resend &rArr; mqtt_send_packet &rArr; network_write &rArr; nettype_tcp_write &rArr; platform_net_socket_write_timeout &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
-<LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
+<BR>[Calls]<UL><LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
 <LI><a href="#[657]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subtract_ack_handler_num
 <LI><a href="#[656]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_destory
 <LI><a href="#[64b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_handler_resend
 <LI><a href="#[648]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_handler_destroy
+<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_yield
 <LI><a href="#[679]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_try_do_reconnect
@@ -19654,9 +19654,9 @@ Local Symbols
 <P><STRONG><a name="[658]"></a>mqtt_ack_list_unrecord</STRONG> (Thumb, 68 bytes, Stack size 32 bytes, mqttclient.o(i.mqtt_ack_list_unrecord))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = mqtt_ack_list_unrecord &rArr; mqtt_subtract_ack_handler_num &rArr; platform_mutex_unlock &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
-<LI><a href="#[657]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subtract_ack_handler_num
+<BR>[Calls]<UL><LI><a href="#[657]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subtract_ack_handler_num
 <LI><a href="#[648]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_handler_destroy
+<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 </UL>
 <BR>[Called By]<UL><LI><a href="#[671]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_suback_packet_handle
 <LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
@@ -19665,12 +19665,12 @@ Local Symbols
 <P><STRONG><a name="[659]"></a>mqtt_clean_session</STRONG> (Thumb, 128 bytes, Stack size 24 bytes, mqttclient.o(i.mqtt_clean_session))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = mqtt_clean_session &rArr; mqtt_set_client_state &rArr; platform_mutex_unlock &rArr; xQueueGenericSend &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
-<LI><a href="#[65a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del_init
-<LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
-<LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<BR>[Calls]<UL><LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
 <LI><a href="#[65b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_set_client_state
 <LI><a href="#[656]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_destory
+<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
+<LI><a href="#[65a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del_init
+<LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_yield_thread
 </UL>
@@ -19678,9 +19678,6 @@ Local Symbols
 <P><STRONG><a name="[65c]"></a>mqtt_connect_with_results</STRONG> (Thumb, 630 bytes, Stack size 136 bytes, mqttclient.o(i.mqtt_connect_with_results), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_unlock
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_lock
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
-<LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_connack
-<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 <LI><a href="#[655]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_is_expired
 <LI><a href="#[64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_init
 <LI><a href="#[64d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_cutdown
@@ -19695,6 +19692,9 @@ Local Symbols
 <LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
 <LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_connect
+<LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_connack
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 
 <P><STRONG><a name="[664]"></a>mqtt_deliver_message</STRONG> (Thumb, 92 bytes, Stack size 96 bytes, mqttclient.o(i.mqtt_deliver_message))
@@ -19731,12 +19731,12 @@ Local Symbols
 <LI>Call Chain = mqtt_init &rArr; platform_mutex_init &rArr; xQueueGenericCreate &rArr; pvPortMalloc &rArr; vApplicationMallocFailedHook &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[170]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_init
-<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[652]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_init
 <LI><a href="#[64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_init
 <LI><a href="#[66b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_write_buf_malloc
 <LI><a href="#[66a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_read_buf_malloc
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
+<LI><a href="#[652]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_lease
 </UL>
@@ -19751,8 +19751,8 @@ Local Symbols
 <P><STRONG><a name="[656]"></a>mqtt_msg_handler_destory</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mqttclient.o(i.mqtt_msg_handler_destory))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = mqtt_msg_handler_destory &rArr; platform_memory_free &rArr; vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
-<LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<BR>[Calls]<UL><LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<LI><a href="#[649]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_del
 </UL>
 <BR>[Called By]<UL><LI><a href="#[671]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_suback_packet_handle
 <LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
@@ -19764,10 +19764,10 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
 <LI>Call Chain = mqtt_msg_handler_is_exist &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+<BR>[Calls]<UL><LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 </UL>
 <BR>[Called By]<UL><LI><a href="#[671]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_suback_packet_handle
 </UL>
@@ -19784,8 +19784,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 432 + Unknown Stack Size
 <LI>Call Chain = mqtt_packet_handle &rArr; mqtt_publish_packet_handle &rArr; mqtt_send_packet &rArr; network_write &rArr; nettype_tcp_write &rArr; platform_net_socket_write_timeout &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_ack
-<LI><a href="#[66c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_keep_alive
+<BR>[Calls]<UL><LI><a href="#[66c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_keep_alive
 <LI><a href="#[671]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_suback_packet_handle
 <LI><a href="#[670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_read_packet
 <LI><a href="#[672]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_publish_packet_handle
@@ -19795,6 +19794,7 @@ Local Symbols
 <LI><a href="#[658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_unrecord
 <LI><a href="#[241]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_unsuback
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_ack
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_yield
 <LI><a href="#[65c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_connect_with_results
@@ -19821,12 +19821,12 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_unlock
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_mutex_lock
-<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
 <LI><a href="#[64e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_send_packet
 <LI><a href="#[66d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_is_connected
 <LI><a href="#[664]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_deliver_message
 <LI><a href="#[64f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_record
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSerialize_ack
+<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_publish
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
 </UL>
@@ -19835,9 +19835,9 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
 <LI>Call Chain = mqtt_read_buf_malloc &rArr; platform_memory_alloc &rArr; pvPortMalloc &rArr; vApplicationMallocFailedHook &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<BR>[Calls]<UL><LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[669]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_init
 </UL>
@@ -19845,11 +19845,11 @@ Local Symbols
 <P><STRONG><a name="[670]"></a>mqtt_read_packet</STRONG> (Thumb, 278 bytes, Stack size 56 bytes, mqttclient.o(i.mqtt_read_packet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = mqtt_read_packet &rArr; network_read &rArr; nettype_tcp_read &rArr; platform_net_socket_recv_timeout &rArr; ATReadData &rArr; platform_mutex_lock_timeout &rArr; xQueueSemaphoreTake &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_encode
-<LI><a href="#[674]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_remain
+<BR>[Calls]<UL><LI><a href="#[674]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_remain
 <LI><a href="#[64c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_init
 <LI><a href="#[64d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_timer_cutdown
 <LI><a href="#[675]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;network_read
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTPacket_encode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
 </UL>
@@ -19889,13 +19889,13 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
 <LI>Call Chain = mqtt_suback_packet_handle &rArr; mqtt_msg_handler_is_exist &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[653]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_add_tail
-<LI><a href="#[66f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_is_exist
+<BR>[Calls]<UL><LI><a href="#[66f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_is_exist
 <LI><a href="#[656]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_msg_handler_destory
 <LI><a href="#[66d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_is_connected
 <LI><a href="#[658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_ack_list_unrecord
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTDeserialize_suback
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[653]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_add_tail
 </UL>
 <BR>[Called By]<UL><LI><a href="#[65f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_packet_handle
 </UL>
@@ -19927,8 +19927,8 @@ Local Symbols
 <LI>Call Chain = mqtt_try_resubscribe &rArr; mqtt_subscribe &rArr; mqtt_send_packet &rArr; network_write &rArr; nettype_tcp_write &rArr; platform_net_socket_write_timeout &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_subscribe
-<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[650]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_list_is_empty
 </UL>
 <BR>[Called By]<UL><LI><a href="#[679]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_try_do_reconnect
 </UL>
@@ -19937,9 +19937,9 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
 <LI>Call Chain = mqtt_write_buf_malloc &rArr; platform_memory_alloc &rArr; pvPortMalloc &rArr; vApplicationMallocFailedHook &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
-<LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
+<BR>[Calls]<UL><LI><a href="#[64a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_free
 <LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[651]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;platform_memory_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[669]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mqtt_init
 </UL>

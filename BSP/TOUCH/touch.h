@@ -34,10 +34,10 @@ typedef struct
 extern _m_tp_dev tp_dev;
 
 #define PEN PFin(10)  // PF10 INT
-#define DOUT PFin(8)  // PB2  MISO
+#define DOUT PFin(8)  // PB8  MISO
 #define TDIN PFout(9) // PF9  MOSI
 #define TCLK PBout(1) // PB1  SCLK
-#define TCS PBout(2)  // PF11  CS
+#define TCS  PBout(2)  // PB2  CS
 
 void TP_Write_Byte(u8 num);
 u16 TP_Read_AD(u8 CMD);

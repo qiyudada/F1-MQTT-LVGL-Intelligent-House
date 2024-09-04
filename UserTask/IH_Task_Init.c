@@ -51,7 +51,7 @@ const osThreadAttr_t LvHandlerTask_attributes = {
 osThreadId_t MessageUpload_TaskHandle;
 const osThreadAttr_t MessageUpload_attributes = {
     .name = "MesuploadTask",
-    .stack_size = 128 * 8,
+    .stack_size = 128 * 15,
     .priority = (osPriority_t)osPriorityLow,
 };
 /*Message Update Task*/

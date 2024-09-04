@@ -64,10 +64,8 @@ void MqttInitTask(void *argument)
  */
 void MqttSendTask(void *argument)
 {
-
     QI_DEBUG("enter MQTT_Platform successfully\r\n");
-    char MQTT_buffer[200] = {0}; // data buffer Initialization
-    IH_Family.MQTT.msg.payload = MQTT_buffer;
+    IH_Family.MQTT.msg.payload = IH_Family.MQTT.Msg_Buffer;
     IH_Family.MQTT.msg.qos = QOS0;
     while (1)
     {
@@ -76,11 +74,12 @@ void MqttSendTask(void *argument)
         if (osMessageQueueGet(MessageUpComplete_Queue, &MessComStr, NULL, pdMS_TO_TICKS(10)) == osOK)
         {
             /*!!!pay attention to the order of the data size,don't exceed the size of the buffer!!!*/
-            sprintf(MQTT_buffer, "\"temperature\":\"%dC\",\"humidity\":\"%d%%\",\"light:\"%dLUX\",\"smoke\":\"%dPPM\"", IH_Family.DTH11.tempature, IH_Family.DTH11.humidity, IH_Family.Light.Light_Value, IH_Family.CO2.Concentration_Value);
+            sprintf(IH_Family.MQTT.Msg_Buffer, "\"temperature\":\"%dC\",\"humidity\":\"%d%%\",\"light:\"%dLUX\",\"smoke\":\"%dPPM\"",
+                    IH_Family.DTH11.tempature, IH_Family.DTH11.humidity, IH_Family.Light.Light_Value, IH_Family.CO2.Concentration_Value);
 
-            IH_Family.MQTT.msg.payloadlen = strlen(MQTT_buffer);
+            IH_Family.MQTT.msg.payloadlen = strlen(IH_Family.MQTT.Msg_Buffer);
             mqtt_publish(IH_Family.MQTT.client, IH_Family.MQTT.User_Topic, &IH_Family.MQTT.msg);
-            memset(MQTT_buffer, 0, sizeof(MQTT_buffer));
+            memset(IH_Family.MQTT.Msg_Buffer, 0, sizeof(IH_Family.MQTT.Msg_Buffer));
             QI_DEBUG("send data to MQTT server successfully\r\n");
         }
         else

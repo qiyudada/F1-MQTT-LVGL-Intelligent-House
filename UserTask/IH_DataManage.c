@@ -101,6 +101,7 @@ IH_Family_TypeDef IH_Family = {
         .Ip_Port = "1883",
         .Server_Ip = "47.114.187.247",
         .User_Topic = "mcu_test",
+        .Msg_Buffer = {0},
     },
     .DTH11 = {
         .ConnectionError = 1,
