@@ -14,7 +14,7 @@
 
 #include "stm32f1xx_hal.h"
 
-#define BUFFER_SIZE 1024        /* 环形缓冲区的大小 */
+#define BUFFER_SIZE 2048        /* 环形缓冲区的大小 */
 
 typedef struct
 {

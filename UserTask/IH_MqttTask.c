@@ -88,6 +88,6 @@ void MqttSendTask(void *argument)
         }
         QI_DEBUG("Mqttupload stack is %d\r\n", (int *)osThreadGetStackSpace(MessageUpload_TaskHandle));
         // osMutexRelease(MessageUpload_MutexHandle);
-        osDelay(pdMS_TO_TICKS(1000));
+        osDelay(pdMS_TO_TICKS(5000));/*better delay exceed 5s,prevent from producter surpass consumer that result in ring buffer overflow*/
     }
 }

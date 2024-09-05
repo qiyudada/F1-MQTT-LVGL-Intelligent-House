@@ -61,3 +61,4 @@ f1 fsmc lvgl\lv_refr.o: ..\LVGL\src\core\lv_theme.h
 f1 fsmc lvgl\lv_refr.o: ..\LVGL\src\core\../misc/lv_gc.h
 f1 fsmc lvgl\lv_refr.o: ..\LVGL\src\core\../font/lv_font_fmt_txt.h
 f1 fsmc lvgl\lv_refr.o: ..\LVGL\src\core\../extra/others/snapshot/lv_snapshot.h
+f1 fsmc lvgl\lv_refr.o: ..\LVGL\src\core\../widgets/lv_label.h
