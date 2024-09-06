@@ -4,8 +4,6 @@
 #include "font.h"
 #include "Delay.h"
 
-
-
 /*******************************************************************
  * @name       :void GUI_DrawPoint(u16 x,u16 y,u16 color)
  * @date       :2018-08-09
@@ -107,7 +105,7 @@ void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)
 }
 
 /*****************************************************************************
- * @name       :void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+ * @name       :void GUI_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
  * @date       :2018-08-09
  * @function   :Draw a rectangle
  * @parameters :x1:the bebinning x coordinate of the rectangle
@@ -116,7 +114,7 @@ void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)
 								y2:the ending y coordinate of the rectangle
  * @retvalue   :None
 ******************************************************************************/
-void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+void GUI_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
 {
 	LCD_DrawLine(x1, y1, x2, y1);
 	LCD_DrawLine(x1, y1, x1, y2);
@@ -170,7 +168,7 @@ void _draw_circle_8(int xc, int yc, int x, int y, u16 c)
 }
 
 /*****************************************************************************
- * @name       :void gui_circle(int xc, int yc,u16 c,int r, int fill)
+ * @name       :void GUI_Circle(int xc, int yc,u16 c,int r, int fill)
  * @date       :2018-08-09
  * @function   :Draw a circle of specified size at a specified location
  * @parameters :xc:the x coordinate of the Circular center
@@ -179,7 +177,7 @@ void _draw_circle_8(int xc, int yc, int x, int y, u16 c)
 								fill:1-filling,0-no filling
  * @retvalue   :None
 ******************************************************************************/
-void gui_circle(int xc, int yc, u16 c, int r, int fill)
+void GUI_Circle(int xc, int yc, u16 c, int r, int fill)
 {
 	int x = 0, y = r, yi, d;
 
@@ -226,7 +224,7 @@ void gui_circle(int xc, int yc, u16 c, int r, int fill)
 }
 
 /*****************************************************************************
- * @name       :void Draw_Triangel(u16 x0,u16 y0,u16 x1,u16 y1,u16 x2,u16 y2)
+ * @name       :void GUI_Draw_Triangel(u16 x0,u16 y0,u16 x1,u16 y1,u16 x2,u16 y2)
  * @date       :2018-08-09
  * @function   :Draw a triangle at a specified position
  * @parameters :x0:the bebinning x coordinate of the triangular edge
@@ -237,7 +235,7 @@ void gui_circle(int xc, int yc, u16 c, int r, int fill)
 								y2:the ending y coordinate of the triangular edge
  * @retvalue   :None
 ******************************************************************************/
-void Draw_Triangel(u16 x0, u16 y0, u16 x1, u16 y1, u16 x2, u16 y2)
+void GUI_Draw_Triangel(u16 x0, u16 y0, u16 x1, u16 y1, u16 x2, u16 y2)
 {
 	LCD_DrawLine(x0, y0, x1, y1);
 	LCD_DrawLine(x1, y1, x2, y2);
@@ -253,7 +251,7 @@ static void _swap(u16 *a, u16 *b)
 }
 
 /*****************************************************************************
- * @name       :void Fill_Triangel(u16 x0,u16 y0,u16 x1,u16 y1,u16 x2,u16 y2)
+ * @name       :void GUI_Fill_Triangel(u16 x0,u16 y0,u16 x1,u16 y1,u16 x2,u16 y2)
  * @date       :2018-08-09
  * @function   :filling a triangle at a specified position
  * @parameters :x0:the bebinning x coordinate of the triangular edge
@@ -264,7 +262,7 @@ static void _swap(u16 *a, u16 *b)
 								y2:the ending y coordinate of the triangular edge
  * @retvalue   :None
 ******************************************************************************/
-void Fill_Triangel(u16 x0, u16 y0, u16 x1, u16 y1, u16 x2, u16 y2)
+void GUI_Fill_Triangel(u16 x0, u16 y0, u16 x1, u16 y1, u16 x2, u16 y2)
 {
 	u16 a, b, y, last;
 	int dx01, dy01, dx02, dy02, dx12, dy12;
@@ -433,6 +431,28 @@ void LCD_ShowString(u16 x, u16 y, u8 size, u8 *p, u8 mode)
 	}
 }
 
+void LCD_ShowString2(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t size, char *p, uint16_t color)
+{
+	uint8_t x0 = x;
+	width += x;
+	height += y;
+
+	while ((*p <= '~') && (*p >= ' ')) /* 判断是不是非法字符! */
+	{
+		if (x >= width)
+		{
+			x = x0;
+			y += size;
+		}
+
+		if (y >= height)
+			break; /* 退出 */
+
+		LCD_ShowChar(x, y, color, WHITE, *p, size, 0);
+		x += size / 2;
+		p++;
+	}
+}
 /*****************************************************************************
  * @name       :u32 mypow(u8 m,u8 n)
  * @date       :2018-08-09
@@ -655,7 +675,7 @@ void GUI_DrawFont32(u16 x, u16 y, u16 fc, u16 bc, u8 *s, u8 mode)
 }
 
 /*****************************************************************************
- * @name       :void Show_Str(u16 x, u16 y, u16 fc, u16 bc, u8 *str,u8 size,u8 mode)
+ * @name       :void GUI_Show_String(u16 x, u16 y, u16 fc, u16 bc, u8 *str,u8 size,u8 mode)
  * @date       :2018-08-09
  * @function   :Display Chinese and English strings
  * @parameters :x:the bebinning x coordinate of the Chinese and English strings
@@ -667,7 +687,7 @@ void GUI_DrawFont32(u16 x, u16 y, u16 fc, u16 bc, u8 *s, u8 mode)
 								mode:0-no overlying,1-overlying
  * @retvalue   :None
 ******************************************************************************/
-void Show_Str(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
+void GUI_Show_String(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
 {
 	u16 x0 = x;
 	u8 bHz = 0;
@@ -722,7 +742,7 @@ void Show_Str(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
 }
 
 /*****************************************************************************
- * @name       :void Gui_StrCenter(u16 x, u16 y, u16 fc, u16 bc, u8 *str,u8 size,u8 mode)
+ * @name       :void GUI_StrCenter(u16 x, u16 y, u16 fc, u16 bc, u8 *str,u8 size,u8 mode)
  * @date       :2018-08-09
  * @function   :Centered display of English and Chinese strings
  * @parameters :x:the bebinning x coordinate of the Chinese and English strings
@@ -734,15 +754,15 @@ void Show_Str(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
 								mode:0-no overlying,1-overlying
  * @retvalue   :None
 ******************************************************************************/
-void Gui_StrCenter(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
+void GUI_StrCenter(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
 {
 	u16 len = strlen((const char *)str);
 	u16 x1 = (lcddev.width - len * 8) / 2;
-	Show_Str(x1, y, fc, bc, str, size, mode);
+	GUI_Show_String(x1, y, fc, bc, str, size, mode);
 }
 
 /*****************************************************************************
- * @name       :void Gui_Drawbmp16(u16 x,u16 y,const unsigned char *p)
+ * @name       :void GUI_Drawbmp16(u16 x,u16 y,const unsigned char *p)
  * @date       :2018-08-09
  * @function   :Display a 16-bit BMP image
  * @parameters :x:the bebinning x coordinate of the BMP image
@@ -750,7 +770,7 @@ void Gui_StrCenter(u16 x, u16 y, u16 fc, u16 bc, u8 *str, u8 size, u8 mode)
 								p:the start address of image array
  * @retvalue   :None
 ******************************************************************************/
-void Gui_Drawbmp16(u16 x, u16 y, const unsigned char *p)
+void GUI_Drawbmp16(u16 x, u16 y, const unsigned char *p)
 {
 	int i;
 	unsigned char picH, picL;
@@ -779,25 +799,4 @@ void lvgl_LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, lv_color_t *color)
 		Lcd_WriteData_16Bit(color->full);
 		color++;
 	}
-}
-void lcd_show_string(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t size, char *p, uint16_t color)
-{
-    uint8_t x0 = x;
-    width += x;
-    height += y;
-
-    while ((*p <= '~') && (*p >= ' '))   /* 判断是不是非法字符! */
-    {
-        if (x >= width)
-        {
-            x = x0;
-            y += size;
-        }
-
-        if (y >= height)break;  /* 退出 */
-
-        LCD_ShowChar(x,y,BLACK,WHITE,*p,size,0);
-        x += size / 2;
-        p++;
-    }
 }

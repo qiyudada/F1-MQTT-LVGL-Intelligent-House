@@ -1,16 +1,18 @@
-#include "stdio.h"
-#include "stdlib.h"
-#include "lcd.h"
 #include "touch.h"
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "lcd.h"
 #include "24cxx.h"
 #include "Delay.h"
 #include "GUI.h"
 
 _m_tp_dev tp_dev =
 	{
-		tp_init,
-		tp_scan,
-		tp_adjust,
+		.init = tp_init,
+		.scan = tp_scan,
+		.adjust = tp_adjust,
 		0,
 		0,
 		0,
@@ -210,7 +212,7 @@ static void tp_draw_touch_point(uint16_t x, uint16_t y, uint16_t color)
 	GUI_DrawPoint(x - 1, y + 1, color);
 	GUI_DrawPoint(x + 1, y - 1, color);
 	GUI_DrawPoint(x - 1, y - 1, color);
-	gui_circle(x, y, color, 6, 1); /* 画中心圈 */
+	GUI_Circle(x, y, color, 6, 1); /* 画中心圈 */
 }
 
 /**
@@ -301,8 +303,8 @@ void tp_save_adjust_data(void)
 	 * p+12用于存放标记电阻触摸屏是否校准的数据(0X0A)
 	 * 往p[12]写入0X0A. 标记已经校准过.
 	 */
-	at24cxx_write(TP_SAVE_ADDR_BASE, p, 12);			  /* 保存12个字节数据(xfac,yfac,xc,yc) */
-	at24cxx_write_one_byte(TP_SAVE_ADDR_BASE + 12, 0X0A); /* 保存校准值 */
+	AT24Cxx_Write(TP_SAVE_ADDR_BASE, p, 12);			  /* 保存12个字节数据(xfac,yfac,xc,yc) */
+	AT24Cxx_Write_One_Byte(TP_SAVE_ADDR_BASE + 12, 0X0A); /* 保存校准值 */
 }
 
 /**
@@ -320,8 +322,8 @@ uint8_t tp_get_adjust_data(void)
 	 * 写入指向tp_dev.xfac的首地址, 就可以还原写入进去的值, 而不需要理会具体的数
 	 * 据类型. 此方法适用于各种数据(包括结构体)的保存/读取(包括结构体).
 	 */
-	at24cxx_read(TP_SAVE_ADDR_BASE, p, 12);				  /* 读取12字节数据 */
-	temp = at24cxx_read_one_byte(TP_SAVE_ADDR_BASE + 12); /* 读取校准状态标记 */
+	AT24Cxx_Read(TP_SAVE_ADDR_BASE, p, 12);				  /* 读取12字节数据 */
+	temp = AT24Cxx_Read_One_Byte(TP_SAVE_ADDR_BASE + 12); /* 读取校准状态标记 */
 
 	if (temp == 0X0A)
 	{
@@ -330,9 +332,6 @@ uint8_t tp_get_adjust_data(void)
 
 	return 0;
 }
-
-/* 提示字符串 */
-char *const TP_REMIND_MSG_TBL = "Please use the stylus click the cross on the screen.The cross will always move until the screen adjustment is completed.";
 
 /**
  * @brief       提示校准结果(各个参数)
@@ -348,19 +347,19 @@ static void tp_adjust_info_show(uint16_t xy[5][2], double px, double py)
 	for (i = 0; i < 5; i++) /* 显示5个物理坐标值 */
 	{
 		sprintf(sbuf, "x%d:%d", i + 1, xy[i][0]);
-		lcd_show_string(40, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
+		LCD_ShowString2(40, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
 		sprintf(sbuf, "y%d:%d", i + 1, xy[i][1]);
-		lcd_show_string(40 + 80, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
+		LCD_ShowString2(40 + 80, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
 	}
 
 	/* 显示X/Y方向的比例因子 */
 	LCD_Fill(40, 160 + (i * 20), lcddev.width - 1, 16, WHITE); /* 清除之前的px,py显示 */
 	sprintf(sbuf, "px:%0.2f", px);
 	sbuf[7] = 0; /* 添加结束符 */
-	lcd_show_string(40, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
+	LCD_ShowString2(40, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
 	sprintf(sbuf, "py:%0.2f", py);
 	sbuf[7] = 0; /* 添加结束符 */
-	lcd_show_string(40 + 80, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
+	LCD_ShowString2(40 + 80, 160 + (i * 20), lcddev.width, lcddev.height, 16, sbuf, RED);
 }
 
 /**
@@ -454,7 +453,7 @@ void tp_adjust(void)
 				tp_dev.yc = pxy[4][1]; /* Y轴,物理中心坐标 */
 
 				LCD_Clear(WHITE);																			/* 清屏 */
-				lcd_show_string(35, 110, lcddev.width, lcddev.height, 16, "Touch Screen Adjust OK!", BLUE); /* 校正完成 */
+				LCD_ShowString2(35, 110, lcddev.width, lcddev.height, 16, "Touch Screen Adjust OK!", BLUE); /* 校正完成 */
 				Delay_ms(1000);
 				tp_save_adjust_data();
 
@@ -486,7 +485,7 @@ uint8_t tp_init(void)
 	tp_dev.touchtype = 0;				   /* 默认设置(电阻屏 & 竖屏) */
 	tp_dev.touchtype |= lcddev.dir & 0X01; /* 根据LCD判定是横屏还是竖屏 */
 
-	at24cxx_init(); /* 初始化24CXX */
+	AT24Cxx_Init(); /* 初始化24CXX */
 
 	if (tp_get_adjust_data())
 	{

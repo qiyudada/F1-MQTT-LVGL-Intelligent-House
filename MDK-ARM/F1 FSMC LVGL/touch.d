@@ -1,7 +1,6 @@
 f1 fsmc lvgl\touch.o: ..\BSP\TOUCH\touch.c
-f1 fsmc lvgl\touch.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
-f1 fsmc lvgl\touch.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
-f1 fsmc lvgl\touch.o: ../BSP/LCD/lcd.h
+f1 fsmc lvgl\touch.o: ..\BSP\TOUCH\touch.h
+f1 fsmc lvgl\touch.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\touch.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -37,9 +36,11 @@ f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
 f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\touch.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+f1 fsmc lvgl\touch.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h
+f1 fsmc lvgl\touch.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdlib.h
+f1 fsmc lvgl\touch.o: ../BSP/LCD/lcd.h
 f1 fsmc lvgl\touch.o: ../Core/Inc/main.h
 f1 fsmc lvgl\touch.o: ../SYSTEM/Delay/Delay.h
-f1 fsmc lvgl\touch.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\touch.o: ../LVGL/lvgl.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/misc/lv_log.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/misc/../lv_conf_internal.h
@@ -168,6 +169,5 @@ f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/colorwheel/lv_colorwheel.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/span/lv_span.h
-f1 fsmc lvgl\touch.o: ..\BSP\TOUCH\touch.h
 f1 fsmc lvgl\touch.o: ../BSP/AT24Cxx/24cxx.h
 f1 fsmc lvgl\touch.o: ../BSP/LCD/GUI.h
