@@ -65,7 +65,7 @@ void HardwareInitTask(void *argument)
         {
             QI_DEBUG("LightSensor Init error!\r\n");
         }
-        AT24C02_Init();
+        
         /*********************LVGL INITATION**********************/
         lv_init();
         lv_port_disp_init();

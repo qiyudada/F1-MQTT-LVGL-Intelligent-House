@@ -131,7 +131,7 @@ f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/led/lv_led.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\lv_port_indev.o: ../LVGL/src/extra/widgets/span/lv_span.h
 f1 fsmc lvgl\lv_port_indev.o: ../BSP/TOUCH/touch.h
-f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/main.h
+f1 fsmc lvgl\lv_port_indev.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 f1 fsmc lvgl\lv_port_indev.o: ../Core/Inc/stm32f1xx_hal_conf.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -165,5 +165,4 @@ f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 f1 fsmc lvgl\lv_port_indev.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-f1 fsmc lvgl\lv_port_indev.o: ../SYSTEM/SYS/sys.h
 f1 fsmc lvgl\lv_port_indev.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\stdio.h

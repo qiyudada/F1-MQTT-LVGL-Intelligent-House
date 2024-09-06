@@ -1,186 +1,184 @@
+/**
+ ****************************************************************************************************
+ * @file        24cxx.c
+ * @author      正点原子团队(ALIENTEK)
+ * @version     V1.0
+ * @date        2020-04-24
+ * @brief       24CXX 驱动代码
+ * @license     Copyright (c) 2020-2032, 广州市星翼电子科技有限公司
+ ****************************************************************************************************
+ * @attention
+ *
+ * 实验平台:正点原子 STM32F103开发板
+ * 在线视频:www.yuanzige.com
+ * 技术论坛:www.openedv.com
+ * 公司网址:www.alientek.com
+ * 购买地址:openedv.taobao.com
+ *
+ * 修改说明
+ * V1.0 20200424
+ * 第一次发布
+ *
+ ****************************************************************************************************
+ */
+
+#include "myiic.h"
 #include "24cxx.h"
 #include "Delay.h"
 
-#define AT24_CLK_ENABLE __HAL_RCC_GPIOB_CLK_ENABLE()
 
-iic_bus_t AT24_bus = {
-	.IIC_SDA_PORT = GPIOB,
-	.IIC_SCL_PORT = GPIOB,
-	.IIC_SDA_PIN = GPIO_PIN_10,
-	.IIC_SCL_PIN = GPIO_PIN_11,
-};
-
-/*****************************************************************************
- * @name       :u8 AT24CXX_ReadOneByte(u16 ReadAddr)
- * @date       :2018-08-09
- * @function   :Read out a data at a specified address in the AT24CXX
- * @parameters :ReadAddr:the address of start reading
- * @retvalue   :Read data
- ******************************************************************************/
-u8 AT24CXX_ReadOneByte(u16 ReadAddr)
+/**
+ * @brief       初始化IIC接口
+ * @param       无
+ * @retval      无
+ */
+void at24cxx_init(void)
 {
-	u8 temp = 0;
-	IICStart(&AT24_bus);
-	if (EE_TYPE > AT24C16)
-	{
-		IICSendByte(&AT24_bus,0XA0);
-		IICWaitAck(&AT24_bus);
-		IICSendByte(&AT24_bus,ReadAddr >> 8);
-		IICWaitAck(&AT24_bus);
-	}
-	else
-		IICSendByte(&AT24_bus,0XA0 + ((ReadAddr / 256) << 1));
-
-	IICWaitAck(&AT24_bus);
-	IICSendByte(&AT24_bus,ReadAddr % 256);
-	IICWaitAck(&AT24_bus);
-	IICStart(&AT24_bus);
-	IICSendByte(&AT24_bus,0XA0);
-	IICWaitAck(&AT24_bus);
-	temp = IICReceiveByte(&AT24_bus);
-	IICStop(&AT24_bus);
-	return temp;
+    iic_init();
 }
 
-/*****************************************************************************
- * @name       :void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite)
- * @date       :2018-08-09
- * @function   :Write a data at a specified address in AT24CXX
- * @parameters :WriteAddr:the destination address for writing data
-								DataToWrite:Data to be written
- * @retvalue   :None
-******************************************************************************/
-void AT24CXX_WriteOneByte(u16 WriteAddr, u8 DataToWrite)
+/**
+ * @brief       在AT24CXX指定地址读出一个数据
+ * @param       readaddr: 开始读数的地址
+ * @retval      读到的数据
+ */
+uint8_t at24cxx_read_one_byte(uint16_t addr)
 {
-	IICStart(&AT24_bus);
-	if (EE_TYPE > AT24C16)
-	{
-		IICSendByte(&AT24_bus,0XA0);
-		IICWaitAck(&AT24_bus);
-		IICSendByte(&AT24_bus,WriteAddr >> 8);
-		IICWaitAck(&AT24_bus);
-	}
-	else
-	{
-		IICSendByte(&AT24_bus,0XA0 + ((WriteAddr / 256) << 1));
-	}
-	IICWaitAck(&AT24_bus);
-	IICSendByte(&AT24_bus,WriteAddr % 256);
-	IICWaitAck(&AT24_bus);
-	IICSendByte(&AT24_bus,DataToWrite);
-	IICWaitAck(&AT24_bus);
-	IICStop(&AT24_bus);
-	Delay_ms(10);
+    uint8_t temp = 0;
+    iic_start();                /* 发送起始信号 */
+
+    /* 根据不同的24CXX型号, 发送高位地址
+     * 1, 24C16以上的型号, 分2个字节发送地址
+     * 2, 24C16及以下的型号, 分1个低字节地址 + 占用器件地址的bit1~bit3位 用于表示高位地址, 最多11位地址
+     *    对于24C01/02, 其器件地址格式(8bit)为: 1  0  1  0  A2  A1  A0  R/W
+     *    对于24C04,    其器件地址格式(8bit)为: 1  0  1  0  A2  A1  a8  R/W
+     *    对于24C08,    其器件地址格式(8bit)为: 1  0  1  0  A2  a9  a8  R/W
+     *    对于24C16,    其器件地址格式(8bit)为: 1  0  1  0  a10 a9  a8  R/W
+     *    R/W      : 读/写控制位 0,表示写; 1,表示读;
+     *    A0/A1/A2 : 对应器件的1,2,3引脚(只有24C01/02/04/8有这些脚)
+     *    a8/a9/a10: 对应存储整列的高位地址, 11bit地址最多可以表示2048个位置,可以寻址24C16及以内的型号
+     */    
+    if (EE_TYPE > AT24C16)      /* 24C16以上的型号, 分2个字节发送地址 */
+    {
+        iic_send_byte(0XA0);    /* 发送写命令, IIC规定最低位是0, 表示写入 */
+        iic_wait_ack();         /* 每次发送完一个字节,都要等待ACK */
+        iic_send_byte(addr >> 8);/* 发送高字节地址 */
+    }
+    else 
+    {
+        iic_send_byte(0XA0 + ((addr >> 8) << 1));   /* 发送器件 0XA0 + 高位a8/a9/a10地址,写数据 */
+    }
+    
+    iic_wait_ack();             /* 每次发送完一个字节,都要等待ACK */
+    iic_send_byte(addr % 256);  /* 发送低位地址 */
+    iic_wait_ack();             /* 等待ACK, 此时地址发送完成了 */
+    
+    iic_start();                /* 重新发送起始信号 */ 
+    iic_send_byte(0XA1);        /* 进入接收模式, IIC规定最低位是0, 表示读取 */
+    iic_wait_ack();             /* 每次发送完一个字节,都要等待ACK */
+    temp = iic_read_byte(0);    /* 接收一个字节数据 */
+    iic_stop();                 /* 产生一个停止条件 */
+    return temp;
 }
 
-/*****************************************************************************
- * @name       :void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)
- * @date       :2018-08-09
- * @function   :begins to write data with a length of Len
-								at the specified address in the AT24CXX
- * @parameters :WriteAddr:the address to start writing
-								DataToWrite:the header address of the data array
-								Len:Length of data to be written(2 or 4)
- * @retvalue   :None
-******************************************************************************/
-void AT24CXX_WriteLenByte(u16 WriteAddr, u32 DataToWrite, u8 Len)
+/**
+ * @brief       在AT24CXX指定地址写入一个数据
+ * @param       addr: 写入数据的目的地址
+ * @param       data: 要写入的数据
+ * @retval      无
+ */
+void at24cxx_write_one_byte(uint16_t addr, uint8_t data)
 {
-	u8 t;
-	for (t = 0; t < Len; t++)
-	{
-		AT24CXX_WriteOneByte(WriteAddr + t, (DataToWrite >> (8 * t)) & 0xff);
-	}
+    /* 原理说明见:at24cxx_read_one_byte函数, 本函数完全类似 */
+    iic_start();                /* 发送起始信号 */
+
+    if (EE_TYPE > AT24C16)      /* 24C16以上的型号, 分2个字节发送地址 */
+    {
+        iic_send_byte(0XA0);    /* 发送写命令, IIC规定最低位是0, 表示写入 */
+        iic_wait_ack();         /* 每次发送完一个字节,都要等待ACK */
+        iic_send_byte(addr >> 8);/* 发送高字节地址 */
+    }
+    else 
+    {
+        iic_send_byte(0XA0 + ((addr >> 8) << 1));   /* 发送器件 0XA0 + 高位a8/a9/a10地址,写数据 */
+    }
+    
+    iic_wait_ack();             /* 每次发送完一个字节,都要等待ACK */
+    iic_send_byte(addr % 256);  /* 发送低位地址 */
+    iic_wait_ack();             /* 等待ACK, 此时地址发送完成了 */
+    
+    /* 因为写数据的时候,不需要进入接收模式了,所以这里不用重新发送起始信号了 */
+    iic_send_byte(data);        /* 发送1字节 */
+    iic_wait_ack();             /* 等待ACK */
+    iic_stop();                 /* 产生一个停止条件 */
+    Delay_ms(10);               /* 注意: EEPROM 写入比较慢,必须等到10ms后再写下一个字节 */
+}
+ 
+/**
+ * @brief       检查AT24CXX是否正常
+ *   @note      检测原理: 在器件的末地址写如0X55, 然后再读取, 如果读取值为0X55
+ *              则表示检测正常. 否则,则表示检测失败.
+ *
+ * @param       无
+ * @retval      检测结果
+ *              0: 检测成功
+ *              1: 检测失败
+ */
+uint8_t at24cxx_check(void)
+{
+    uint8_t temp;
+    uint16_t addr = EE_TYPE;
+    temp = at24cxx_read_one_byte(addr); /* 避免每次开机都写AT24CXX */
+
+    if (temp == 0X55)   /* 读取数据正常 */
+    {
+        return 0;
+    }
+    else    /* 排除第一次初始化的情况 */
+    {
+        at24cxx_write_one_byte(addr, 0X55); /* 先写入数据 */
+        temp = at24cxx_read_one_byte(255);  /* 再读取数据 */
+
+        if (temp == 0X55)return 0;
+    }
+
+    return 1;
 }
 
-/*****************************************************************************
- * @name       :u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len)
- * @date       :2018-08-09
- * @function   :begins to read data with a length of Len
-								at the specified address in the AT24CXX,
-								used to read 16bits or 32bits data
- * @parameters :ReadAddr:the address of start reading
-								len:Length of data to be read(2 or 4)
- * @retvalue   :Read data
-******************************************************************************/
-u32 AT24CXX_ReadLenByte(u16 ReadAddr, u8 Len)
+/**
+ * @brief       在AT24CXX里面的指定地址开始读出指定个数的数据
+ * @param       addr    : 开始读出的地址 对24c02为0~255
+ * @param       pbuf    : 数据数组首地址
+ * @param       datalen : 要读出数据的个数
+ * @retval      无
+ */
+void at24cxx_read(uint16_t addr, uint8_t *pbuf, uint16_t datalen)
 {
-	u8 t;
-	u32 temp = 0;
-	for (t = 0; t < Len; t++)
-	{
-		temp <<= 8;
-		temp += AT24CXX_ReadOneByte(ReadAddr + Len - t - 1);
-	}
-	return temp;
+    while (datalen--)
+    {
+        *pbuf++ = at24cxx_read_one_byte(addr++);
+    }
 }
 
-/*****************************************************************************
- * @name       :u8 AT24CXX_Check(void)
- * @date       :2018-08-09
- * @function   :Check that AT24CXX is normal or not,
-								Use AT24CXX's last address (255) to store the token,
-								if use the other 24C series, this address needs to be modified,
- * @parameters :None
- * @retvalue   :0-check successfully
-								1-check failed
-******************************************************************************/
-u8 AT24CXX_Check(void)
+/**
+ * @brief       在AT24CXX里面的指定地址开始写入指定个数的数据
+ * @param       addr    : 开始写入的地址 对24c02为0~255
+ * @param       pbuf    : 数据数组首地址
+ * @param       datalen : 要写入数据的个数
+ * @retval      无
+ */
+void at24cxx_write(uint16_t addr, uint8_t *pbuf, uint16_t datalen)
 {
-	u8 temp;
-	temp = AT24CXX_ReadOneByte(EE_TYPE);
-	if (temp == 0xAB)
-		return 0;
-	else
-	{
-		AT24CXX_WriteOneByte(EE_TYPE, 0xAB);
-		temp = AT24CXX_ReadOneByte(EE_TYPE);
-		if (temp == 0xAB)
-			return 0;
-	}
-	return 1;
+    while (datalen--)
+    {
+        at24cxx_write_one_byte(addr, *pbuf);
+        addr++;
+        pbuf++;
+    }
 }
 
-/*****************************************************************************
- * @name       :void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead)
- * @date       :2018-08-09
- * @function   :begins to read out the specified number of data at
-								the specified address in the AT24CXX
- * @parameters :ReadAddr:the address of start reading,it is 0~255 for 24c02
-								pBuffer:the header address of the data array
-								NumToRead:Number of data to be read
- * @retvalue   :None
-******************************************************************************/
-void AT24CXX_Read(u16 ReadAddr, u8 *pBuffer, u16 NumToRead)
-{
-	while (NumToRead)
-	{
-		*pBuffer++ = AT24CXX_ReadOneByte(ReadAddr++);
-		NumToRead--;
-	}
-}
 
-/*****************************************************************************
- * @name       :void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite)
- * @date       :2018-08-09
- * @function   :begins to write the specified number of data at
-								the specified address in the AT24CXX
- * @parameters :WriteAddr:the address of start writing,it is 0~255 for 24c02
-								pBuffer:the header address of the data array
-								NumToRead:Number of data to be writen
- * @retvalue   :None
-******************************************************************************/
-void AT24CXX_Write(u16 WriteAddr, u8 *pBuffer, u16 NumToWrite)
-{
-	while (NumToWrite--)
-	{
-		AT24CXX_WriteOneByte(WriteAddr, *pBuffer);
-		WriteAddr++;
-		pBuffer++;
-	}
-}
 
-void AT24C02_Init(void)
-{
-	AT24_CLK_ENABLE;
-	IICInit(&AT24_bus);
-}
+
+
+

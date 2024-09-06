@@ -44,7 +44,7 @@
 "f1 fsmc lvgl\hal_uart.o"
 "f1 fsmc lvgl\sys.o"
 "f1 fsmc lvgl\uart_redefine.o"
-"f1 fsmc lvgl\softiic.o"
+"f1 fsmc lvgl\myiic.o"
 "f1 fsmc lvgl\24cxx.o"
 "f1 fsmc lvgl\atcommand.o"
 "f1 fsmc lvgl\wifi_uart_irq.o"

@@ -780,3 +780,24 @@ void lvgl_LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, lv_color_t *color)
 		color++;
 	}
 }
+void lcd_show_string(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t size, char *p, uint16_t color)
+{
+    uint8_t x0 = x;
+    width += x;
+    height += y;
+
+    while ((*p <= '~') && (*p >= ' '))   /* 判断是不是非法字符! */
+    {
+        if (x >= width)
+        {
+            x = x0;
+            y += size;
+        }
+
+        if (y >= height)break;  /* 退出 */
+
+        LCD_ShowChar(x,y,BLACK,WHITE,*p,size,0);
+        x += size / 2;
+        p++;
+    }
+}

@@ -854,8 +854,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\SYSTEM\Soft_IIC\SoftIIC.c</PathWithFileName>
-      <FilenameWithoutPath>SoftIIC.c</FilenameWithoutPath>
+      <PathWithFileName>..\SYSTEM\IIC\myiic.c</PathWithFileName>
+      <FilenameWithoutPath>myiic.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
