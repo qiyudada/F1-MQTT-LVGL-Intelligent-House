@@ -1,6 +1,15 @@
 #include "24cxx.h"
 #include "Delay.h"
 
+#define AT24_CLK_ENABLE __HAL_RCC_GPIOB_CLK_ENABLE()
+
+iic_bus_t AT24_bus = {
+	.IIC_SDA_PORT = GPIOB,
+	.IIC_SCL_PORT = GPIOB,
+	.IIC_SDA_PIN = GPIO_PIN_10,
+	.IIC_SCL_PIN = GPIO_PIN_11,
+};
+
 /*****************************************************************************
  * @name       :u8 AT24CXX_ReadOneByte(u16 ReadAddr)
  * @date       :2018-08-09
@@ -11,25 +20,25 @@
 u8 AT24CXX_ReadOneByte(u16 ReadAddr)
 {
 	u8 temp = 0;
-	IIC_Start();
+	IICStart(&AT24_bus);
 	if (EE_TYPE > AT24C16)
 	{
-		IIC_Send_Byte(0XA0);
-		IIC_Wait_Ack();
-		IIC_Send_Byte(ReadAddr >> 8);
-		IIC_Wait_Ack();
+		IICSendByte(&AT24_bus,0XA0);
+		IICWaitAck(&AT24_bus);
+		IICSendByte(&AT24_bus,ReadAddr >> 8);
+		IICWaitAck(&AT24_bus);
 	}
 	else
-		IIC_Send_Byte(0XA0 + ((ReadAddr / 256) << 1));
+		IICSendByte(&AT24_bus,0XA0 + ((ReadAddr / 256) << 1));
 
-	IIC_Wait_Ack();
-	IIC_Send_Byte(ReadAddr % 256);
-	IIC_Wait_Ack();
-	IIC_Start();
-	IIC_Send_Byte(0XA1);
-	IIC_Wait_Ack();
-	temp = IIC_Read_Byte(0);
-	IIC_Stop();
+	IICWaitAck(&AT24_bus);
+	IICSendByte(&AT24_bus,ReadAddr % 256);
+	IICWaitAck(&AT24_bus);
+	IICStart(&AT24_bus);
+	IICSendByte(&AT24_bus,0XA0);
+	IICWaitAck(&AT24_bus);
+	temp = IICReceiveByte(&AT24_bus);
+	IICStop(&AT24_bus);
 	return temp;
 }
 
@@ -43,24 +52,24 @@ u8 AT24CXX_ReadOneByte(u16 ReadAddr)
 ******************************************************************************/
 void AT24CXX_WriteOneByte(u16 WriteAddr, u8 DataToWrite)
 {
-	IIC_Start();
+	IICStart(&AT24_bus);
 	if (EE_TYPE > AT24C16)
 	{
-		IIC_Send_Byte(0XA0);
-		IIC_Wait_Ack();
-		IIC_Send_Byte(WriteAddr >> 8);
-		IIC_Wait_Ack();
+		IICSendByte(&AT24_bus,0XA0);
+		IICWaitAck(&AT24_bus);
+		IICSendByte(&AT24_bus,WriteAddr >> 8);
+		IICWaitAck(&AT24_bus);
 	}
 	else
 	{
-		IIC_Send_Byte(0XA0 + ((WriteAddr / 256) << 1));
+		IICSendByte(&AT24_bus,0XA0 + ((WriteAddr / 256) << 1));
 	}
-	IIC_Wait_Ack();
-	IIC_Send_Byte(WriteAddr % 256);
-	IIC_Wait_Ack();
-	IIC_Send_Byte(DataToWrite);
-	IIC_Wait_Ack();
-	IIC_Stop();
+	IICWaitAck(&AT24_bus);
+	IICSendByte(&AT24_bus,WriteAddr % 256);
+	IICWaitAck(&AT24_bus);
+	IICSendByte(&AT24_bus,DataToWrite);
+	IICWaitAck(&AT24_bus);
+	IICStop(&AT24_bus);
 	Delay_ms(10);
 }
 
@@ -118,14 +127,14 @@ u32 AT24CXX_ReadLenByte(u16 ReadAddr, u8 Len)
 u8 AT24CXX_Check(void)
 {
 	u8 temp;
-	temp = AT24CXX_ReadOneByte(255);
-	if (temp == 0X55)
+	temp = AT24CXX_ReadOneByte(EE_TYPE);
+	if (temp == 0xAB)
 		return 0;
 	else
 	{
-		AT24CXX_WriteOneByte(255, 0X55);
-		temp = AT24CXX_ReadOneByte(255);
-		if (temp == 0X55)
+		AT24CXX_WriteOneByte(EE_TYPE, 0xAB);
+		temp = AT24CXX_ReadOneByte(EE_TYPE);
+		if (temp == 0xAB)
 			return 0;
 	}
 	return 1;
@@ -168,4 +177,10 @@ void AT24CXX_Write(u16 WriteAddr, u8 *pBuffer, u16 NumToWrite)
 		WriteAddr++;
 		pBuffer++;
 	}
+}
+
+void AT24C02_Init(void)
+{
+	AT24_CLK_ENABLE;
+	IICInit(&AT24_bus);
 }

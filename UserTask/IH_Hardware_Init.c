@@ -25,7 +25,8 @@ void HardwareInitTask(void *argument)
         /*!!! Any about Mutex/Semaphore/Queue/Timer/etc. should be initated out of vTasksuspend line!!!*/
         Uart3_Lock_Init();
         ATInit();
-        
+
+        /*ADC Calibration*/
         HAL_ADCEx_Calibration_Start(&hadc1);
         HAL_ADCEx_Calibration_Start(&hadc2);
 
@@ -64,6 +65,7 @@ void HardwareInitTask(void *argument)
         {
             QI_DEBUG("LightSensor Init error!\r\n");
         }
+        AT24C02_Init();
         /*********************LVGL INITATION**********************/
         lv_init();
         lv_port_disp_init();

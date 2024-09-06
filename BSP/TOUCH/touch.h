@@ -14,6 +14,7 @@
 /*TP_Save_Adjdata*/
 #define SAVE_ADDR_BASE 40
 
+
 typedef struct
 {
 	u8 (*init)(void); // initation

@@ -44,7 +44,8 @@
         "ui_events.h": "c",
         "mq2.h": "c",
         "cmath": "c",
-        "*.tcc": "c"
+        "*.tcc": "c",
+        "softiic.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

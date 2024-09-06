@@ -6,7 +6,6 @@
 #include "24cxx.h"
 #include "GUI.h"
 
-const u8 *TP_REMIND_MSG_TBL = "Please use the stylus click the cross on the screen.The cross will always move until the screen adjustment is completed.";
 
 _m_tp_dev tp_dev =
 	{

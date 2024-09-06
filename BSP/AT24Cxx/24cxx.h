@@ -1,6 +1,8 @@
 #ifndef __24CXX_H
 #define __24CXX_H
-#include "myiic.h"
+
+#include "SoftIIC.h"
+#include "sys.h"
 
 #define AT24C01 127
 #define AT24C02 255
@@ -15,6 +17,7 @@
 /*AT24CXX_WriteOneByte()*/
 #define EE_TYPE AT24C02
 
+void AT24C02_Init(void);
 u8 AT24CXX_ReadOneByte(u16 ReadAddr);
 void AT24CXX_WriteOneByte(u16 WriteAddr, u8 DataToWrite);
 void AT24CXX_WriteLenByte(u16 WriteAddr, u32 DataToWrite, u8 Len);

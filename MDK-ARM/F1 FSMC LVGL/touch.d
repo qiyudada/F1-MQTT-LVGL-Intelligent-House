@@ -171,5 +171,5 @@ f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 f1 fsmc lvgl\touch.o: ../LVGL/src/extra/widgets/span/lv_span.h
 f1 fsmc lvgl\touch.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h
 f1 fsmc lvgl\touch.o: ../BSP/AT24Cxx/24cxx.h
-f1 fsmc lvgl\touch.o: ../SYSTEM/MyIIC/myiic.h
+f1 fsmc lvgl\touch.o: ..\SYSTEM\Soft_IIC\SoftIIC.h
 f1 fsmc lvgl\touch.o: ../BSP/LCD/GUI.h
