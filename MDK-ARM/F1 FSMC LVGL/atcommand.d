@@ -221,5 +221,5 @@ f1 fsmc lvgl\atcommand.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/tim
 f1 fsmc lvgl\atcommand.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\atcommand.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\atcommand.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\atcommand.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\atcommand.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\atcommand.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h

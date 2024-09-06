@@ -221,5 +221,5 @@ f1 fsmc lvgl\ui_events.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/tim
 f1 fsmc lvgl\ui_events.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\ui_events.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\ui_events.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\ui_events.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\ui_events.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\ui_events.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h

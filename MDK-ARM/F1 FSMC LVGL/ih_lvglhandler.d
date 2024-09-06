@@ -222,5 +222,5 @@ f1 fsmc lvgl\ih_lvglhandler.o: ../Middlewares/Third_Party/FreeRTOS/Source/includ
 f1 fsmc lvgl\ih_lvglhandler.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\ih_lvglhandler.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\ih_lvglhandler.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\ih_lvglhandler.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\ih_lvglhandler.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\ih_lvglhandler.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h

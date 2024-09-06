@@ -222,5 +222,5 @@ f1 fsmc lvgl\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/time
 f1 fsmc lvgl\freertos.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\freertos.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\freertos.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\freertos.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\freertos.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\freertos.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h

@@ -221,7 +221,7 @@ f1 fsmc lvgl\ih_task_init.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/
 f1 fsmc lvgl\ih_task_init.o: ../BSP/LightSensor/Lightsensor.h
 f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/adc.h
 f1 fsmc lvgl\ih_task_init.o: ../Core/Inc/rtc.h
-f1 fsmc lvgl\ih_task_init.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\ih_task_init.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\ih_task_init.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_Hardware_Init.h
 f1 fsmc lvgl\ih_task_init.o: ..\UserTask\IH_MqttTask.h

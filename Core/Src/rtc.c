@@ -38,12 +38,12 @@ void MX_RTC_Init(void)
   RTC_DateTypeDef DateToUpdate = {0};
 
   /* USER CODE BEGIN RTC_Init 1 */
-  __HAL_RCC_BKP_CLK_ENABLE(); // �??启后备区域时�??
-  __HAL_RCC_PWR_CLK_ENABLE(); // �??启电源时�??
+  __HAL_RCC_BKP_CLK_ENABLE(); // �???启后备区域时�???
+  __HAL_RCC_PWR_CLK_ENABLE(); // �???启电源时�???
   /* USER CODE END RTC_Init 1 */
 
   /** Initialize RTC Only
-   */
+  */
   hrtc.Instance = RTC;
   hrtc.Init.AsynchPrediv = RTC_AUTO_1_SECOND;
   hrtc.Init.OutPut = RTC_OUTPUTSOURCE_NONE;
@@ -55,28 +55,28 @@ void MX_RTC_Init(void)
   /* USER CODE BEGIN Check_RTC_BKUP */
   if (HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) != 0x5051)
   {
-    /* USER CODE END Check_RTC_BKUP */
+  /* USER CODE END Check_RTC_BKUP */
 
-    /** Initialize RTC and set the Time and Date
-     */
-    sTime.Hours = 0x16;
-    sTime.Minutes = 0x46;
-    sTime.Seconds = 0x0;
+  /** Initialize RTC and set the Time and Date
+  */
+  sTime.Hours = 0x16;
+  sTime.Minutes = 0x46;
+  sTime.Seconds = 0x0;
 
-    if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
-    {
-      Error_Handler();
-    }
-    DateToUpdate.WeekDay = RTC_WEEKDAY_TUESDAY;
-    DateToUpdate.Month = RTC_MONTH_AUGUST;
-    DateToUpdate.Date = 0x27;
-    DateToUpdate.Year = 0x24;
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  DateToUpdate.WeekDay = RTC_WEEKDAY_TUESDAY;
+  DateToUpdate.Month = RTC_MONTH_AUGUST;
+  DateToUpdate.Date = 0x27;
+  DateToUpdate.Year = 0x24;
 
-    if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BCD) != HAL_OK)
-    {
-      Error_Handler();
-    }
-    /* USER CODE BEGIN RTC_Init 2 */
+  if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BCD) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN RTC_Init 2 */
     __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC);
     datebuff = DateToUpdate;
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x5051);
@@ -99,16 +99,17 @@ void MX_RTC_Init(void)
     __HAL_RTC_SECOND_ENABLE_IT(&hrtc, RTC_IT_SEC);
   }
   /* USER CODE END RTC_Init 2 */
+
 }
 
-void HAL_RTC_MspInit(RTC_HandleTypeDef *rtcHandle)
+void HAL_RTC_MspInit(RTC_HandleTypeDef* rtcHandle)
 {
 
-  if (rtcHandle->Instance == RTC)
+  if(rtcHandle->Instance==RTC)
   {
-    /* USER CODE BEGIN RTC_MspInit 0 */
+  /* USER CODE BEGIN RTC_MspInit 0 */
 
-    /* USER CODE END RTC_MspInit 0 */
+  /* USER CODE END RTC_MspInit 0 */
     HAL_PWR_EnableBkUpAccess();
     /* Enable BKP CLK enable for backup registers */
     __HAL_RCC_BKP_CLK_ENABLE();
@@ -118,28 +119,28 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef *rtcHandle)
     /* RTC interrupt Init */
     HAL_NVIC_SetPriority(RTC_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(RTC_IRQn);
-    /* USER CODE BEGIN RTC_MspInit 1 */
+  /* USER CODE BEGIN RTC_MspInit 1 */
 
-    /* USER CODE END RTC_MspInit 1 */
+  /* USER CODE END RTC_MspInit 1 */
   }
 }
 
-void HAL_RTC_MspDeInit(RTC_HandleTypeDef *rtcHandle)
+void HAL_RTC_MspDeInit(RTC_HandleTypeDef* rtcHandle)
 {
 
-  if (rtcHandle->Instance == RTC)
+  if(rtcHandle->Instance==RTC)
   {
-    /* USER CODE BEGIN RTC_MspDeInit 0 */
+  /* USER CODE BEGIN RTC_MspDeInit 0 */
 
-    /* USER CODE END RTC_MspDeInit 0 */
+  /* USER CODE END RTC_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_RTC_DISABLE();
 
     /* RTC interrupt Deinit */
     HAL_NVIC_DisableIRQ(RTC_IRQn);
-    /* USER CODE BEGIN RTC_MspDeInit 1 */
+  /* USER CODE BEGIN RTC_MspDeInit 1 */
 
-    /* USER CODE END RTC_MspDeInit 1 */
+  /* USER CODE END RTC_MspDeInit 1 */
   }
 }
 

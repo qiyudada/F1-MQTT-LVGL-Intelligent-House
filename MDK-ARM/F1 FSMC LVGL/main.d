@@ -227,5 +227,5 @@ f1 fsmc lvgl\main.o: ../BSP/DTH11/DTH11.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 f1 fsmc lvgl\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 f1 fsmc lvgl\main.o: ../BSP/LightSensor/Lightsensor.h
-f1 fsmc lvgl\main.o: ..\BSP\MQ2\MQ2.h
+f1 fsmc lvgl\main.o: ../BSP/MQ2/MQ2.h
 f1 fsmc lvgl\main.o: D:\Keil\ARM Start\ARM\ARMCC\Bin\..\include\math.h
