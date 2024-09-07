@@ -1,9 +1,4 @@
 #include "Dth11.h"
-#include "usart.h"
-#include "platform_mutex.h"
-#include "mqttclient.h"
-#include "ATcommand.h"
-#include "semphr.h"
 #include "Lcd.h"
 
 

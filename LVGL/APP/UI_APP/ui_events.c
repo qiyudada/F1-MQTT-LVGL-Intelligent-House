@@ -66,7 +66,7 @@ void Get_From_Day(lv_event_t *e)
 void Get_from_Light(lv_event_t *e)
 {
 	static char LightSensor_buf[8];
-	sprintf(LightSensor_buf, "%d LUX", IH_Family.Light.Light_Value);
+	sprintf(LightSensor_buf, "%dLUX", IH_Family.Light.Light_Value);
 	lv_label_set_text_fmt(e->target, LightSensor_buf);
 }
 

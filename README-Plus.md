@@ -207,6 +207,14 @@ lv_event_send(ui_TempLabel, LV_EVENT_VALUE_CHANGED, NULL);//没有它事件程�
 
 <img src="D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240903233752871.png" alt="image-20240903233752871" style="zoom:50%;" />
 
+### 4.基于IIC1的硬件使用的仪器无法响应
+
+![image-20240906225329957](D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240906225329957.png)
+
+![image-20240906225400304](D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240906225400304.png)
+
+![image-20240906225410058](D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240906225410058.png)
+
 ## 4.总结
 
 程序架构大伙有兴趣可以自己下载看看，如果有什么不懂的和建议也欢迎私信我，应用设计的程序也是挺简单的，难就难在底层驱动，还有就是内存太小了，无法做到三个屏幕切换的境地了，还是建议大伙首先去用F4或者H7之类的开发板。
