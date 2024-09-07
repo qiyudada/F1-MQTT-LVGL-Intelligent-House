@@ -83,7 +83,10 @@ extern "C"
     typedef struct
     {
         char *Ip_Port;
-        char *Server_Ip;
+        char *Server_Host;
+        char *Client_ID;
+        char *User_Name;
+        char *User_Password;
         char *User_Topic;
         mqtt_client_t *client;
         mqtt_message_t msg;

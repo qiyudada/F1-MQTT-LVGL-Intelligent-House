@@ -67,7 +67,7 @@ int AT_SendCmd(char *cmd, char *resp, int resp_len, int timeout)
         if (!err && resp)
         {
             /* copy response data */
-            memcpy(resp, AT_resp, resp_len > AT_RESP_LEN ? AT_RESP_LEN : resp_len);
+            memcpy(resp, AT_resp, (resp_len > AT_RESP_LEN) ? AT_RESP_LEN : resp_len);
         }
         return err;
     }

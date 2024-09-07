@@ -23,42 +23,42 @@
 osThreadId_t HardwareInit_TaskHandle;
 const osThreadAttr_t HardwareInitTask_attributes = {
     .name = "HardwareInitTask",
-    .stack_size = 128 * 15,
+    .stack_size = 128 * 10,
     .priority = (osPriority_t)osPriorityHigh3,
 };
 /*ATCommand Receive*/
 osThreadId_t ATRece_TaskHandle;
 const osThreadAttr_t ATReceTask_attributes = {
     .name = "AtReceTask",
-    .stack_size = 128 * 5,
+    .stack_size = 128 * 10,
     .priority = (osPriority_t)osPriorityHigh1,
 };
 /*Mqtt Client Initation*/
 osThreadId_t MQTTInit_TaskHandle;
 const osThreadAttr_t MqttInitTask_attributes = {
     .name = "MqttInitTask",
-    .stack_size = 128 * 8,
+    .stack_size = 128 * 10,
     .priority = (osPriority_t)osPriorityHigh2,
 };
 /*LVGL Handler Task*/
 osThreadId_t LvHandler_TaskHandle;
 const osThreadAttr_t LvHandlerTask_attributes = {
     .name = "LvHandlerTask",
-    .stack_size = 128 * 20,
+    .stack_size = 128 * 16,
     .priority = (osPriority_t)osPriorityLow,
 };
 /*Message Upload Task*/
 osThreadId_t MessageUpload_TaskHandle;
 const osThreadAttr_t MessageUpload_attributes = {
     .name = "MesuploadTask",
-    .stack_size = 128 * 15,
+    .stack_size = 128 * 5,
     .priority = (osPriority_t)osPriorityLow,
 };
 /*Message Update Task*/
 osThreadId_t MessageUpdate_TaskHandle;
 const osThreadAttr_t MessageUpdate_attributes = {
     .name = "MesupdateTask",
-    .stack_size = 128 * 6,
+    .stack_size = 128 * 5,
     .priority = (osPriority_t)osPriorityLow1,
 };
 /*MUTEX------------------------------------------------------*/

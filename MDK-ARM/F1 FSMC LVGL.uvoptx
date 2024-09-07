@@ -150,50 +150,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>80</LineNumber>
+          <LineNumber>150</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134241138</Address>
+          <Address>134246614</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\UserTask\IH_MqttTask.c</Filename>
+          <Filename>..\UserTask\IH_ATcommand.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../UserTask/IH_MqttTask.c\80</Expression>
+          <Expression>\\F1_FSMC_LVGL\../UserTask/IH_ATcommand.c\150</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>23</LineNumber>
+          <LineNumber>146</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134221220</Address>
+          <Address>134246596</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\BSP\AT24Cxx\24cxx.c</Filename>
+          <Filename>..\UserTask\IH_ATcommand.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../BSP/AT24Cxx/24cxx.c\23</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>537</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134244428</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\BSP\TOUCH\touch.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\F1_FSMC_LVGL\../BSP/TOUCH/touch.c\537</Expression>
+          <Expression>\\F1_FSMC_LVGL\../UserTask/IH_ATcommand.c\146</Expression>
         </Bp>
       </Breakpoint>
       <MemoryWindow1>
@@ -875,7 +859,7 @@
 
   <Group>
     <GroupName>Drivers/BSP</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

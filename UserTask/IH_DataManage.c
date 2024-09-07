@@ -99,7 +99,10 @@ IH_Family_TypeDef IH_Family = {
     .MQTT = {
         .client = NULL,
         .Ip_Port = "1883",
-        .Server_Ip = "47.114.187.247",
+        .Server_Host = "47.114.187.247",
+        .Client_ID = "k1piv8f8ZBM.Qilala|securemode=2,signmethod=hmacsha256,timestamp=1725711510318|",
+        .User_Name = "Qilala&k1piv8f8ZBM",
+        .User_Password = "95b1bb9b838b71b721c36d16570f9294715c73579668af57cb35881ccdc8c6e0",
         .User_Topic = "mcu_test",
         .Msg_Buffer = {0},
     },

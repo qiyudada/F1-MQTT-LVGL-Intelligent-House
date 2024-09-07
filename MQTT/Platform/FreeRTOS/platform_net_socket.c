@@ -24,7 +24,7 @@ int platform_net_socket_connect(const char *host, const char *port, int proto)
 			if (!errs)
 			{
 				i++;
-				printf("AT+CWMODE err = %d\r\n", errs);
+				printf("AT+CWMODE=1 Ok\r\n");
 			}
 			break;
 		/*连接Wifi*/
@@ -33,7 +33,7 @@ int platform_net_socket_connect(const char *host, const char *port, int proto)
 			if (!errs)
 			{
 				i++;
-				printf("AT+CWJAP err = %d\n", errs);
+				printf("AT+CWJAP(WIFI Ok)\r\n");
 			}
 			break;
 		/*开启服务器*/
@@ -51,12 +51,13 @@ int platform_net_socket_connect(const char *host, const char *port, int proto)
 			if (!errs)
 			{
 				i++;
-				printf("AT+CIPSTART err = %d\n", errs);
+				printf("AT+CIPSTART(TCP OK)\r\n");
 			}
 			break;
 		}
 		if(i>3)
 		{
+			printf("WIFI Configuration OK\r\n");
 			break;
 		}
 	}
@@ -101,13 +102,13 @@ int platform_net_socket_write_timeout(int fd, unsigned char *buf, int len, int t
 {
 	int err;
 	char cmd[20];
-	char resp[100];
+	char resp[256];
 
 	sprintf(cmd, "AT+CIPSEND=%d", len);
-	err = AT_SendCmd(cmd, resp, 100, timeout);
+	err = AT_SendCmd(cmd, resp, 256, timeout);
 	if (err)
 	{
-		resp[99] = '\0';
+		resp[255] = '\0';
 		printf("%s err = %d, timeout = %d\r\n", cmd, err, timeout);
 		printf("resp : %s\r\n", resp);
 		return err;
@@ -115,7 +116,7 @@ int platform_net_socket_write_timeout(int fd, unsigned char *buf, int len, int t
 	err = ATSendData(buf, len, timeout);/*send data*/
 	if (err)
 	{
-		printf("ATSendData err = %d\r\n", err);
+		printf("ATSendData(OK)\r\n");
 		return err;
 	}
 	
