@@ -206,7 +206,7 @@ f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\ih_mqtttask.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\ih_mqtttask.o: ../BSP/WIFI/ATcommand.h
+f1 fsmc lvgl\ih_mqtttask.o: ..\UserTask\IH_ATcommand.h
 f1 fsmc lvgl\ih_mqtttask.o: ../SYSTEM/Hal_Uart/Hal_Uart.h
 f1 fsmc lvgl\ih_mqtttask.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
 f1 fsmc lvgl\ih_mqtttask.o: ../LVGL/examples/porting/lv_port_disp.h

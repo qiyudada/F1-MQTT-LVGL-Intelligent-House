@@ -1,8 +1,8 @@
+#include "IH_ATcommand.h"
+
 #include "mqtt_log.h"
 #include "platform_net_socket.h"
-#include "ATcommand.h"
-#include <string.h>
-#include <stdio.h>
+
 #include <portmacro.h>
 
 #define SSID "PRAYMERRY"

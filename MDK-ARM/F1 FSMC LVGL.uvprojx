@@ -780,6 +780,11 @@
               <FileType>1</FileType>
               <FilePath>..\UserTask\IH_LvglHandler.c</FilePath>
             </File>
+            <File>
+              <FileName>IH_ATcommand.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UserTask\IH_ATcommand.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -2062,11 +2067,6 @@
               <FileName>24cxx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\AT24Cxx\24cxx.c</FilePath>
-            </File>
-            <File>
-              <FileName>ATcommand.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\WIFI\ATcommand.c</FilePath>
             </File>
             <File>
               <FileName>WIFI_Uart_IRQ.c</FileName>

@@ -209,7 +209,7 @@ f1 fsmc lvgl\ui_events.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\ui_events.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\ui_events.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\ui_events.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\ui_events.o: ../BSP/WIFI/ATcommand.h
+f1 fsmc lvgl\ui_events.o: ../UserTask/IH_ATcommand.h
 f1 fsmc lvgl\ui_events.o: ../SYSTEM/Hal_Uart/Hal_Uart.h
 f1 fsmc lvgl\ui_events.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
 f1 fsmc lvgl\ui_events.o: ../LVGL/examples/porting/lv_port_disp.h

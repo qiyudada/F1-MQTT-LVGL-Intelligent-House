@@ -43,7 +43,7 @@ extern "C"
 #endif
 
 #if (IH_USE_WIFI)
-#include "ATcommand.h"
+#include "IH_ATcommand.h"
 #endif
 
 #if (IH_USE_LVGL)

@@ -214,7 +214,7 @@ f1 fsmc lvgl\main.o: ../MQTT/Network/network.h
 f1 fsmc lvgl\main.o: ../MQTT/Common/random.h
 f1 fsmc lvgl\main.o: ../MQTT/Common/mqtt_error.h
 f1 fsmc lvgl\main.o: ../MQTT/Common/mqtt_log.h
-f1 fsmc lvgl\main.o: ../BSP/WIFI/ATcommand.h
+f1 fsmc lvgl\main.o: ../UserTask/IH_ATcommand.h
 f1 fsmc lvgl\main.o: ../SYSTEM/Hal_Uart/Hal_Uart.h
 f1 fsmc lvgl\main.o: ../BSP/WIFI/WIFI_Uart_IRQ.h
 f1 fsmc lvgl\main.o: ../LVGL/examples/porting/lv_port_disp.h
