@@ -93,7 +93,7 @@ void User_Tasks_Init(void)
     /*Priority reference:(1)is biggest*/
     HardwareInit_TaskHandle = osThreadNew(HardwareInitTask, NULL, &HardwareInitTask_attributes); //(1)
     MQTTInit_TaskHandle = osThreadNew(MqttInitTask, NULL, &MqttInitTask_attributes);             //(2)
-    //ATRece_TaskHandle = osThreadNew(AT_RecvParse, NULL, &ATReceTask_attributes);                 //(3)
+    ATRece_TaskHandle = osThreadNew(AT_RecvParse, NULL, &ATReceTask_attributes);                 //(3)
     MessageUpdate_TaskHandle = osThreadNew(MessageUpdateTask, NULL, &MessageUpdate_attributes);  //(4)
     MessageUpload_TaskHandle = osThreadNew(MqttSendTask, NULL, &MessageUpload_attributes);       //(5)
     LvHandler_TaskHandle = osThreadNew(LvHandlerTask, NULL, &LvHandlerTask_attributes);          //(5)
