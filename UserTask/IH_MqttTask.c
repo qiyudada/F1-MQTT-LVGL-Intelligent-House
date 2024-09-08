@@ -27,6 +27,7 @@ void MqttInitTask(void *argument)
         memset(&IH_Family.MQTT.msg, 0, sizeof(IH_Family.MQTT.msg));
         mqtt_log_init();
         IH_Family.MQTT.client = mqtt_lease();
+
         mqtt_set_port(IH_Family.MQTT.client, IH_Family.MQTT.Ip_Port);
         mqtt_set_host(IH_Family.MQTT.client, IH_Family.MQTT.Server_Host);
         mqtt_set_client_id(IH_Family.MQTT.client, random_string(10));
@@ -60,7 +61,6 @@ void MqttSendTask(void *argument)
     IH_Family.MQTT.msg.payload = IH_Family.MQTT.Msg_Buffer;
     IH_Family.MQTT.msg.qos = QOS0;
 
-    mqtt_list_subscribe_topic(IH_Family.MQTT.client);
 
     while (1)
     {
