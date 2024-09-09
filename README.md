@@ -20,7 +20,8 @@ This is a simple intelligent sensor system,which integrate light weight Mqtt ser
 + DTH11
 + Lightsensor
 + LED
-+ Beep(No add yet)
++ Beep
++ MQ2
 + Motor(No add yet)
 
 ## 4. Build process
