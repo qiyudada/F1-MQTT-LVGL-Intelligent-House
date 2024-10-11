@@ -209,7 +209,7 @@ lv_event_send(ui_TempLabel, LV_EVENT_VALUE_CHANGED, NULL);//没有它事件程�
 
 <img src="D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240903233752871.png" alt="image-20240903233752871" style="zoom:50%;" />
 
-### 4.基于IIC1的硬件使用的仪器无法响应
+### 4.基于IIC的硬件使用的仪器无法响应
 
 ![image-20240906225329957](D:\2024710Embeded Learn\My FreeRtos\F1-MQTT-LVGL-Intelligent-House\assets\image-20240906225329957.png)
 
